@@ -1,0 +1,3481 @@
+{
+  "metadata": {
+    "revision": "0.8.11",
+    "based_on": "Kya 0.8.8 / 0.9.32 + archived terrain research 26-29 October 2026",
+    "important": "Requirement lists are NOT proofs of accessibility; region graph gates are additional. Provisional/unverified must not be marketed as tested. Item requirements reflect current code with wind-bypass adjustment.",
+    "region_access": "APWorld world.py create_regions is the authoritative region entrance graph. FT AP starts are chosen per seed; vanilla FT follows game-order graph.",
+    "shop_warning": "AP shop progression forbidden until Nooties economics modelled",
+    "rune_warning": "AP progression forbidden on physical rune pickup checks because pickups can disappear",
+    "fixed_bracelets": "7 locked to zone-specific Wolfen in current beta; retained until combat progression logic verified",
+    "item_names": [
+      "+2% Attack",
+      "+2% Protection",
+      "+5% Attack",
+      "+5% Protection",
+      "+8% Attack",
+      "+8% Protection",
+      "Basic Boomy",
+      "Blue Egg",
+      "Climbing Gloves",
+      "HP Restore +10",
+      "HP Restore +20",
+      "HP Restore +30",
+      "HP Restore +50",
+      "Jamgut Birdcall",
+      "Magic Bouncers",
+      "Magic Regeneration",
+      "Magic Restore +10",
+      "Magic Restore +15",
+      "Magic Restore +20",
+      "Magic Restore +30",
+      "Magic Restore +50",
+      "Nooties +10",
+      "Nooties +100",
+      "Nooties +20",
+      "Nooties +200",
+      "Nooties +30",
+      "Nooties +40",
+      "Nooties +5",
+      "Nooties +50",
+      "Nooties +500",
+      "Progressive Board",
+      "Progressive Boomy",
+      "Progressive Bracelet",
+      "Progressive Life Gauge",
+      "Progressive Magic Gauge",
+      "Progressive Rune: Air Post Rune",
+      "Progressive Rune: Flying Forest Rune",
+      "Progressive Rune: Forgotten Island Rune",
+      "Progressive Rune: Hunter's Domain Rune",
+      "Progressive Rune: Quarry's Rune",
+      "Progressive Rune: Root's Rune",
+      "Receptacle",
+      "Telescope",
+      "The Fortress Access",
+      "Wolfen City Access"
+    ],
+    "progression_names": [
+      "Climbing Gloves",
+      "Jamgut Birdcall",
+      "Magic Bouncers",
+      "Magic Regeneration",
+      "Progressive Board",
+      "Progressive Boomy",
+      "Progressive Bracelet",
+      "Progressive Rune: Air Post Rune",
+      "Progressive Rune: Flying Forest Rune",
+      "Progressive Rune: Forgotten Island Rune",
+      "Progressive Rune: Hunter's Domain Rune",
+      "Progressive Rune: Quarry's Rune",
+      "Progressive Rune: Root's Rune",
+      "Receptacle",
+      "Telescope",
+      "The Fortress Access",
+      "Wolfen City Access"
+    ],
+    "quarry_fix": "2026-10-30: The Quarry Wolfen 01 (key 0x296A) is the only Wolfen reachable without Climbing Gloves when FT01 is open. Wolfen 02-10 require Gloves at minimum, but sufficiency remains unverified."
+  },
+  "locations": {
+    "Nativs City - Wolfen 01": {
+      "id": 51474001,
+      "zone": "Nativs City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "No individual physical access evidence recorded"
+    },
+    "Flying Forest - Entrance - Wolfen 01 - Scrawny Blue Outfit (Fists)": {
+      "id": 51474002,
+      "zone": "Flying Forest",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "observed",
+      "note": "Entrance samples reachable in FT01 reconnaissance; isolate other items where needed"
+    },
+    "Flying Forest - Entrance - Wolfen 02 - Scrawny Blue Outfit (Fists)": {
+      "id": 51474003,
+      "zone": "Flying Forest",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "observed",
+      "note": "Entrance samples reachable in FT01 reconnaissance; isolate other items where needed"
+    },
+    "Flying Forest - Entrance - Wolfen 03 - Scrawny Blue Outfit (Club)": {
+      "id": 51474004,
+      "zone": "Flying Forest",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "observed",
+      "note": "Entrance samples reachable in FT01 reconnaissance; isolate other items where needed"
+    },
+    "Flying Forest - Entrance - Wolfen 04 - Scrawny Blue Outfit (Fists)": {
+      "id": 51474005,
+      "zone": "Flying Forest",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "observed",
+      "note": "Entrance samples reachable in FT01 reconnaissance; isolate other items where needed"
+    },
+    "Flying Forest - Entrance - Wolfen 05 - Scrawny Blue Outfit (Fists)": {
+      "id": 51474006,
+      "zone": "Flying Forest",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "observed",
+      "note": "Entrance samples reachable in FT01 reconnaissance; isolate other items where needed"
+    },
+    "Flying Forest - Entrance - Wolfen 06 - Scrawny Yellow Outfit (Fists)": {
+      "id": 51474007,
+      "zone": "Flying Forest",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "observed",
+      "note": "Entrance samples reachable in FT01 reconnaissance; isolate other items where needed"
+    },
+    "Flying Forest - Entrance - Wolfen 07 - Scrawny Blue Outfit (Fists)": {
+      "id": 51474008,
+      "zone": "Flying Forest",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "observed",
+      "note": "Entrance samples reachable in FT01 reconnaissance; isolate other items where needed"
+    },
+    "Flying Forest - Entrance - Wolfen 08 - Grunt Blue Outfit (Fists)": {
+      "id": 51474009,
+      "zone": "Flying Forest",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "observed",
+      "note": "Entrance samples reachable in FT01 reconnaissance; isolate other items where needed"
+    },
+    "Flying Forest - Entrance - Wolfen 09 - Scrawny Blue Outfit (Fists)": {
+      "id": 51474010,
+      "zone": "Flying Forest",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "observed",
+      "note": "Entrance samples reachable in FT01 reconnaissance; isolate other items where needed"
+    },
+    "Flying Forest - Entrance - Wolfen 10 - Scrawny Yellow Outfit (Fists)": {
+      "id": 51474011,
+      "zone": "Flying Forest",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "observed",
+      "note": "Entrance samples reachable in FT01 reconnaissance; isolate other items where needed"
+    },
+    "Flying Forest - Entrance - Wolfen 11 - Scrawny Yellow Outfit (Fists)": {
+      "id": 51474012,
+      "zone": "Flying Forest",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "observed",
+      "note": "Entrance samples reachable in FT01 reconnaissance; isolate other items where needed"
+    },
+    "Flying Forest - Entrance - Wolfen 12": {
+      "id": 51474013,
+      "zone": "Flying Forest",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "observed",
+      "note": "Entrance samples reachable in FT01 reconnaissance; isolate other items where needed"
+    },
+    "Flying Forest - Entrance - Wolfen 13 - Scrawny Blue Outfit (Fists)": {
+      "id": 51474014,
+      "zone": "Flying Forest",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "observed",
+      "note": "Entrance samples reachable in FT01 reconnaissance; isolate other items where needed"
+    },
+    "Flying Forest - Wolfun Camp - Wolfen 14 - Scrawny Blue Outfit (Club)": {
+      "id": 51474015,
+      "zone": "Flying Forest",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "observed",
+      "note": "Entrance samples reachable in FT01 reconnaissance; isolate other items where needed"
+    },
+    "Flying Forest - Wolfun Camp - Wolfen 15 - Scrawny Blue Outfit (Club)": {
+      "id": 51474016,
+      "zone": "Flying Forest",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "observed",
+      "note": "Entrance samples reachable in FT01 reconnaissance; isolate other items where needed"
+    },
+    "Flying Forest - Wolfun Camp - Wolfen 16 - Scrawny Blue Outfit (Fists)": {
+      "id": 51474017,
+      "zone": "Flying Forest",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "observed",
+      "note": "Entrance samples reachable in FT01 reconnaissance; isolate other items where needed"
+    },
+    "Flying Forest - Wolfun Camp - Wolfen 17 - Scrawny Blue Outfit (Club)": {
+      "id": 51474018,
+      "zone": "Flying Forest",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Board": 1
+      },
+      "confidence": "provisional",
+      "note": "Reached after basic board; individual need not isolated"
+    },
+    "Flying Forest - Wolfun Camp - Wolfen 18 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474019,
+      "zone": "Flying Forest",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Board": 1
+      },
+      "confidence": "provisional",
+      "note": "Reached after basic board; individual need not isolated"
+    },
+    "Flying Forest - Wolfun Camp - Wolfen 19 - Scrawny Blue Outfit (Fists)": {
+      "id": 51474020,
+      "zone": "Flying Forest",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Board": 1
+      },
+      "confidence": "provisional",
+      "note": "Reached after basic board; individual need not isolated"
+    },
+    "Flying Forest - Wolfun Camp - Wolfen 20 - Scrawny Blue Outfit (Club)": {
+      "id": 51474021,
+      "zone": "Flying Forest",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Board": 1
+      },
+      "confidence": "provisional",
+      "note": "Reached after basic board; individual need not isolated"
+    },
+    "Flying Forest - Brazul's Crow Chase - Wolfen 21 - Scrawny Blue Outfit (Fists)": {
+      "id": 51474022,
+      "zone": "Flying Forest",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Board": 1
+      },
+      "confidence": "provisional",
+      "note": "Reached after basic board; individual need not isolated"
+    },
+    "Flying Forest - Brazul's Crow Chase - Wolfen 22 - Scrawny Blue Outfit (Fists)": {
+      "id": 51474023,
+      "zone": "Flying Forest",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Board": 1
+      },
+      "confidence": "provisional",
+      "note": "Reached after basic board; individual need not isolated"
+    },
+    "Flying Forest - Brazul's Crow Chase - Wolfen 23 - Scrawny Blue Outfit (Fists)": {
+      "id": 51474024,
+      "zone": "Flying Forest",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Board": 1
+      },
+      "confidence": "provisional",
+      "note": "Reached after basic board; individual need not isolated"
+    },
+    "Flying Forest - Wolfun Camp - Wolfen 24 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474025,
+      "zone": "Flying Forest",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Board": 1,
+        "Climbing Gloves": 1
+      },
+      "confidence": "provisional",
+      "note": "Conservative mapping; late suffix not individually tested without Gloves"
+    },
+    "Flying Forest - Wolfun Camp - Wolfen 25": {
+      "id": 51474026,
+      "zone": "Flying Forest",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Board": 1,
+        "Climbing Gloves": 1
+      },
+      "confidence": "provisional",
+      "note": "Conservative mapping; late suffix not individually tested without Gloves"
+    },
+    "Flying Forest - Wolfun Factory - Wolfen 26": {
+      "id": 51474027,
+      "zone": "Flying Forest",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Board": 1,
+        "Climbing Gloves": 1
+      },
+      "confidence": "provisional",
+      "note": "Conservative mapping; late suffix not individually tested without Gloves"
+    },
+    "Flying Forest - Wolfun Factory - Wolfen 27": {
+      "id": 51474028,
+      "zone": "Flying Forest",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Board": 1,
+        "Climbing Gloves": 1
+      },
+      "confidence": "provisional",
+      "note": "Conservative mapping; late suffix not individually tested without Gloves"
+    },
+    "Flying Forest - Wolfun Factory - Wolfen 28": {
+      "id": 51474029,
+      "zone": "Flying Forest",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Board": 1,
+        "Climbing Gloves": 1
+      },
+      "confidence": "provisional",
+      "note": "Conservative mapping; late suffix not individually tested without Gloves"
+    },
+    "Flying Forest - Wolfun Factory - Wolfen 29": {
+      "id": 51474030,
+      "zone": "Flying Forest",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Board": 1,
+        "Climbing Gloves": 1
+      },
+      "confidence": "provisional",
+      "note": "Conservative mapping; late suffix not individually tested without Gloves"
+    },
+    "Flying Forest - Wolfun Factory - Wolfen 30": {
+      "id": 51474031,
+      "zone": "Flying Forest",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Board": 1,
+        "Climbing Gloves": 1
+      },
+      "confidence": "provisional",
+      "note": "Conservative mapping; late suffix not individually tested without Gloves"
+    },
+    "Flying Forest - Wolfun Factory - Wolfen 31": {
+      "id": 51474032,
+      "zone": "Flying Forest",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Board": 1,
+        "Climbing Gloves": 1
+      },
+      "confidence": "provisional",
+      "note": "Conservative mapping; late suffix not individually tested without Gloves"
+    },
+    "Flying Forest - Wolfun Factory - Wolfen 32": {
+      "id": 51474033,
+      "zone": "Flying Forest",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Board": 1,
+        "Climbing Gloves": 1
+      },
+      "confidence": "provisional",
+      "note": "Conservative mapping; late suffix not individually tested without Gloves"
+    },
+    "Flying Forest - Wolfun Factory - Wolfen 33": {
+      "id": 51474034,
+      "zone": "Flying Forest",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Board": 1,
+        "Climbing Gloves": 1
+      },
+      "confidence": "provisional",
+      "note": "Conservative mapping; late suffix not individually tested without Gloves"
+    },
+    "Flying Forest - Brazul's Crow Chase - Wolfen 34": {
+      "id": 51474035,
+      "zone": "Flying Forest",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Board": 1,
+        "Climbing Gloves": 1
+      },
+      "confidence": "provisional",
+      "note": "Conservative mapping; late suffix not individually tested without Gloves"
+    },
+    "Flying Forest - Wolfun Factory - Wolfen 35": {
+      "id": 51474036,
+      "zone": "Flying Forest",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Board": 1,
+        "Climbing Gloves": 1
+      },
+      "confidence": "provisional",
+      "note": "Conservative mapping; late suffix not individually tested without Gloves"
+    },
+    "Flying Forest - Wolfun Factory - Wolfen 36": {
+      "id": 51474037,
+      "zone": "Flying Forest",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Board": 1,
+        "Climbing Gloves": 1
+      },
+      "confidence": "provisional",
+      "note": "Conservative mapping; late suffix not individually tested without Gloves"
+    },
+    "Flying Forest - Wolfun Factory - Wolfen 37": {
+      "id": 51474038,
+      "zone": "Flying Forest",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Board": 1,
+        "Climbing Gloves": 1
+      },
+      "confidence": "provisional",
+      "note": "Conservative mapping; late suffix not individually tested without Gloves"
+    },
+    "Hunters Domain - Entrance - Wolfen 01 - Scrawny Blue Outfit (Fists)": {
+      "id": 51474039,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "provisional",
+      "note": "Lateral winds bypass missing Gloves; extent of bypass for individual Wolfen needs confirmation"
+    },
+    "Hunters Domain - Entrance - Wolfen 02 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474040,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "provisional",
+      "note": "Lateral winds bypass missing Gloves; extent of bypass for individual Wolfen needs confirmation"
+    },
+    "Hunters Domain - Entrance - Wolfen 03 - Scrawny Blue Outfit (Fists)": {
+      "id": 51474041,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "provisional",
+      "note": "Lateral winds bypass missing Gloves; extent of bypass for individual Wolfen needs confirmation"
+    },
+    "Hunters Domain - Entrance - Wolfen 04 - Scrawny Blue Outfit (Fists)": {
+      "id": 51474042,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "provisional",
+      "note": "Lateral winds bypass missing Gloves; extent of bypass for individual Wolfen needs confirmation"
+    },
+    "Hunters Domain - Entrance - Wolfen 05 - Scrawny Blue Outfit (Club)": {
+      "id": 51474043,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "provisional",
+      "note": "Lateral winds bypass missing Gloves; extent of bypass for individual Wolfen needs confirmation"
+    },
+    "Hunters Domain - Entrance - Wolfen 06 - Scrawny Blue Outfit (Club)": {
+      "id": 51474044,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "provisional",
+      "note": "Lateral winds bypass missing Gloves; extent of bypass for individual Wolfen needs confirmation"
+    },
+    "Hunters Domain - Entrance - Wolfen 07 - Scrawny Yellow Outfit (Fists)": {
+      "id": 51474045,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "provisional",
+      "note": "Lateral winds bypass missing Gloves; extent of bypass for individual Wolfen needs confirmation"
+    },
+    "Hunters Domain - Entrance - Wolfen 08 - Scrawny Blue Outfit (Club)": {
+      "id": 51474046,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "provisional",
+      "note": "Lateral winds bypass missing Gloves; extent of bypass for individual Wolfen needs confirmation"
+    },
+    "Hunters Domain - Wolfun Camp - Wolfen 09 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474047,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "provisional",
+      "note": "Lateral winds bypass missing Gloves; extent of bypass for individual Wolfen needs confirmation"
+    },
+    "Hunters Domain - Wolfun Camp - Wolfen 10 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474048,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "provisional",
+      "note": "Lateral winds bypass missing Gloves; extent of bypass for individual Wolfen needs confirmation"
+    },
+    "Hunters Domain - Wolfun Camp - Wolfen 11 - Gun Blue Outfit": {
+      "id": 51474049,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "provisional",
+      "note": "Lateral winds bypass missing Gloves; extent of bypass for individual Wolfen needs confirmation"
+    },
+    "Hunters Domain - Wolfun Camp - Wolfen 12 - Gun Blue Outfit": {
+      "id": 51474050,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "provisional",
+      "note": "Lateral winds bypass missing Gloves; extent of bypass for individual Wolfen needs confirmation"
+    },
+    "Hunters Domain - Wolfun Camp - Wolfen 13 - Club Blue Outfit": {
+      "id": 51474051,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "provisional",
+      "note": "Lateral winds bypass missing Gloves; extent of bypass for individual Wolfen needs confirmation"
+    },
+    "Hunters Domain - Wolfun Camp - Wolfen 14 - Fists Black Outfit": {
+      "id": 51474052,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "provisional",
+      "note": "Lateral winds bypass missing Gloves; extent of bypass for individual Wolfen needs confirmation"
+    },
+    "Hunters Domain - Wolfun Camp - Wolfen 15 - Fists Black Outfit": {
+      "id": 51474053,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "provisional",
+      "note": "Lateral winds bypass missing Gloves; extent of bypass for individual Wolfen needs confirmation"
+    },
+    "Hunters Domain - Wolfun Camp - Wolfen 16 - Grunt Blue Outfit (Fists)": {
+      "id": 51474054,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "provisional",
+      "note": "Lateral winds bypass missing Gloves; extent of bypass for individual Wolfen needs confirmation"
+    },
+    "Hunters Domain - Wolfun Camp - Wolfen 17 - Scrawny Blue Outfit (Sniper)": {
+      "id": 51474055,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "provisional",
+      "note": "Lateral winds bypass missing Gloves; extent of bypass for individual Wolfen needs confirmation"
+    },
+    "Hunters Domain - Wolfun Camp - Wolfen 18 - Scrawny Blue Outfit (Sniper)": {
+      "id": 51474056,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "provisional",
+      "note": "Lateral winds bypass missing Gloves; extent of bypass for individual Wolfen needs confirmation"
+    },
+    "Hunters Domain - Wolfun Camp - Wolfen 19 - Grunt Blue Outfit (Fists)": {
+      "id": 51474057,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "provisional",
+      "note": "Lateral winds bypass missing Gloves; extent of bypass for individual Wolfen needs confirmation"
+    },
+    "Hunters Domain - Wolfun Camp - Wolfen 20 - Grunt Blue Outfit (Fists)": {
+      "id": 51474058,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "provisional",
+      "note": "Lateral winds bypass missing Gloves; extent of bypass for individual Wolfen needs confirmation"
+    },
+    "Hunters Domain - Wolfun Camp - Wolfen 21 - Scrawny Blue Outfit (Club)": {
+      "id": 51474059,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "provisional",
+      "note": "Lateral winds bypass missing Gloves; extent of bypass for individual Wolfen needs confirmation"
+    },
+    "Hunters Domain - Wolfun Camp - Wolfen 22 - Scrawny Blue Outfit (Club)": {
+      "id": 51474060,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "provisional",
+      "note": "Lateral winds bypass missing Gloves; extent of bypass for individual Wolfen needs confirmation"
+    },
+    "Hunters Domain - Wolfun Camp - Wolfen 23 - Scrawny Blue Outfit (Club)": {
+      "id": 51474061,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "provisional",
+      "note": "Lateral winds bypass missing Gloves; extent of bypass for individual Wolfen needs confirmation"
+    },
+    "Hunters Domain - Wolfun Camp - Wolfen 24 - Scrawny Blue Outfit (Club)": {
+      "id": 51474062,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "provisional",
+      "note": "Lateral winds bypass missing Gloves; extent of bypass for individual Wolfen needs confirmation"
+    },
+    "Hunters Domain - Wolfun Camp - Wolfen 25 - Scrawny Blue Outfit (Club)": {
+      "id": 51474063,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "provisional",
+      "note": "Lateral winds bypass missing Gloves; extent of bypass for individual Wolfen needs confirmation"
+    },
+    "Hunters Domain - Hunter's Dungeon - Wolfen 26 - Grunt Blue Outfit (Fists)": {
+      "id": 51474064,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1,
+        "Progressive Boomy": 1
+      },
+      "confidence": "provisional",
+      "note": "Silver/Gloves kept conservatively; terrain isolation incomplete"
+    },
+    "Hunters Domain - Hunter's Dungeon - Wolfen 27 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474065,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1,
+        "Progressive Boomy": 1
+      },
+      "confidence": "provisional",
+      "note": "Silver/Gloves kept conservatively; terrain isolation incomplete"
+    },
+    "Hunters Domain - Hunter's Dungeon - Wolfen 28 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474066,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1,
+        "Progressive Boomy": 1
+      },
+      "confidence": "provisional",
+      "note": "Silver/Gloves kept conservatively; terrain isolation incomplete"
+    },
+    "Hunters Domain - Hunter's Dungeon - Wolfen 29 - Grunt Blue Outfit (Fists)": {
+      "id": 51474067,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1,
+        "Progressive Boomy": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "provisional",
+      "note": "Late Hunter stages conservatively gated; lateral wind bypass extent not fully mapped"
+    },
+    "Hunters Domain - Hunter's Dungeon - Wolfen 30 - Grunt Blue Outfit (Fists)": {
+      "id": 51474068,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1,
+        "Progressive Boomy": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "provisional",
+      "note": "Late Hunter stages conservatively gated; lateral wind bypass extent not fully mapped"
+    },
+    "Hunters Domain - Hunter's Dungeon - Wolfen 31 - Scrawny Blue Outfit (Sniper)": {
+      "id": 51474069,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1,
+        "Progressive Boomy": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "provisional",
+      "note": "Late Hunter stages conservatively gated; lateral wind bypass extent not fully mapped"
+    },
+    "Hunters Domain - Hunter's Dungeon - Wolfen 32 - Scrawny Blue Outfit (Sniper)": {
+      "id": 51474070,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1,
+        "Progressive Boomy": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "provisional",
+      "note": "Late Hunter stages conservatively gated; lateral wind bypass extent not fully mapped"
+    },
+    "Hunters Domain - Hunter's Dungeon - Wolfen 33 - Scrawny Blue Outfit (Fists)": {
+      "id": 51474071,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1,
+        "Progressive Boomy": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "provisional",
+      "note": "Late Hunter stages conservatively gated; lateral wind bypass extent not fully mapped"
+    },
+    "Hunters Domain - Hunter's Dungeon - Wolfen 34 - Grunt Blue Outfit (Fists)": {
+      "id": 51474072,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1,
+        "Progressive Boomy": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "provisional",
+      "note": "Late Hunter stages conservatively gated; lateral wind bypass extent not fully mapped"
+    },
+    "Hunters Domain - Hunter's Dungeon - Wolfen 35 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474073,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1,
+        "Progressive Boomy": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "provisional",
+      "note": "Late Hunter stages conservatively gated; lateral wind bypass extent not fully mapped"
+    },
+    "Hunters Domain - Hilltop Fort - Wolfen 36 - Grunt Blue Outfit (Fists)": {
+      "id": 51474074,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1,
+        "Progressive Boomy": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "provisional",
+      "note": "Late Hunter stages conservatively gated; lateral wind bypass extent not fully mapped"
+    },
+    "Hunters Domain - Hilltop Fort - Wolfen 37 - Scrawny Blue Outfit (Fists)": {
+      "id": 51474075,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1,
+        "Progressive Boomy": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "provisional",
+      "note": "Late Hunter stages conservatively gated; lateral wind bypass extent not fully mapped"
+    },
+    "Hunters Domain - Hilltop Fort - Wolfen 38 - Scrawny Yellow Outfit (Fists)": {
+      "id": 51474076,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1,
+        "Progressive Boomy": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "provisional",
+      "note": "Late Hunter stages conservatively gated; lateral wind bypass extent not fully mapped"
+    },
+    "Hunters Domain - Hilltop Fort - Wolfen 39 - Scrawny Yellow Outfit (Fists)": {
+      "id": 51474077,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1,
+        "Progressive Boomy": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "provisional",
+      "note": "Late Hunter stages conservatively gated; lateral wind bypass extent not fully mapped"
+    },
+    "Hunters Domain - Hilltop Fort - Wolfen 40 - Scrawny Yellow Outfit (Fists)": {
+      "id": 51474078,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1,
+        "Progressive Boomy": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "provisional",
+      "note": "Late Hunter stages conservatively gated; lateral wind bypass extent not fully mapped"
+    },
+    "Hunters Domain - Hilltop Fort - Wolfen 41 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474079,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1,
+        "Progressive Boomy": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "provisional",
+      "note": "Late Hunter stages conservatively gated; lateral wind bypass extent not fully mapped"
+    },
+    "Hunters Domain - Hilltop Fort - Wolfen 42 - Scrawny Blue Outfit (Sniper)": {
+      "id": 51474080,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1,
+        "Progressive Boomy": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "provisional",
+      "note": "Late Hunter stages conservatively gated; lateral wind bypass extent not fully mapped"
+    },
+    "Hunters Domain - Hilltop Fort - Wolfen 43 - Grunt Blue Outfit (Fists)": {
+      "id": 51474081,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1,
+        "Progressive Boomy": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "provisional",
+      "note": "Late Hunter stages conservatively gated; lateral wind bypass extent not fully mapped"
+    },
+    "Hunters Domain - Hilltop Fort - Wolfen 44 - Scrawny Blue Outfit (Fists)": {
+      "id": 51474082,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1,
+        "Progressive Boomy": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "provisional",
+      "note": "Late Hunter stages conservatively gated; lateral wind bypass extent not fully mapped"
+    },
+    "Hunters Domain - Hilltop Fort - Wolfen 45 - Scrawny Blue Outfit (Fists)": {
+      "id": 51474083,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1,
+        "Progressive Boomy": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "provisional",
+      "note": "Late Hunter stages conservatively gated; lateral wind bypass extent not fully mapped"
+    },
+    "Hunters Domain - Hilltop Fort - Wolfen 46 - Scrawny Blue Outfit (Fists)": {
+      "id": 51474084,
+      "zone": "Hunters Domain",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1,
+        "Progressive Boomy": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "provisional",
+      "note": "Late Hunter stages conservatively gated; lateral wind bypass extent not fully mapped"
+    },
+    "Hunters Domain - Wind Tower - Wolfen 01 - Scrawny Blue Outfit (Rocket Gun)": {
+      "id": 51474085,
+      "zone": "Wind Tower",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "provisional",
+      "note": "Bouncers wall; silver specifically not required"
+    },
+    "Hunters Domain - Wind Tower - Wolfen 02 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474086,
+      "zone": "Wind Tower",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "provisional",
+      "note": "Bouncers wall; silver specifically not required"
+    },
+    "The Quarry - Entrance - Wolfen 01": {
+      "id": 51474087,
+      "zone": "The Quarry",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "observed",
+      "note": "Confirmed by mapper 2026-10-30: ONLY Quarry Wolfen reachable without Climbing Gloves from FT01. Key 0x296A."
+    },
+    "The Quarry - Entrance - Wolfen 02": {
+      "id": 51474088,
+      "zone": "The Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Climbing Gloves": 1
+      },
+      "confidence": "provisional",
+      "note": "Mapper confirmed 2026-10-30: NOT reachable without Climbing Gloves. Gloves are necessary, not independently proven sufficient; other gates remain provisional."
+    },
+    "The Quarry - Entrance - Wolfen 03": {
+      "id": 51474089,
+      "zone": "The Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Climbing Gloves": 1
+      },
+      "confidence": "provisional",
+      "note": "Mapper confirmed 2026-10-30: NOT reachable without Climbing Gloves. Gloves are necessary, not independently proven sufficient; other gates remain provisional."
+    },
+    "The Quarry - Entrance - Wolfen 04": {
+      "id": 51474090,
+      "zone": "The Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Climbing Gloves": 1
+      },
+      "confidence": "provisional",
+      "note": "Mapper confirmed 2026-10-30: NOT reachable without Climbing Gloves. Gloves are necessary, not independently proven sufficient; other gates remain provisional."
+    },
+    "The Quarry - Entrance - Wolfen 05 - Scrawny Blue Outfit (Club)": {
+      "id": 51474091,
+      "zone": "The Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Climbing Gloves": 1
+      },
+      "confidence": "provisional",
+      "note": "Mapper confirmed 2026-10-30: NOT reachable without Climbing Gloves. Gloves are necessary, not independently proven sufficient; other gates remain provisional."
+    },
+    "The Quarry - Entrance - Wolfen 06 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474092,
+      "zone": "The Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Climbing Gloves": 1
+      },
+      "confidence": "provisional",
+      "note": "Mapper confirmed 2026-10-30: NOT reachable without Climbing Gloves. Gloves are necessary, not independently proven sufficient; other gates remain provisional."
+    },
+    "The Quarry - Entrance - Wolfen 07 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474093,
+      "zone": "The Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Climbing Gloves": 1
+      },
+      "confidence": "provisional",
+      "note": "Mapper confirmed 2026-10-30: NOT reachable without Climbing Gloves. Gloves are necessary, not independently proven sufficient; other gates remain provisional."
+    },
+    "The Quarry - Quarry - Wolfen 08 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474094,
+      "zone": "The Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Climbing Gloves": 1
+      },
+      "confidence": "provisional",
+      "note": "Mapper confirmed 2026-10-30: NOT reachable without Climbing Gloves. Gloves are necessary, not independently proven sufficient; other gates remain provisional."
+    },
+    "The Quarry - Quarry - Wolfen 09 - Grunt Blue Outfit (Fists)": {
+      "id": 51474095,
+      "zone": "The Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Climbing Gloves": 1
+      },
+      "confidence": "provisional",
+      "note": "Mapper confirmed 2026-10-30: NOT reachable without Climbing Gloves. Gloves are necessary, not independently proven sufficient; other gates remain provisional."
+    },
+    "The Quarry - Quarry - Wolfen 10 - Scrawny Yellow Outfit (Fists)": {
+      "id": 51474096,
+      "zone": "The Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Climbing Gloves": 1
+      },
+      "confidence": "provisional",
+      "note": "Mapper confirmed 2026-10-30: NOT reachable without Climbing Gloves. Gloves are necessary, not independently proven sufficient; other gates remain provisional."
+    },
+    "The Quarry - Quarry - Wolfen 11 - Scrawny Yellow Outfit (Fists)": {
+      "id": 51474097,
+      "zone": "The Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1
+      },
+      "confidence": "provisional",
+      "note": "Gloves / King Jamgut section; in-game Hunter event not yet modelled"
+    },
+    "The Quarry - Quarry - Wolfen 12 - Scrawny Yellow Outfit (Fists)": {
+      "id": 51474098,
+      "zone": "The Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1
+      },
+      "confidence": "provisional",
+      "note": "Gloves / King Jamgut section; in-game Hunter event not yet modelled"
+    },
+    "The Quarry - Quarry - Wolfen 13 - Grunt Blue Outfit (Fists)": {
+      "id": 51474099,
+      "zone": "The Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1
+      },
+      "confidence": "provisional",
+      "note": "Gloves / King Jamgut section; in-game Hunter event not yet modelled"
+    },
+    "The Quarry - Quarry - Wolfen 14": {
+      "id": 51474100,
+      "zone": "The Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1
+      },
+      "confidence": "provisional",
+      "note": "Gloves / King Jamgut section; in-game Hunter event not yet modelled"
+    },
+    "The Quarry - Quarry - Wolfen 15": {
+      "id": 51474101,
+      "zone": "The Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1
+      },
+      "confidence": "provisional",
+      "note": "Gloves / King Jamgut section; in-game Hunter event not yet modelled"
+    },
+    "The Quarry - Quarry - Wolfen 16": {
+      "id": 51474102,
+      "zone": "The Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1
+      },
+      "confidence": "provisional",
+      "note": "Gloves / King Jamgut section; in-game Hunter event not yet modelled"
+    },
+    "The Quarry - Quarry - Wolfen 17 - Grunt Black Outfit (Fists)": {
+      "id": 51474103,
+      "zone": "The Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1
+      },
+      "confidence": "provisional",
+      "note": "Gloves / King Jamgut section; in-game Hunter event not yet modelled"
+    },
+    "The Quarry - Quarry - Wolfen 18": {
+      "id": 51474104,
+      "zone": "The Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1
+      },
+      "confidence": "provisional",
+      "note": "Gloves / King Jamgut section; in-game Hunter event not yet modelled"
+    },
+    "The Quarry - Quarry - Wolfen 19 - Grunt Black Outfit (Fists)": {
+      "id": 51474105,
+      "zone": "The Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1
+      },
+      "confidence": "provisional",
+      "note": "Gloves / King Jamgut section; in-game Hunter event not yet modelled"
+    },
+    "The Quarry - Arena - Wolfen 20": {
+      "id": 51474106,
+      "zone": "The Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1,
+        "Progressive Board": 2
+      },
+      "confidence": "provisional",
+      "note": "Post-Speed Board Amber Quarry passage"
+    },
+    "The Quarry - Arena - Wolfen 21": {
+      "id": 51474107,
+      "zone": "The Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1,
+        "Progressive Board": 2
+      },
+      "confidence": "provisional",
+      "note": "Post-Speed Board Amber Quarry passage"
+    },
+    "The Quarry - Arena - Wolfen 22": {
+      "id": 51474108,
+      "zone": "The Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1,
+        "Progressive Board": 2,
+        "Magic Bouncers": 1
+      },
+      "confidence": "provisional",
+      "note": "After Magic Bouncers in session"
+    },
+    "The Quarry - Arena - Wolfen 23": {
+      "id": 51474109,
+      "zone": "The Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1,
+        "Progressive Board": 2,
+        "Magic Bouncers": 1
+      },
+      "confidence": "provisional",
+      "note": "After Magic Bouncers in session"
+    },
+    "The Quarry - Arena - Wolfen 24": {
+      "id": 51474110,
+      "zone": "The Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1,
+        "Progressive Board": 2,
+        "Magic Bouncers": 1
+      },
+      "confidence": "provisional",
+      "note": "After Magic Bouncers in session"
+    },
+    "The Quarry - Arena - Wolfen 25": {
+      "id": 51474111,
+      "zone": "The Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1,
+        "Progressive Board": 2,
+        "Magic Bouncers": 1
+      },
+      "confidence": "provisional",
+      "note": "After Magic Bouncers in session"
+    },
+    "The Quarry - Arena - Wolfen 26": {
+      "id": 51474112,
+      "zone": "The Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1,
+        "Progressive Board": 2,
+        "Magic Bouncers": 1
+      },
+      "confidence": "provisional",
+      "note": "After Magic Bouncers in session"
+    },
+    "The Quarry - Arena - Wolfen 27": {
+      "id": 51474113,
+      "zone": "The Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1,
+        "Progressive Board": 2,
+        "Magic Bouncers": 1
+      },
+      "confidence": "provisional",
+      "note": "After Magic Bouncers in session"
+    },
+    "The Quarry - Arena - Wolfen 28": {
+      "id": 51474114,
+      "zone": "The Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1,
+        "Progressive Board": 2,
+        "Magic Bouncers": 1
+      },
+      "confidence": "provisional",
+      "note": "After Magic Bouncers in session"
+    },
+    "The Quarry - Arena - Wolfen 29": {
+      "id": 51474115,
+      "zone": "The Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1,
+        "Progressive Board": 2,
+        "Magic Bouncers": 1
+      },
+      "confidence": "provisional",
+      "note": "After Magic Bouncers in session"
+    },
+    "The Quarry - Arena - Wolfen 30": {
+      "id": 51474116,
+      "zone": "The Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1,
+        "Progressive Board": 2,
+        "Magic Bouncers": 1
+      },
+      "confidence": "provisional",
+      "note": "After Magic Bouncers in session"
+    },
+    "The Quarry - Arena - Wolfen 31": {
+      "id": 51474117,
+      "zone": "The Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1,
+        "Progressive Board": 2,
+        "Magic Bouncers": 1
+      },
+      "confidence": "provisional",
+      "note": "After Magic Bouncers in session"
+    },
+    "The Quarry - Amber Quarry - Wolfen 01 - Scrawny Blue Outfit (Fists)": {
+      "id": 51474118,
+      "zone": "Amber Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Board": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "unverified",
+      "note": "All 14 individual barriers remain unverified; broad conservative requirements"
+    },
+    "The Quarry - Amber Quarry - Wolfen 02 - Scrawny Yellow Outfit (Fists)": {
+      "id": 51474119,
+      "zone": "Amber Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Board": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "unverified",
+      "note": "All 14 individual barriers remain unverified; broad conservative requirements"
+    },
+    "The Quarry - Amber Quarry - Wolfen 03 - Grunt Black Outfit (Fists)": {
+      "id": 51474120,
+      "zone": "Amber Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Board": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "unverified",
+      "note": "All 14 individual barriers remain unverified; broad conservative requirements"
+    },
+    "The Quarry - Amber Quarry - Wolfen 04 - Scrawny Blue Outfit (Fists)": {
+      "id": 51474121,
+      "zone": "Amber Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Board": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "unverified",
+      "note": "All 14 individual barriers remain unverified; broad conservative requirements"
+    },
+    "The Quarry - Amber Quarry - Wolfen 05 - Scrawny Yellow Outfit (Fists)": {
+      "id": 51474122,
+      "zone": "Amber Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Board": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "unverified",
+      "note": "All 14 individual barriers remain unverified; broad conservative requirements"
+    },
+    "The Quarry - Amber Quarry - Wolfen 06 - Grunt Black Outfit (Fists)": {
+      "id": 51474123,
+      "zone": "Amber Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Board": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "unverified",
+      "note": "All 14 individual barriers remain unverified; broad conservative requirements"
+    },
+    "The Quarry - Amber Quarry - Wolfen 07 - Scrawny Blue Outfit (Fists)": {
+      "id": 51474124,
+      "zone": "Amber Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Board": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "unverified",
+      "note": "All 14 individual barriers remain unverified; broad conservative requirements"
+    },
+    "The Quarry - Amber Quarry - Wolfen 08 - Grunt Blue Outfit (Fists)": {
+      "id": 51474125,
+      "zone": "Amber Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Board": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "unverified",
+      "note": "All 14 individual barriers remain unverified; broad conservative requirements"
+    },
+    "The Quarry - Amber Quarry - Wolfen 09 - Scrawny Blue Outfit (Fists)": {
+      "id": 51474126,
+      "zone": "Amber Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Board": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "unverified",
+      "note": "All 14 individual barriers remain unverified; broad conservative requirements"
+    },
+    "The Quarry - Amber Quarry - Wolfen 10 - Grunt Blue Outfit (Fists)": {
+      "id": 51474127,
+      "zone": "Amber Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Board": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "unverified",
+      "note": "All 14 individual barriers remain unverified; broad conservative requirements"
+    },
+    "The Quarry - Amber Quarry - Wolfen 11 - Scrawny Blue Outfit (Sniper)": {
+      "id": 51474128,
+      "zone": "Amber Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Board": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "unverified",
+      "note": "All 14 individual barriers remain unverified; broad conservative requirements"
+    },
+    "The Quarry - Amber Quarry - Wolfen 12 - Scrawny Blue Outfit (Sniper)": {
+      "id": 51474129,
+      "zone": "Amber Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Board": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "unverified",
+      "note": "All 14 individual barriers remain unverified; broad conservative requirements"
+    },
+    "The Quarry - Amber Quarry - Wolfen 13 - Scrawny Blue Outfit (Sniper)": {
+      "id": 51474130,
+      "zone": "Amber Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Board": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "unverified",
+      "note": "All 14 individual barriers remain unverified; broad conservative requirements"
+    },
+    "The Quarry - Amber Quarry - Wolfen 14 - Scrawny Blue Outfit (Sniper)": {
+      "id": 51474131,
+      "zone": "Amber Quarry",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Board": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "unverified",
+      "note": "All 14 individual barriers remain unverified; broad conservative requirements"
+    },
+    "The Root - Wolfun Bridge - Wolfen 01 - Scrawny Blue Outfit (Rocket Gun)": {
+      "id": 51474132,
+      "zone": "The Root",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "observed",
+      "note": "First five Wolfen reached without advanced equipment in FT01 test"
+    },
+    "The Root - Wolfun Camp 1 - Wolfen 02 - Scrawny Blue Outfit (Fists)": {
+      "id": 51474133,
+      "zone": "The Root",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "observed",
+      "note": "First five Wolfen reached without advanced equipment in FT01 test"
+    },
+    "The Root - Wolfun Camp 1 - Wolfen 03 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474134,
+      "zone": "The Root",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "observed",
+      "note": "First five Wolfen reached without advanced equipment in FT01 test"
+    },
+    "The Root - Wolfun Camp 1 - Wolfen 04 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474135,
+      "zone": "The Root",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "observed",
+      "note": "First five Wolfen reached without advanced equipment in FT01 test"
+    },
+    "The Root - Wolfun Camp 1 - Wolfen 05 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474136,
+      "zone": "The Root",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "observed",
+      "note": "First five Wolfen reached without advanced equipment in FT01 test"
+    },
+    "The Root - Wolfun Camp 2 - Wolfen 06 - Scrawny Blue Outfit (Sniper)": {
+      "id": 51474137,
+      "zone": "The Root",
+      "kind": "wolfen",
+      "required": {
+        "Climbing Gloves": 1
+      },
+      "confidence": "observed",
+      "note": "Gloves opened last two in FT01 test"
+    },
+    "The Root - Wolfun Camp 2 - Wolfen 07 - Scrawny Blue Outfit (Sniper)": {
+      "id": 51474138,
+      "zone": "The Root",
+      "kind": "wolfen",
+      "required": {
+        "Climbing Gloves": 1
+      },
+      "confidence": "observed",
+      "note": "Gloves opened last two in FT01 test"
+    },
+    "The Air Post - Entrance - Wolfen 01 - Scrawny Blue Outfit (Sniper)": {
+      "id": 51474139,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2
+      },
+      "confidence": "provisional",
+      "note": "Reached after Golden Boomy; not proof of individual necessity"
+    },
+    "The Air Post - Entrance - Wolfen 02 - Scrawny Blue Outfit (Sniper)": {
+      "id": 51474140,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2
+      },
+      "confidence": "provisional",
+      "note": "Reached after Golden Boomy; not proof of individual necessity"
+    },
+    "The Air Post - Dark Island - Wolfen 03 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474141,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "observed",
+      "note": "Dark Island #03 accessible before Golden Boomy in supplied test"
+    },
+    "The Air Post - Dark Island - Wolfen 04 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474142,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Dark Island - Wolfen 05 - Scrawny Blue Outfit (Fists)": {
+      "id": 51474143,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Dark Island - Wolfen 06 - Scrawny Blue Outfit (Club)": {
+      "id": 51474144,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Dark Island - Wolfen 07 - Scrawny Blue Outfit (Sniper)": {
+      "id": 51474145,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Dark Island - Wolfen 08 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474146,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Dark Island - Wolfen 09 - Scrawny Blue Outfit (Club)": {
+      "id": 51474147,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Dark Island - Wolfen 10 - Grunt Black Outfit (Fists)": {
+      "id": 51474148,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Dark Island - Wolfen 11 - Grunt Yellow Outfit (Club)": {
+      "id": 51474149,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Dark Island - Wolfen 12 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474150,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Dark Island - Wolfen 13 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474151,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Dark Island - Wolfen 14 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474152,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Dark Island - Wolfen 15 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474153,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Dark Island - Wolfen 16 - Grunt Brown Outfit (Club)": {
+      "id": 51474154,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Dark Island - Wolfen 17 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474155,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Dark Island - Wolfen 18 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474156,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Dark Island - Wolfen 19 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474157,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Dark Island - Wolfen 20 - Grunt Yellow Outfit (Fists)": {
+      "id": 51474158,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Wolfun Guard Room - Wolfen 21 - Scrawny Blue Outfit (Sniper)": {
+      "id": 51474159,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Wolfun Guard Room - Wolfen 22 - Grunt Yellow Outfit (Club)": {
+      "id": 51474160,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Wolfun Guard Room - Wolfen 23 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474161,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Wolfun Guard Room - Wolfen 24 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474162,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Wolfun Guard Room - Wolfen 25 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474163,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Wolfun Guard Room - Wolfen 26 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474164,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Wolfun Guard Room - Wolfen 27 - Scrawny Yellow Outfit (Gun)": {
+      "id": 51474165,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Energy Field Control Room - Wolfen 28 - Scrawny Blue Outfit (Fists)": {
+      "id": 51474166,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2
+      },
+      "confidence": "provisional",
+      "note": "Reached after Golden Boomy; not proof of individual necessity"
+    },
+    "The Air Post - Energy Field Control Room - Wolfen 29 - Grunt Black Outfit (Fists)": {
+      "id": 51474167,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2
+      },
+      "confidence": "provisional",
+      "note": "Reached after Golden Boomy; not proof of individual necessity"
+    },
+    "The Air Post - Energy Field Control Room - Wolfen 30 - Scrawny Blue Outfit (Rocket Gun)": {
+      "id": 51474168,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "provisional",
+      "note": "Reached after both Gloves and Bouncers; cannot isolate"
+    },
+    "The Air Post - Energy Field Control Room - Wolfen 31 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474169,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "provisional",
+      "note": "Reached after both Gloves and Bouncers; cannot isolate"
+    },
+    "The Air Post - Energy Field Control Room - Wolfen 32 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474170,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "provisional",
+      "note": "Reached after both Gloves and Bouncers; cannot isolate"
+    },
+    "The Air Post - Energy Field Control Room - Wolfen 33 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474171,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "provisional",
+      "note": "Reached after both Gloves and Bouncers; cannot isolate"
+    },
+    "The Air Post - Energy Field Control Room - Wolfen 34 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474172,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Air Post Blowers - Wolfen 35 - Grunt Blue Outfit (Fists)": {
+      "id": 51474173,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Air Post Blowers - Wolfen 36 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474174,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Air Post Blowers - Wolfen 37 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474175,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Air Post Blowers - Wolfen 38 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474176,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Air Post Blowers - Wolfen 39 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474177,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Air Post Blowers - Wolfen 40 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474178,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Air Post Blowers - Wolfen 41 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474179,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Air Post Blowers - Wolfen 42 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474180,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Air Post Blowers - Wolfen 43 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474181,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Air Post Blowers - Wolfen 44 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474182,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Air Post Blowers - Wolfen 45 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474183,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Air Post Blowers - Wolfen 46 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474184,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Air Post Blowers - Wolfen 47 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474185,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Air Post Blowers - Wolfen 48 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474186,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Wolfun Ventilation Zone - Wolfen 49 - Grunt Blue Outfit (Club)": {
+      "id": 51474187,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Wolfun Ventilation Zone - Wolfen 50 - Grunt Yellow Outfit (Club)": {
+      "id": 51474188,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Wolfun Ventilation Zone - Wolfen 51 - Grunt Yellow Outfit (Fists)": {
+      "id": 51474189,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Wolfun Ventilation Zone - Wolfen 52 - Scrawny Blue Outfit (Rocket Gun)": {
+      "id": 51474190,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Wolfun Ventilation Zone - Wolfen 53 - Scrawny Blue Outfit (Rocket Gun)": {
+      "id": 51474191,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Forgotten Island Cannon Room - Wolfen 54 - Grunt Yellow Outfit (Fists)": {
+      "id": 51474192,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Forgotten Island Cannon Room - Wolfen 55 - Scrawny Blue Outfit (Sniper)": {
+      "id": 51474193,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Forgotten Island Cannon Room - Wolfen 56 - Scrawny Blue Outfit (Sniper)": {
+      "id": 51474194,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Forgotten Island Cannon Room - Wolfen 57 - Scrawny Blue Outfit (Sniper)": {
+      "id": 51474195,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Forgotten Island Cannon Room - Wolfen 58 - Scrawny Blue Outfit (Rocket Gun)": {
+      "id": 51474196,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Forgotten Island Cannon Room - Wolfen 59 - Scrawny Blue Outfit (Club)": {
+      "id": 51474197,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Forgotten Island Cannon Room - Wolfen 60 - Scrawny Blue Outfit (Club)": {
+      "id": 51474198,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "The Air Post - Forgotten Island Cannon Room - Wolfen 61 - Grunt Black Outfit (Fists)": {
+      "id": 51474199,
+      "zone": "The Air Post",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "unverified",
+      "note": "Not individually mapped; deliberately conservative"
+    },
+    "Forgotten Island - Entrance - Wolfen 01": {
+      "id": 51474200,
+      "zone": "Forgotten Island",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2
+      },
+      "confidence": "unverified",
+      "note": "No reliable individual gear map; conservative requirements"
+    },
+    "Forgotten Island - Entrance - Wolfen 02": {
+      "id": 51474201,
+      "zone": "Forgotten Island",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2
+      },
+      "confidence": "unverified",
+      "note": "No reliable individual gear map; conservative requirements"
+    },
+    "Forgotten Island - Entrance - Wolfen 03": {
+      "id": 51474202,
+      "zone": "Forgotten Island",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2
+      },
+      "confidence": "unverified",
+      "note": "No reliable individual gear map; conservative requirements"
+    },
+    "Forgotten Island - Hell's Road - Wolfen 04 - Scrawny Yellow Outfit (Fists)": {
+      "id": 51474203,
+      "zone": "Forgotten Island",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2
+      },
+      "confidence": "unverified",
+      "note": "No reliable individual gear map; conservative requirements"
+    },
+    "Forgotten Island - Laboratory Entrance - Wolfen 05 - Grunt Yellow Outfit (Club)": {
+      "id": 51474204,
+      "zone": "Forgotten Island",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2
+      },
+      "confidence": "unverified",
+      "note": "No reliable individual gear map; conservative requirements"
+    },
+    "Forgotten Island - Laboratory Entrance - Wolfen 06 - Grunt Blue Outfit (Fists)": {
+      "id": 51474205,
+      "zone": "Forgotten Island",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2
+      },
+      "confidence": "unverified",
+      "note": "No reliable individual gear map; conservative requirements"
+    },
+    "Forgotten Island - Laboratory Entrance - Wolfen 07 - Scrawny Yellow Outfit (Rocket Gun)": {
+      "id": 51474206,
+      "zone": "Forgotten Island",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2
+      },
+      "confidence": "unverified",
+      "note": "No reliable individual gear map; conservative requirements"
+    },
+    "Forgotten Island - Laboratory Entrance - Wolfen 08 - Kronos Black Outfit (Fists)": {
+      "id": 51474207,
+      "zone": "Forgotten Island",
+      "kind": "wolfen",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2
+      },
+      "confidence": "unverified",
+      "note": "No reliable individual gear map; conservative requirements"
+    },
+    "Wolfen City - Entrance - Wolfen 01 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474208,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Wolfen City - Entrance - Wolfen 02 - Grunt Yellow Outfit (Fists)": {
+      "id": 51474209,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Wolfen City - Entrance - Wolfen 03 - Scrawny Blue Outfit (Fists)": {
+      "id": 51474210,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Wolfen City - Entrance - Wolfen 04 - Grunt Yellow Outfit (Fists)": {
+      "id": 51474211,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Wolfen City - Entrance - Wolfen 05 - Scrawny Blue Outfit (Fists)": {
+      "id": 51474212,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Wolfen City - Wolfen 06 - Scrawny Blue Outfit (Club)": {
+      "id": 51474213,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Wolfen City - Wolfen 07 - Scrawny Blue Outfit (Club)": {
+      "id": 51474214,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Wolfen City - Wolfen 08 - Kronos Black Outfit (Fists)": {
+      "id": 51474215,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Wolfen City - Wolfen 09 - Grunt Blue Outfit (Club)": {
+      "id": 51474216,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Wolfen City - Wolfen 10 - Kronos Black Outfit (Fists)": {
+      "id": 51474217,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Wolfen City - Wolfen 11 - Scrawny Yellow Outfit (Gun)": {
+      "id": 51474218,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Wolfen City - Wolfen 12 - Grunt Blue Outfit (Fists)": {
+      "id": 51474219,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Wolfen City - Wolfen 13 - Scrawny Blue Outfit (Sniper)": {
+      "id": 51474220,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Wolfen City - Wolfen 14 - Scrawny Blue Outfit (Sniper)": {
+      "id": 51474221,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Wolfen City - Wolfen 15 - Scrawny Yellow Outfit (Gun)": {
+      "id": 51474222,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Wolfen City - Wolfen 16 - Kronos Black Outfit (Fists)": {
+      "id": 51474223,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Wolfen City - Wolfen 17 - Grunt Yellow Outfit (Fists)": {
+      "id": 51474224,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Wolfen City - Wolfen 18 - Grunt Blue Outfit (Club)": {
+      "id": 51474225,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Wolfen City - Wolfen 19 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474226,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Wolfen City - Wolfen 20 - Grunt Blue Outfit (Club)": {
+      "id": 51474227,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Wolfen City - Wolfen 21 - Kronos Black Outfit (Fists)": {
+      "id": 51474228,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Wolfen City - Wolfen 22 - Scrawny Yellow Outfit (Gun)": {
+      "id": 51474229,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Wolfen City - Wolfen 23 - Scrawny Yellow Outfit (Gun)": {
+      "id": 51474230,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Wolfen City - Wolfen 24 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474231,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Wolfen City - Wolfen 25 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474232,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Wolfen City - Wolfen 26 - Scrawny Blue Outfit (Gun)": {
+      "id": 51474233,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Wolfen City - Wolfen 27 - Grunt Blue Outfit (Fists)": {
+      "id": 51474234,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Wolfen City - Wolfen 28 - Grunt Blue Outfit (Fists)": {
+      "id": 51474235,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Wolfen City - Wolfen 29 - Grunt Blue Outfit (Fists)": {
+      "id": 51474236,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Wolfen City - Wolfen 30": {
+      "id": 51474237,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Wolfen City - Wolfen 31": {
+      "id": 51474238,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Wolfen City - Wolfen 32 - Scrawny Blue Outfit (Sniper)": {
+      "id": 51474239,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Wolfen City - Wolfen 33 - Kronos Black Outfit (Fists)": {
+      "id": 51474240,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Wolfen City - Wolfen 34 - Scrawny Blue Outfit (Sniper)": {
+      "id": 51474241,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Wolfen City - Wolfen 35 - Scrawny Blue Outfit (Sniper)": {
+      "id": 51474242,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Wolfen City - Wolfen 36 - Scrawny Blue Outfit (Sniper)": {
+      "id": 51474243,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Wolfen City - Wolfun Reserve - Wolfen 37 - Scrawny Blue Outfit (Fists)": {
+      "id": 51474244,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Wolfen City - Wolfun Reserve - Wolfen 38": {
+      "id": 51474245,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Wolfen City - Wolfun Reserve - Wolfen 39 - Scrawny Blue Outfit (Fists)": {
+      "id": 51474246,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Wolfen City - Wolfun Reserve - Wolfen 40 - Scrawny Blue Outfit (Fists)": {
+      "id": 51474247,
+      "zone": "Wolfen City",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "The Fortress - Fortress Arena - Wolfen 01": {
+      "id": 51474248,
+      "zone": "The Fortress",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "The Fortress - Fortress Arena - Wolfen 02": {
+      "id": 51474249,
+      "zone": "The Fortress",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "The Fortress - Fortress Arena - Wolfen 03": {
+      "id": 51474250,
+      "zone": "The Fortress",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "The Fortress - Fortress Arena - Wolfen 04 - Scrawny": {
+      "id": 51474251,
+      "zone": "The Fortress",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "The Fortress - Fortress Arena - Wolfen 05": {
+      "id": 51474252,
+      "zone": "The Fortress",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "The Fortress - Fortress Arena - Wolfen 06": {
+      "id": 51474253,
+      "zone": "The Fortress",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "The Fortress - Fortress Arena - Wolfen 07": {
+      "id": 51474254,
+      "zone": "The Fortress",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "The Fortress - Fortress Arena - Wolfen 08": {
+      "id": 51474255,
+      "zone": "The Fortress",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "The Fortress - Fortress Arena - Wolfen 09": {
+      "id": 51474256,
+      "zone": "The Fortress",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "The Fortress - Fortress Arena - Wolfen 10": {
+      "id": 51474257,
+      "zone": "The Fortress",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "The Fortress - Fortress Arena - Wolfen 11": {
+      "id": 51474258,
+      "zone": "The Fortress",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "The Fortress - Fortress Arena - Wolfen 12": {
+      "id": 51474259,
+      "zone": "The Fortress",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "The Fortress - Fortress Arena - Wolfen 13": {
+      "id": 51474260,
+      "zone": "The Fortress",
+      "kind": "wolfen",
+      "required": {},
+      "confidence": "unverified",
+      "note": "Location access governed by region gate; individual physical path unverified"
+    },
+    "Flying Forest - Map Discovery": {
+      "id": 51474261,
+      "zone": "Flying Forest",
+      "kind": "map",
+      "required": {},
+      "confidence": "unverified",
+      "note": "No individual physical access evidence recorded"
+    },
+    "The Root - Root's Rune": {
+      "id": 51474262,
+      "zone": "The Root",
+      "kind": "rune_pickup",
+      "required": {
+        "Receptacle": 1,
+        "Climbing Gloves": 1
+      },
+      "confidence": "provisional",
+      "note": "Vanilla rune check. AP progression is never placed here: pickup can disappear after same Rune item arrives"
+    },
+    "Hunters Domain - Hunter's Domain's Rune": {
+      "id": 51474263,
+      "zone": "Hunters Domain",
+      "kind": "rune_pickup",
+      "required": {
+        "Receptacle": 1,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "provisional",
+      "note": "Vanilla rune check. AP progression is never placed here: pickup can disappear after same Rune item arrives"
+    },
+    "The Quarry - Quarry's Rune": {
+      "id": 51474264,
+      "zone": "The Quarry",
+      "kind": "rune_pickup",
+      "required": {
+        "Receptacle": 1,
+        "Progressive Board": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "provisional",
+      "note": "Vanilla rune check. AP progression is never placed here: pickup can disappear after same Rune item arrives"
+    },
+    "The Air Post - Air Post's Rune": {
+      "id": 51474265,
+      "zone": "The Air Post",
+      "kind": "rune_pickup",
+      "required": {
+        "Receptacle": 1,
+        "Progressive Board": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "provisional",
+      "note": "Vanilla rune check. AP progression is never placed here: pickup can disappear after same Rune item arrives"
+    },
+    "Forgotten Island - Forgotten Island's Rune": {
+      "id": 51474266,
+      "zone": "Forgotten Island",
+      "kind": "rune_pickup",
+      "required": {
+        "Receptacle": 1,
+        "Progressive Board": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "provisional",
+      "note": "Vanilla rune check. AP progression is never placed here: pickup can disappear after same Rune item arrives"
+    },
+    "Hunters Domain - Boss Defeated": {
+      "id": 51474267,
+      "zone": "Hunters Domain",
+      "kind": "other",
+      "required": {
+        "Jamgut Birdcall": 1,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "provisional",
+      "note": "Additional condition modelled in APWorld"
+    },
+    "The Root - Map Discovery": {
+      "id": 51474268,
+      "zone": "The Root",
+      "kind": "map",
+      "required": {},
+      "confidence": "unverified",
+      "note": "No individual physical access evidence recorded"
+    },
+    "The Quarry - Map Discovery": {
+      "id": 51474269,
+      "zone": "The Quarry",
+      "kind": "map",
+      "required": {},
+      "confidence": "unverified",
+      "note": "No individual physical access evidence recorded"
+    },
+    "The Air Post - Map Discovery": {
+      "id": 51474270,
+      "zone": "The Air Post",
+      "kind": "map",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2
+      },
+      "confidence": "unverified",
+      "note": "Late-map conservative"
+    },
+    "Wolfen City - Map Discovery": {
+      "id": 51474271,
+      "zone": "Wolfen City",
+      "kind": "map",
+      "required": {},
+      "confidence": "unverified",
+      "note": "No individual physical access evidence recorded"
+    },
+    "Amber Quarry - Brazul First Encounter": {
+      "id": 51474272,
+      "zone": "Amber Quarry",
+      "kind": "other",
+      "required": {
+        "Progressive Board": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1
+      },
+      "confidence": "provisional",
+      "note": "Additional condition modelled in APWorld"
+    },
+    "The Fortress - Brazul Final Defeated": {
+      "id": 51474273,
+      "zone": "The Fortress",
+      "kind": "other",
+      "required": {},
+      "confidence": "unverified",
+      "note": "No individual physical access evidence recorded"
+    },
+    "Nativs City - Shop - Basic Boomy": {
+      "id": 51474274,
+      "zone": "Nativs City",
+      "kind": "shop",
+      "required": {},
+      "confidence": "observed",
+      "note": "Vanilla Wolfen unlock threshold; NO money affordability logic modelled, progression items forbidden",
+      "shop_wolfen_threshold": 1
+    },
+    "Nativs City - Shop - Yellow Bracelet": {
+      "id": 51474275,
+      "zone": "Nativs City",
+      "kind": "shop",
+      "required": {},
+      "confidence": "observed",
+      "note": "Vanilla Wolfen unlock threshold; NO money affordability logic modelled, progression items forbidden",
+      "shop_wolfen_threshold": 10
+    },
+    "Nativs City - Shop - Telescope": {
+      "id": 51474276,
+      "zone": "Nativs City",
+      "kind": "shop",
+      "required": {},
+      "confidence": "observed",
+      "note": "Vanilla Wolfen unlock threshold; NO money affordability logic modelled, progression items forbidden",
+      "shop_wolfen_threshold": 10
+    },
+    "Nativs City - Shop - Magic Board": {
+      "id": 51474277,
+      "zone": "Nativs City",
+      "kind": "shop",
+      "required": {},
+      "confidence": "observed",
+      "note": "Vanilla Wolfen unlock threshold; NO money affordability logic modelled, progression items forbidden",
+      "shop_wolfen_threshold": 10
+    },
+    "Nativs City - Shop - Green Bracelet": {
+      "id": 51474278,
+      "zone": "Nativs City",
+      "kind": "shop",
+      "required": {},
+      "confidence": "observed",
+      "note": "Vanilla Wolfen unlock threshold; NO money affordability logic modelled, progression items forbidden",
+      "shop_wolfen_threshold": 20
+    },
+    "Nativs City - Shop - Climbing Gloves": {
+      "id": 51474279,
+      "zone": "Nativs City",
+      "kind": "shop",
+      "required": {},
+      "confidence": "observed",
+      "note": "Vanilla Wolfen unlock threshold; NO money affordability logic modelled, progression items forbidden",
+      "shop_wolfen_threshold": 20
+    },
+    "Nativs City - Shop - Extra Energy Bar 1": {
+      "id": 51474280,
+      "zone": "Nativs City",
+      "kind": "shop",
+      "required": {},
+      "confidence": "observed",
+      "note": "Vanilla Wolfen unlock threshold; NO money affordability logic modelled, progression items forbidden",
+      "shop_wolfen_threshold": 30
+    },
+    "Nativs City - Shop - Blue Bracelet": {
+      "id": 51474281,
+      "zone": "Nativs City",
+      "kind": "shop",
+      "required": {},
+      "confidence": "observed",
+      "note": "Vanilla Wolfen unlock threshold; NO money affordability logic modelled, progression items forbidden",
+      "shop_wolfen_threshold": 30
+    },
+    "Nativs City - Shop - Jamgut Birdcall": {
+      "id": 51474282,
+      "zone": "Nativs City",
+      "kind": "shop",
+      "required": {},
+      "confidence": "observed",
+      "note": "Vanilla Wolfen unlock threshold; NO money affordability logic modelled, progression items forbidden",
+      "shop_wolfen_threshold": 30
+    },
+    "Nativs City - Shop - Speed Board": {
+      "id": 51474283,
+      "zone": "Nativs City",
+      "kind": "shop",
+      "required": {},
+      "confidence": "observed",
+      "note": "Vanilla Wolfen unlock threshold; NO money affordability logic modelled, progression items forbidden",
+      "shop_wolfen_threshold": 75
+    },
+    "Nativs City - Shop - Golden Boomy": {
+      "id": 51474284,
+      "zone": "Nativs City",
+      "kind": "shop",
+      "required": {},
+      "confidence": "observed",
+      "note": "Vanilla Wolfen unlock threshold; NO money affordability logic modelled, progression items forbidden",
+      "shop_wolfen_threshold": 75
+    },
+    "Nativs City - Shop - Silver Bracelet": {
+      "id": 51474285,
+      "zone": "Nativs City",
+      "kind": "shop",
+      "required": {},
+      "confidence": "observed",
+      "note": "Vanilla Wolfen unlock threshold; NO money affordability logic modelled, progression items forbidden",
+      "shop_wolfen_threshold": 110
+    },
+    "Nativs City - Shop - Silver Boomy": {
+      "id": 51474286,
+      "zone": "Nativs City",
+      "kind": "shop",
+      "required": {},
+      "confidence": "observed",
+      "note": "Vanilla Wolfen unlock threshold; NO money affordability logic modelled, progression items forbidden",
+      "shop_wolfen_threshold": 50
+    },
+    "Nativs City - Shop - Brown Bracelet": {
+      "id": 51474287,
+      "zone": "Nativs City",
+      "kind": "shop",
+      "required": {},
+      "confidence": "observed",
+      "note": "Vanilla Wolfen unlock threshold; NO money affordability logic modelled, progression items forbidden",
+      "shop_wolfen_threshold": 50
+    },
+    "Nativs City - Shop - Magic Bouncers": {
+      "id": 51474288,
+      "zone": "Nativs City",
+      "kind": "shop",
+      "required": {},
+      "confidence": "observed",
+      "note": "Vanilla Wolfen unlock threshold; NO money affordability logic modelled, progression items forbidden",
+      "shop_wolfen_threshold": 50
+    },
+    "Nativs City - Shop - Extra Energy Bar 2": {
+      "id": 51474289,
+      "zone": "Nativs City",
+      "kind": "shop",
+      "required": {},
+      "confidence": "observed",
+      "note": "Vanilla Wolfen unlock threshold; NO money affordability logic modelled, progression items forbidden",
+      "shop_wolfen_threshold": 200
+    },
+    "Nativs City - Shop - Black Bracelet": {
+      "id": 51474290,
+      "zone": "Nativs City",
+      "kind": "shop",
+      "required": {},
+      "confidence": "observed",
+      "note": "Vanilla Wolfen unlock threshold; NO money affordability logic modelled, progression items forbidden",
+      "shop_wolfen_threshold": 75
+    },
+    "Nativs City - Shop - Gold Bracelet": {
+      "id": 51474291,
+      "zone": "Nativs City",
+      "kind": "shop",
+      "required": {},
+      "confidence": "observed",
+      "note": "Vanilla Wolfen unlock threshold; NO money affordability logic modelled, progression items forbidden",
+      "shop_wolfen_threshold": 200
+    },
+    "Flying Forest - Fast Travel 01": {
+      "id": 51474292,
+      "zone": "Flying Forest",
+      "kind": "fast_travel",
+      "required": {},
+      "confidence": "observed",
+      "note": "FT01 access route validated in corresponding region; may be discovered on first arrival"
+    },
+    "Flying Forest - Fast Travel 02": {
+      "id": 51474293,
+      "zone": "Flying Forest",
+      "kind": "fast_travel",
+      "required": {
+        "Progressive Board": 1
+      },
+      "confidence": "provisional",
+      "note": "Conservative secondary FT mobility requirement"
+    },
+    "Hunters Domain - Fast Travel 02": {
+      "id": 51474294,
+      "zone": "Hunters Domain",
+      "kind": "fast_travel",
+      "required": {
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "provisional",
+      "note": "Jamgut section"
+    },
+    "The Quarry - Fast Travel 01": {
+      "id": 51474296,
+      "zone": "The Quarry",
+      "kind": "fast_travel",
+      "required": {},
+      "confidence": "observed",
+      "note": "FT01 access route validated in corresponding region; may be discovered on first arrival"
+    },
+    "The Quarry - Fast Travel 02": {
+      "id": 51474297,
+      "zone": "The Quarry",
+      "kind": "fast_travel",
+      "required": {
+        "Climbing Gloves": 1,
+        "Progressive Board": 2
+      },
+      "confidence": "provisional",
+      "note": "Secondary Quarry route"
+    },
+    "The Quarry - Fast Travel 03": {
+      "id": 51474298,
+      "zone": "The Quarry",
+      "kind": "fast_travel",
+      "required": {
+        "Climbing Gloves": 1,
+        "Progressive Board": 2
+      },
+      "confidence": "provisional",
+      "note": "Secondary Quarry route"
+    },
+    "The Root - Fast Travel 01": {
+      "id": 51474300,
+      "zone": "The Root",
+      "kind": "fast_travel",
+      "required": {},
+      "confidence": "observed",
+      "note": "FT01 access route validated in corresponding region; may be discovered on first arrival"
+    },
+    "The Root - Fast Travel 02": {
+      "id": 51474301,
+      "zone": "The Root",
+      "kind": "fast_travel",
+      "required": {
+        "Climbing Gloves": 1
+      },
+      "confidence": "provisional",
+      "note": "Secondary Root route"
+    },
+    "The Root - Fast Travel 03": {
+      "id": 51474302,
+      "zone": "The Root",
+      "kind": "fast_travel",
+      "required": {
+        "Climbing Gloves": 1
+      },
+      "confidence": "provisional",
+      "note": "Secondary Root route"
+    },
+    "The Air Post - Fast Travel 01": {
+      "id": 51474304,
+      "zone": "The Air Post",
+      "kind": "fast_travel",
+      "required": {},
+      "confidence": "observed",
+      "note": "FT01 access route validated in corresponding region; may be discovered on first arrival"
+    },
+    "The Air Post - Fast Travel 02": {
+      "id": 51474305,
+      "zone": "The Air Post",
+      "kind": "fast_travel",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2
+      },
+      "confidence": "unverified",
+      "note": "Late FT route not separately documented"
+    },
+    "The Air Post - Fast Travel 03": {
+      "id": 51474306,
+      "zone": "The Air Post",
+      "kind": "fast_travel",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2
+      },
+      "confidence": "unverified",
+      "note": "Late FT route not separately documented"
+    },
+    "The Air Post - Fast Travel 04": {
+      "id": 51474307,
+      "zone": "The Air Post",
+      "kind": "fast_travel",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2
+      },
+      "confidence": "unverified",
+      "note": "Late FT route not separately documented"
+    },
+    "Forgotten Island - Fast Travel 01": {
+      "id": 51474308,
+      "zone": "Forgotten Island",
+      "kind": "fast_travel",
+      "required": {},
+      "confidence": "observed",
+      "note": "FT01 access route validated in corresponding region; may be discovered on first arrival"
+    },
+    "Forgotten Island - Fast Travel 02": {
+      "id": 51474309,
+      "zone": "Forgotten Island",
+      "kind": "fast_travel",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2
+      },
+      "confidence": "unverified",
+      "note": "Late FT route not separately documented"
+    },
+    "Forgotten Island - Fast Travel 03": {
+      "id": 51474310,
+      "zone": "Forgotten Island",
+      "kind": "fast_travel",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2
+      },
+      "confidence": "unverified",
+      "note": "Late FT route not separately documented"
+    },
+    "Forgotten Island - Fast Travel 04": {
+      "id": 51474311,
+      "zone": "Forgotten Island",
+      "kind": "fast_travel",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2
+      },
+      "confidence": "unverified",
+      "note": "Late FT route not separately documented"
+    },
+    "Flying Forest - Flying Forest's Rune": {
+      "id": 51474317,
+      "zone": "Flying Forest",
+      "kind": "rune_pickup",
+      "required": {
+        "Receptacle": 1,
+        "Progressive Board": 1,
+        "Climbing Gloves": 1
+      },
+      "confidence": "provisional",
+      "note": "Vanilla rune check. AP progression is never placed here: pickup can disappear after same Rune item arrives"
+    },
+    "Flying Forest - HP Upgrade": {
+      "id": 51474318,
+      "zone": "Flying Forest",
+      "kind": "other",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1
+      },
+      "confidence": "provisional",
+      "note": "Additional condition modelled in APWorld"
+    },
+    "Forgotten Island - Frank Exorcised": {
+      "id": 51474319,
+      "zone": "Forgotten Island",
+      "kind": "other",
+      "required": {
+        "Progressive Boomy": 2,
+        "Climbing Gloves": 1,
+        "Magic Bouncers": 1,
+        "Progressive Board": 2
+      },
+      "confidence": "unverified",
+      "note": "Late-event conservative"
+    },
+    "Flying Forest - Fast Travel 03": {
+      "id": 51474320,
+      "zone": "Flying Forest",
+      "kind": "fast_travel",
+      "required": {
+        "Progressive Board": 1
+      },
+      "confidence": "provisional",
+      "note": "Conservative secondary FT mobility requirement"
+    },
+    "Flying Forest - Fast Travel 04": {
+      "id": 51474321,
+      "zone": "Flying Forest",
+      "kind": "fast_travel",
+      "required": {
+        "Progressive Board": 1,
+        "Climbing Gloves": 1
+      },
+      "confidence": "provisional",
+      "note": "FT04 detected (0x0FB0), terrain requirement not isolated"
+    },
+    "Hunters Domain - Fast Travel 01": {
+      "id": 51474322,
+      "zone": "Hunters Domain",
+      "kind": "fast_travel",
+      "required": {},
+      "confidence": "observed",
+      "note": "FT01 access route validated in corresponding region; may be discovered on first arrival"
+    },
+    "Hunters Domain - Fast Travel 04": {
+      "id": 51474323,
+      "zone": "Hunters Domain",
+      "kind": "fast_travel",
+      "required": {
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "provisional",
+      "note": "Jamgut section"
+    },
+    "Hunters Domain - Fast Travel 05": {
+      "id": 51474324,
+      "zone": "Hunters Domain",
+      "kind": "fast_travel",
+      "required": {
+        "Jamgut Birdcall": 1
+      },
+      "confidence": "provisional",
+      "note": "Jamgut section"
+    }
+  }
+}

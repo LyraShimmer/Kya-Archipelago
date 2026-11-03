@@ -1,0 +1,746 @@
+{
+  "FAST_TRAVEL_VTABLE": 4461136,
+  "FAST_TRAVEL_STATE_OFFSET": 672,
+  "FAST_TRAVEL_STATE_OFF": 0,
+  "FAST_TRAVEL_STATE_ON": 1,
+  "FAST_TRAVEL_DESCRIPTOR_OFFSET": 28,
+  "FAST_TRAVEL_KEY_OFFSET": 40,
+  "FAST_TRAVEL_ZONE_KEY_TO_LOCATION": {
+    "Hunters Domain": {
+      "5615": "Hunters Domain - Fast Travel 01",
+      "4503": "Hunters Domain - Fast Travel 02",
+      "4871": "Hunters Domain - Fast Travel 04",
+      "4877": "Hunters Domain - Fast Travel 05"
+    },
+    "The Root": {
+      "2674": "The Root - Fast Travel 01",
+      "2766": "The Root - Fast Travel 02",
+      "2900": "The Root - Fast Travel 03"
+    },
+    "Flying Forest": {
+      "3511": "Flying Forest - Fast Travel 01",
+      "3656": "Flying Forest - Fast Travel 02",
+      "3793": "Flying Forest - Fast Travel 03",
+      "4016": "Flying Forest - Fast Travel 04"
+    },
+    "The Quarry": {
+      "10306": "The Quarry - Fast Travel 01",
+      "2794": "The Quarry - Fast Travel 02",
+      "3064": "The Quarry - Fast Travel 03"
+    },
+    "The Air Post": {
+      "3469": "The Air Post - Fast Travel 01",
+      "3493": "The Air Post - Fast Travel 02",
+      "3608": "The Air Post - Fast Travel 03",
+      "4080": "The Air Post - Fast Travel 04"
+    },
+    "Forgotten Island": {
+      "1853": "Forgotten Island - Fast Travel 01",
+      "4373": "Forgotten Island - Fast Travel 02",
+      "1594": "Forgotten Island - Fast Travel 03",
+      "1568": "Forgotten Island - Fast Travel 04"
+    },
+    "Amber Quarry": {
+      "136": "Amber Quarry - Fast Travel 01"
+    }
+  },
+  "FAST_TRAVEL_KEY_TO_ZONES": {
+    "5615": [
+      "Hunters Domain"
+    ],
+    "4503": [
+      "Hunters Domain"
+    ],
+    "4871": [
+      "Hunters Domain"
+    ],
+    "4877": [
+      "Hunters Domain"
+    ],
+    "2674": [
+      "The Root"
+    ],
+    "2766": [
+      "The Root"
+    ],
+    "2900": [
+      "The Root"
+    ],
+    "3511": [
+      "Flying Forest"
+    ],
+    "3656": [
+      "Flying Forest"
+    ],
+    "3793": [
+      "Flying Forest"
+    ],
+    "10306": [
+      "The Quarry"
+    ],
+    "2794": [
+      "The Quarry"
+    ],
+    "3064": [
+      "The Quarry"
+    ],
+    "3469": [
+      "The Air Post"
+    ],
+    "3493": [
+      "The Air Post"
+    ],
+    "3608": [
+      "The Air Post"
+    ],
+    "4080": [
+      "The Air Post"
+    ],
+    "1853": [
+      "Forgotten Island"
+    ],
+    "4373": [
+      "Forgotten Island"
+    ],
+    "1594": [
+      "Forgotten Island"
+    ],
+    "1568": [
+      "Forgotten Island"
+    ],
+    "4016": [
+      "Flying Forest"
+    ],
+    "136": [
+      "Amber Quarry"
+    ]
+  },
+  "FAST_TRAVEL_LOCATION_ZONES": {
+    "Hunters Domain - Fast Travel 01": "Hunters Domain",
+    "Hunters Domain - Fast Travel 02": "Hunters Domain",
+    "Hunters Domain - Fast Travel 04": "Hunters Domain",
+    "Hunters Domain - Fast Travel 05": "Hunters Domain",
+    "The Root - Fast Travel 01": "The Root",
+    "The Root - Fast Travel 02": "The Root",
+    "The Root - Fast Travel 03": "The Root",
+    "Flying Forest - Fast Travel 01": "Flying Forest",
+    "Flying Forest - Fast Travel 02": "Flying Forest",
+    "Flying Forest - Fast Travel 03": "Flying Forest",
+    "The Quarry - Fast Travel 01": "The Quarry",
+    "The Quarry - Fast Travel 02": "The Quarry",
+    "The Quarry - Fast Travel 03": "The Quarry",
+    "The Air Post - Fast Travel 01": "The Air Post",
+    "The Air Post - Fast Travel 02": "The Air Post",
+    "The Air Post - Fast Travel 03": "The Air Post",
+    "The Air Post - Fast Travel 04": "The Air Post",
+    "Forgotten Island - Fast Travel 01": "Forgotten Island",
+    "Forgotten Island - Fast Travel 02": "Forgotten Island",
+    "Forgotten Island - Fast Travel 03": "Forgotten Island",
+    "Forgotten Island - Fast Travel 04": "Forgotten Island",
+    "Flying Forest - Fast Travel 04": "Flying Forest",
+    "Amber Quarry - Fast Travel 01": "Amber Quarry"
+  },
+  "NATIV_FAST_TRAVEL_SOURCE_KEYS": [
+    549,
+    559,
+    569,
+    580,
+    590,
+    600,
+    610,
+    620
+  ],
+  "NATIV_WIND_CONTROLLER_KEYS": {
+    "549": 550,
+    "559": 560,
+    "569": 570,
+    "580": 581,
+    "590": 591,
+    "600": 601,
+    "610": 611,
+    "620": 621
+  },
+  "FAST_TRAVEL_DESTINATION_GROUPS": {
+    "549": [
+      5615,
+      4503,
+      4669,
+      4871,
+      4877,
+      5573
+    ],
+    "559": [
+      2674,
+      2766,
+      2900,
+      3110
+    ],
+    "569": [
+      3511,
+      3656,
+      3793,
+      4016
+    ],
+    "580": [
+      10306,
+      2794,
+      3064,
+      136
+    ],
+    "590": [
+      3469,
+      3493,
+      3608,
+      4080
+    ],
+    "600": [
+      1853,
+      4373,
+      1594,
+      1568,
+      1428
+    ]
+  },
+  "FAST_TRAVEL_ALLOWED_ROUTES": {
+    "Hunters Domain": [
+      {
+        "id": "hunters_01",
+        "label": "Hunters Domain Fast Travel 01",
+        "zone": "Hunters Domain",
+        "source_key": 549,
+        "source_index": 0,
+        "target_key": 5615,
+        "master_key": 5614,
+        "location_name": "Hunters Domain - Fast Travel 01",
+        "vanilla_reference_distance": 4.553,
+        "arrival_radius": 5.303,
+        "departure_source_mask": 4294967236,
+        "arrival_timeout": 15.0,
+        "tail_hold_canonical": false,
+        "source_preflight_legacy": true,
+        "tail_hold_endpoint": true,
+        "require_master8": true,
+        "entry_fallback_min_distance": 20.0
+      },
+      {
+        "id": "hunters_02",
+        "label": "Hunters Domain Fast Travel 02",
+        "zone": "Hunters Domain",
+        "source_key": 549,
+        "source_index": 1,
+        "target_key": 4503,
+        "master_key": 4502,
+        "location_name": "Hunters Domain - Fast Travel 02",
+        "vanilla_reference_distance": 4.24,
+        "arrival_radius": 4.99,
+        "departure_source_mask": 4294967236,
+        "arrival_timeout": 15.0,
+        "tail_hold_canonical": false,
+        "source_preflight_legacy": true,
+        "tail_hold_endpoint": true,
+        "require_master8": true
+      },
+      {
+        "id": "hunters_04",
+        "label": "Hunters Domain Fast Travel 04",
+        "zone": "Hunters Domain",
+        "source_key": 549,
+        "source_index": 3,
+        "target_key": 4871,
+        "master_key": 4870,
+        "location_name": "Hunters Domain - Fast Travel 04",
+        "vanilla_reference_distance": 4.268,
+        "arrival_radius": 5.018,
+        "departure_source_mask": 4294967236,
+        "arrival_timeout": 15.0,
+        "tail_hold_canonical": false,
+        "source_preflight_legacy": true,
+        "tail_hold_endpoint": true,
+        "require_master8": true
+      },
+      {
+        "id": "hunters_05",
+        "label": "Hunters Domain Fast Travel 05",
+        "zone": "Hunters Domain",
+        "source_key": 549,
+        "source_index": 4,
+        "target_key": 4877,
+        "master_key": 4876,
+        "location_name": "Hunters Domain - Fast Travel 05",
+        "vanilla_reference_distance": 4.225,
+        "arrival_radius": 4.975,
+        "departure_source_mask": 4294967236,
+        "arrival_timeout": 15.0,
+        "tail_hold_canonical": false,
+        "source_preflight_legacy": true,
+        "tail_hold_endpoint": true,
+        "require_master8": true
+      }
+    ],
+    "The Root": [
+      {
+        "id": "root_01",
+        "label": "The Root Fast Travel 01",
+        "zone": "The Root",
+        "source_key": 559,
+        "source_index": 0,
+        "target_key": 2674,
+        "master_key": 2673,
+        "location_name": "The Root - Fast Travel 01",
+        "vanilla_reference_distance": 4.296,
+        "arrival_radius": 5.046,
+        "tail_hold_canonical": false,
+        "departure_source_mask": 4294967280,
+        "source_preflight_legacy": true,
+        "tail_hold_endpoint": true,
+        "require_master8": true,
+        "arrival_timeout": 12.0,
+        "entry_fallback_min_distance": 20.0
+      },
+      {
+        "id": "root_02",
+        "label": "The Root Fast Travel 02",
+        "zone": "The Root",
+        "source_key": 559,
+        "source_index": 1,
+        "target_key": 2766,
+        "master_key": 2778,
+        "location_name": "The Root - Fast Travel 02",
+        "vanilla_reference_distance": 4.433,
+        "arrival_radius": 5.183,
+        "tail_hold_canonical": false,
+        "departure_source_mask": 4294967280,
+        "source_preflight_legacy": true,
+        "tail_hold_endpoint": true,
+        "require_master8": true,
+        "arrival_timeout": 12.0
+      },
+      {
+        "id": "root_03",
+        "label": "The Root Fast Travel 03",
+        "zone": "The Root",
+        "source_key": 559,
+        "source_index": 2,
+        "target_key": 2900,
+        "master_key": 2899,
+        "location_name": "The Root - Fast Travel 03",
+        "vanilla_reference_distance": 4.324,
+        "arrival_radius": 5.074,
+        "tail_hold_canonical": false,
+        "departure_source_mask": 4294967280,
+        "source_preflight_legacy": true,
+        "tail_hold_endpoint": true,
+        "require_master8": true,
+        "arrival_timeout": 12.0
+      }
+    ],
+    "Flying Forest": [
+      {
+        "id": "flying_01",
+        "label": "Flying Forest Fast Travel 01",
+        "zone": "Flying Forest",
+        "source_key": 569,
+        "source_index": 0,
+        "target_key": 3511,
+        "master_key": 3510,
+        "location_name": "Flying Forest - Fast Travel 01",
+        "vanilla_reference_distance": 4.295,
+        "arrival_radius": 5.045,
+        "tail_hold_canonical": false,
+        "departure_source_mask": 4294967280,
+        "source_preflight_legacy": true,
+        "tail_hold_endpoint": true,
+        "require_master8": true,
+        "arrival_timeout": 12.0,
+        "entry_fallback_min_distance": 20.0
+      },
+      {
+        "id": "flying_02",
+        "label": "Flying Forest Fast Travel 02",
+        "zone": "Flying Forest",
+        "source_key": 569,
+        "source_index": 1,
+        "target_key": 3656,
+        "master_key": 3655,
+        "location_name": "Flying Forest - Fast Travel 02",
+        "vanilla_reference_distance": 4.489,
+        "arrival_radius": 5.239,
+        "tail_hold_canonical": false,
+        "departure_source_mask": 4294967280,
+        "source_preflight_legacy": true,
+        "tail_hold_endpoint": true,
+        "require_master8": true,
+        "arrival_timeout": 12.0
+      },
+      {
+        "id": "flying_03",
+        "label": "Flying Forest Fast Travel 03",
+        "zone": "Flying Forest",
+        "source_key": 569,
+        "source_index": 2,
+        "target_key": 3793,
+        "master_key": 3792,
+        "location_name": "Flying Forest - Fast Travel 03",
+        "vanilla_reference_distance": 4.716,
+        "arrival_radius": 5.466,
+        "tail_hold_canonical": false,
+        "departure_source_mask": 4294967280,
+        "source_preflight_legacy": true,
+        "tail_hold_endpoint": true,
+        "require_master8": true,
+        "arrival_timeout": 12.0
+      }
+    ],
+    "The Quarry": [
+      {
+        "id": "quarry_01",
+        "label": "The Quarry Fast Travel 01",
+        "zone": "The Quarry",
+        "source_key": 580,
+        "source_index": 0,
+        "target_key": 10306,
+        "master_key": 10305,
+        "location_name": "The Quarry - Fast Travel 01",
+        "vanilla_reference_distance": 4.192,
+        "arrival_radius": 4.942,
+        "destination_cleanup_mask": 4294967294,
+        "tail_hold_canonical": false,
+        "departure_source_mask": 4294967280,
+        "source_preflight_legacy": true,
+        "tail_hold_endpoint": true,
+        "require_master8": true,
+        "arrival_timeout": 12.0,
+        "entry_fallback_min_distance": 20.0
+      },
+      {
+        "id": "quarry_02",
+        "label": "The Quarry Fast Travel 02",
+        "zone": "The Quarry",
+        "source_key": 580,
+        "source_index": 1,
+        "target_key": 2794,
+        "master_key": 2793,
+        "location_name": "The Quarry - Fast Travel 02",
+        "vanilla_reference_distance": 4.364,
+        "arrival_radius": 5.114,
+        "destination_cleanup_mask": 4294967293,
+        "tail_hold_canonical": false,
+        "departure_source_mask": 4294967280,
+        "source_preflight_legacy": true,
+        "tail_hold_endpoint": true,
+        "require_master8": true,
+        "arrival_timeout": 12.0
+      },
+      {
+        "id": "quarry_03",
+        "label": "The Quarry Fast Travel 03",
+        "zone": "The Quarry",
+        "source_key": 580,
+        "source_index": 2,
+        "target_key": 3064,
+        "master_key": 3063,
+        "location_name": "The Quarry - Fast Travel 03",
+        "vanilla_reference_distance": 6.134,
+        "arrival_radius": 6.884,
+        "destination_cleanup_mask": 4294967291,
+        "tail_hold_canonical": false,
+        "departure_source_mask": 4294967280,
+        "source_preflight_legacy": true,
+        "tail_hold_endpoint": true,
+        "require_master8": true,
+        "arrival_timeout": 12.0
+      }
+    ],
+    "The Air Post": [
+      {
+        "id": "airpost_01",
+        "label": "The Air Post Fast Travel 01",
+        "zone": "The Air Post",
+        "source_key": 590,
+        "source_index": 0,
+        "target_key": 3469,
+        "master_key": 3468,
+        "location_name": "The Air Post - Fast Travel 01",
+        "vanilla_reference_distance": 4.695,
+        "arrival_radius": 5.445,
+        "tail_hold_endpoint": true,
+        "arrival_timeout": 12.0,
+        "tail_hold_canonical": false,
+        "departure_source_mask": 4294967280,
+        "source_preflight_legacy": true,
+        "require_master8": true,
+        "entry_fallback_min_distance": 20.0
+      },
+      {
+        "id": "airpost_02",
+        "label": "The Air Post Fast Travel 02",
+        "zone": "The Air Post",
+        "source_key": 590,
+        "source_index": 1,
+        "target_key": 3493,
+        "master_key": 3492,
+        "location_name": "The Air Post - Fast Travel 02",
+        "vanilla_reference_distance": 4.398,
+        "arrival_radius": 5.148,
+        "tail_hold_endpoint": true,
+        "arrival_timeout": 12.0,
+        "tail_hold_canonical": false,
+        "departure_source_mask": 4294967280,
+        "source_preflight_legacy": true,
+        "require_master8": true
+      },
+      {
+        "id": "airpost_03",
+        "label": "The Air Post Fast Travel 03",
+        "zone": "The Air Post",
+        "source_key": 590,
+        "source_index": 2,
+        "target_key": 3608,
+        "master_key": 3607,
+        "location_name": "The Air Post - Fast Travel 03",
+        "vanilla_reference_distance": 4.217,
+        "arrival_radius": 4.967,
+        "tail_hold_endpoint": true,
+        "arrival_timeout": 12.0,
+        "tail_hold_canonical": false,
+        "departure_source_mask": 4294967280,
+        "source_preflight_legacy": true,
+        "require_master8": true
+      },
+      {
+        "id": "airpost_04",
+        "label": "The Air Post Fast Travel 04",
+        "zone": "The Air Post",
+        "source_key": 590,
+        "source_index": 3,
+        "target_key": 4080,
+        "master_key": 4079,
+        "location_name": "The Air Post - Fast Travel 04",
+        "vanilla_reference_distance": 3.987,
+        "arrival_radius": 4.737,
+        "tail_hold_endpoint": true,
+        "arrival_timeout": 12.0,
+        "tail_hold_canonical": false,
+        "departure_source_mask": 4294967280,
+        "source_preflight_legacy": true,
+        "require_master8": true
+      }
+    ],
+    "Forgotten Island": [
+      {
+        "id": "forgotten_01",
+        "label": "Forgotten Island Fast Travel 01",
+        "zone": "Forgotten Island",
+        "source_key": 600,
+        "source_index": 0,
+        "target_key": 1853,
+        "master_key": 1852,
+        "location_name": "Forgotten Island - Fast Travel 01",
+        "vanilla_reference_distance": 4.102,
+        "arrival_radius": 4.852,
+        "tail_hold_canonical": false,
+        "departure_source_mask": 4294967264,
+        "source_preflight_legacy": true,
+        "tail_hold_endpoint": true,
+        "require_master8": true,
+        "arrival_timeout": 12.0,
+        "entry_fallback_min_distance": 20.0
+      },
+      {
+        "id": "forgotten_02",
+        "label": "Forgotten Island Fast Travel 02",
+        "zone": "Forgotten Island",
+        "source_key": 600,
+        "source_index": 1,
+        "target_key": 4373,
+        "master_key": 4372,
+        "location_name": "Forgotten Island - Fast Travel 02",
+        "vanilla_reference_distance": 4.777,
+        "arrival_radius": 5.527,
+        "tail_hold_canonical": false,
+        "departure_source_mask": 4294967264,
+        "source_preflight_legacy": true,
+        "tail_hold_endpoint": true,
+        "require_master8": true,
+        "arrival_timeout": 12.0
+      },
+      {
+        "id": "forgotten_03",
+        "label": "Forgotten Island Fast Travel 03",
+        "zone": "Forgotten Island",
+        "source_key": 600,
+        "source_index": 2,
+        "target_key": 1594,
+        "master_key": 1593,
+        "location_name": "Forgotten Island - Fast Travel 03",
+        "vanilla_reference_distance": 3.083,
+        "arrival_radius": 3.833,
+        "tail_hold_canonical": false,
+        "departure_source_mask": 4294967264,
+        "source_preflight_legacy": true,
+        "tail_hold_endpoint": true,
+        "require_master8": true,
+        "arrival_timeout": 12.0
+      },
+      {
+        "id": "forgotten_04",
+        "label": "Forgotten Island Fast Travel 04",
+        "zone": "Forgotten Island",
+        "source_key": 600,
+        "source_index": 3,
+        "target_key": 1568,
+        "master_key": 1567,
+        "location_name": "Forgotten Island - Fast Travel 04",
+        "vanilla_reference_distance": 6.172,
+        "arrival_radius": 6.922,
+        "tail_hold_canonical": false,
+        "departure_source_mask": 4294967264,
+        "source_preflight_legacy": true,
+        "tail_hold_endpoint": true,
+        "require_master8": true,
+        "arrival_timeout": 12.0
+      }
+    ]
+  },
+  "FAST_TRAVEL_INDEX_OFFSET": 660,
+  "FAST_TRAVEL_INDEX_COPY_OFFSET": 664,
+  "FAST_TRAVEL_MASK_OFFSET": 668,
+  "FAST_TRAVEL_ACTIVE_OFFSET": 672,
+  "FAST_TRAVEL_AVAILABLE_OFFSET": 676,
+  "FAST_TRAVEL_ROUTE_TABLE_OFFSET": 700,
+  "FAST_TRAVEL_ROUTE_READY_FLAG": 1073741824,
+  "FAST_TRAVEL_DESTINATION_SINGLE_MASK": 4294967294,
+  "MASTER_EVENT_VTABLE": 4441072,
+  "WIND_CONTROLLER_VTABLE": 4441408,
+  "WIND_FLAG_CLEAR": 33,
+  "WIND_FLAG_SET_STAGE1": 16640,
+  "WIND_FLAG_SET_STAGE2": 4,
+  "FAST_TRAVEL_MIN_RETURN_MANA": 3,
+  "FAST_TRAVEL_SOURCE_ARM_RADIUS": 4.0,
+  "FAST_TRAVEL_SOURCE_ARM_WINDOW": 8.0,
+  "NATIV_WOOD_MASTER_KEYS": {
+    "549": 558,
+    "559": 568,
+    "569": 578,
+    "580": 589,
+    "590": 599,
+    "600": 609,
+    "610": 619,
+    "620": 629
+  },
+  "NATIV_WOOD_HANDLER_VTABLE": 4440784,
+  "NATIV_WOOD_REQUIRED_OFFSET": 20,
+  "NATIV_WOOD_RADIUS_OFFSET": 24,
+  "NATIV_WOOD_TRIGGER_RADIUS": 1000.0,
+  "NATIV_WOOD_MAX_PAIR_DISTANCE": 8.0,
+  "NATIV_WOOD_MASTER_PTR_OFFSET": 4,
+  "NATIV_WOOD_LEGACY_HANDLER_HINTS": {
+    "549": 26601456,
+    "559": 26602016,
+    "569": 26601792,
+    "580": 26601680,
+    "590": 26602128,
+    "600": 26601904,
+    "610": 26601344,
+    "620": 26601568
+  },
+  "NATIV_WOOD_SCAN_START": 26214400,
+  "NATIV_WOOD_SCAN_END": 27262976,
+  "NATIV_WOOD_SCAN_BATCH_WORDS": 2048,
+  "FAST_TRAVEL_TIGHT_HOLD_TIMEOUT": 1.5,
+  "FAST_TRAVEL_TIGHT_STABLE_SECONDS": 0.5,
+  "FAST_TRAVEL_TIGHT_MIN_READS": 80,
+  "FAST_TRAVEL_TIGHT_POLL_SECONDS": 0.003,
+  "FAST_TRAVEL_TIGHT_ARRIVAL_TIMEOUT": 1.2,
+  "FAST_TRAVEL_IDENTITY_REFRESH_SECONDS": 0.08,
+  "FAST_TRAVEL_DEBUG_WARP_Y_OFFSET": 1.25,
+  "FAST_TRAVEL_DEBUG_WARP_HOLD_SECONDS": 0.35,
+  "FAST_TRAVEL_DEBUG_WARP_SUCCESS_RADIUS": 4.0,
+  "FAST_TRAVEL_DEBUG_TARGET_STABLE_TIMEOUT": 1.5,
+  "FAST_TRAVEL_DEBUG_TARGET_STABLE_SECONDS": 0.25,
+  "FAST_TRAVEL_DEBUG_TARGET_MIN_READS": 30,
+  "FAST_TRAVEL_SAFEWARP_Y_OFFSET": 1.25,
+  "FAST_TRAVEL_SAFEWARP_PIN_INTERVAL": 0.012,
+  "FAST_TRAVEL_SAFEWARP_INITIAL_HOLD": 1.5,
+  "FAST_TRAVEL_SAFEWARP_WATCHDOG_SECONDS": 3.0,
+  "FAST_TRAVEL_SAFEWARP_STABLE_SECONDS": 0.9,
+  "FAST_TRAVEL_SAFEWARP_SUCCESS_RADIUS": 5.0,
+  "FAST_TRAVEL_SAFEWARP_FALL_MARGIN": 6.0,
+  "FAST_TRAVEL_SAFEWARP_REPIN_SECONDS": 0.75,
+  "FAST_TRAVEL_SAFEWARP_MAX_REPINS": 4,
+  "FAST_TRAVEL_TARGET_CHAIN_TABLE_SCAN": 288,
+  "FAST_TRAVEL_TARGET_CHAIN_CONTROLLER_GAP": 0.12,
+  "FAST_TRAVEL_TARGET_CHAIN_WAIT_SECONDS": 1.8,
+  "NATIV_FAST_TRAVEL_LEGACY_MASKS": {
+    "549": 4294967236,
+    "559": 4294967280,
+    "569": 4294967280,
+    "580": 4294967280,
+    "590": 4294967280,
+    "600": 4294967264,
+    "610": 4294967288,
+    "620": 4294967294
+  },
+  "FAST_TRAVEL_LEGACY_CRITICAL_POLL_SECONDS": 0.005,
+  "FAST_TRAVEL_TARGET_STABLE_SECONDS": 0.2,
+  "FAST_TRAVEL_TARGET_LEGACY_MASKS": {
+    "5615": 4294967236,
+    "4503": 4294967236,
+    "4871": 4294967240,
+    "4877": 4294967240,
+    "2674": 4294967280,
+    "2766": 4294967280,
+    "2900": 4294967280,
+    "3511": 4294967280,
+    "3656": 4294967280,
+    "3793": 4294967280,
+    "4016": 4294967280,
+    "10306": 4294967280,
+    "2794": 4294967280,
+    "3064": 4294967280,
+    "3469": 4294967280,
+    "3493": 4294967280,
+    "3608": 4294967280,
+    "4080": 4294967280,
+    "1853": 4294967264,
+    "4373": 4294967264,
+    "1594": 4294967264,
+    "1568": 4294967264
+  },
+  "FAST_TRAVEL_ARRIVAL_RADIUS": 7.0,
+  "FAST_TRAVEL_MANA_STALL_WINDOW_SECONDS": 8.0,
+  "FAST_TRAVEL_MANA_STALL_DWELL_SECONDS": 2.0,
+  "FAST_TRAVEL_MANA_STALL_SAMPLE_SECONDS": 0.1,
+  "FAST_TRAVEL_MANA_STALL_MOVE_EPSILON": 0.25,
+  "FAST_TRAVEL_PANEL_RETRY_SECONDS": 0.1,
+  "FAST_TRAVEL_NATIVE_TAIL_FALLBACK_DWELL_SECONDS": 2.0,
+  "FAST_TRAVEL_MANA_DEBT_FLOOR": 12.0,
+  "FAST_TRAVEL_ENTRY_ONLY_BETA": true,
+  "FAST_TRAVEL_ENTRY_ONLY_PAIR_TIMEOUT": 30.0,
+  "FAST_TRAVEL_ENTRY_ONLY_MASTER_TIMEOUT": 15.0,
+  "FAST_TRAVEL_ENTRY_ONLY_LANDING_TIMEOUT": 12.0,
+  "FAST_TRAVEL_ENTRY_ONLY_STABLE_SECONDS": 0.8,
+  "FAST_TRAVEL_ENTRY_ONLY_MOVE_EPSILON": 0.65,
+  "FAST_TRAVEL_ENTRY_ONLY_POLL_SECONDS": 0.006,
+  "FAST_TRAVEL_ENTRY_PANEL_DIRECT_OPEN": false,
+  "FAST_TRAVEL_ENTRY_FALLBACK_MIN_DISTANCE": 20.0,
+  "FAST_TRAVEL_ENTRY_FALLBACK_TIMEOUT": 18.0,
+  "FAST_TRAVEL_DETECTOR_HANDOFF": true,
+  "FAST_TRAVEL_LOCAL_DISCOVERY_RADIUS": 6.0,
+  "FAST_TRAVEL_HANDOFF_FROM_AP_CHECKED": false,
+  "FAST_TRAVEL_SOURCE_WIND_ARM_RADIUS": 6.5,
+  "FAST_TRAVEL_REMOTE_ACTIVE_FIREWALL": false,
+  "FAST_TRAVEL_DETECTOR_CHAIN_READONLY": true,
+  "FAST_TRAVEL_RETURN_WIND_BLOCK_RADIUS": 7.0,
+  "FAST_TRAVEL_RETURN_WIND_RELEASE_RADIUS": 9.0,
+  "FAST_TRAVEL_ACCESS_ONLY_TEST": true,
+  "FAST_TRAVEL_EARLY_PANEL_RADIUS": 40.0,
+  "FAST_TRAVEL_LOCAL_SOURCE_WIND_TEST": false,
+  "FAST_TRAVEL_WIND_CONFIRM_RADIUS": 4.5,
+  "FAST_TRAVEL_WIND_CONFIRM_SECONDS": 0.18,
+  "FAST_TRAVEL_WIND_SWITCH_COOLDOWN": 0.55,
+  "FAST_TRAVEL_FT01_BAT_VALIDATED": true,
+  "FAST_TRAVEL_STREAM_GUARD": true,
+  "FAST_TRAVEL_STREAM_STABLE_SECONDS": 1.5,
+  "FAST_TRAVEL_AMBER_AP_BUILD": "0.8.12-amber-local-check"
+}

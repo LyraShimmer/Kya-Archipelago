@@ -1,0 +1,135 @@
+{
+  "ITEM_NAME_TO_ID": {
+    "Basic Boomy": 51473001,
+    "Nooties +50": 51473003,
+    "Nooties +100": 51473012,
+    "Nooties +200": 51473013,
+    "Nooties +500": 51473014,
+    "Progressive Rune: Root's Rune": 51473004,
+    "Progressive Rune: Hunter's Domain Rune": 51473005,
+    "Progressive Rune: Quarry's Rune": 51473006,
+    "Progressive Rune: Air Post Rune": 51473007,
+    "Progressive Rune: Forgotten Island Rune": 51473008,
+    "Progressive Rune: Flying Forest Rune": 51473009,
+    "Blue Egg": 51473010,
+    "Receptacle": 51473011,
+    "Progressive Life Gauge": 51473015,
+    "Magic Regeneration": 51473016,
+    "HP Restore +50": 51473017,
+    "Magic Restore +50": 51473018,
+    "+5% Attack": 51473019,
+    "+5% Protection": 51473020,
+    "Progressive Boomy": 51473021,
+    "Progressive Bracelet": 51473022,
+    "Magic Bouncers": 51473023,
+    "Climbing Gloves": 51473024,
+    "Jamgut Birdcall": 51473025,
+    "Telescope": 51473026,
+    "Progressive Board": 51473027,
+    "Progressive Magic Gauge": 51473028,
+    "Nooties +5": 51473029,
+    "Nooties +10": 51473030,
+    "Nooties +20": 51473031,
+    "Nooties +30": 51473032,
+    "Nooties +40": 51473033,
+    "HP Restore +10": 51473034,
+    "HP Restore +20": 51473035,
+    "HP Restore +30": 51473036,
+    "Magic Restore +10": 51473037,
+    "Magic Restore +15": 51473038,
+    "Magic Restore +20": 51473039,
+    "Magic Restore +30": 51473040,
+    "+2% Attack": 51473041,
+    "+8% Attack": 51473042,
+    "+2% Protection": 51473043,
+    "+8% Protection": 51473044,
+    "Wolfen City Access": 51473045,
+    "The Fortress Access": 51473046
+  },
+  "ITEM_RUNE_SCENARIO_VARS": {
+    "Progressive Rune: Root's Rune": 4347060,
+    "Progressive Rune: Hunter's Domain Rune": 4347164,
+    "Progressive Rune: Quarry's Rune": 4347212,
+    "Progressive Rune: Air Post Rune": 4347252,
+    "Progressive Rune: Forgotten Island Rune": 4347284,
+    "Progressive Rune: Flying Forest Rune": 4347108
+  },
+  "ITEM_SCENARIO_FLAGS": {
+    "Blue Egg": 4346860,
+    "Receptacle": 4346956,
+    "Magic Regeneration": 4346932,
+    "Magic Bouncers": 4346892,
+    "Climbing Gloves": 4346900,
+    "Jamgut Birdcall": 4346940,
+    "Telescope": 4346948
+  },
+  "ITEM_MONEY_VALUES": {
+    "Nooties +5": 5,
+    "Nooties +10": 10,
+    "Nooties +20": 20,
+    "Nooties +30": 30,
+    "Nooties +40": 40,
+    "Nooties +50": 50,
+    "Nooties +100": 100,
+    "Nooties +200": 200,
+    "Nooties +500": 500
+  },
+  "ITEM_PROGRESSIVE_LIFE_GAUGE": "Progressive Life Gauge",
+  "ITEM_HP_RESTORE_AMOUNTS": {
+    "HP Restore +10": 10,
+    "HP Restore +20": 20,
+    "HP Restore +30": 30,
+    "HP Restore +50": 50
+  },
+  "ITEM_MAGIC_RESTORE_AMOUNTS": {
+    "Magic Restore +10": 10,
+    "Magic Restore +15": 15,
+    "Magic Restore +20": 20,
+    "Magic Restore +30": 30,
+    "Magic Restore +50": 50
+  },
+  "ITEM_ATTACK_BONUS": "+5% Attack",
+  "ITEM_PROTECTION_BONUS": "+5% Protection",
+  "ITEM_COMBAT_BONUSES": {
+    "+2% Attack": {
+      "effect": "damage",
+      "percent": 2
+    },
+    "+5% Attack": {
+      "effect": "damage",
+      "percent": 5
+    },
+    "+8% Attack": {
+      "effect": "damage",
+      "percent": 8
+    },
+    "+2% Protection": {
+      "effect": "protection",
+      "percent": 2
+    },
+    "+5% Protection": {
+      "effect": "protection",
+      "percent": 5
+    },
+    "+8% Protection": {
+      "effect": "protection",
+      "percent": 8
+    }
+  },
+  "ITEM_COMBAT_BONUS_PERCENT": 5,
+  "ITEM_COMBAT_BONUS_MAX_STACKS": 5,
+  "ITEM_PROGRESSIVE_LIFE_GAUGE_REPLAY": false,
+  "ITEM_PROGRESSIVE_BOOMY": "Progressive Boomy",
+  "ITEM_PROGRESSIVE_BRACELET": "Progressive Bracelet",
+  "ITEM_PROGRESSIVE_BOARD": "Progressive Board",
+  "ITEM_PROGRESSIVE_MAGIC_GAUGE": "Progressive Magic Gauge",
+  "ITEM_TO_SPECIAL_LOCATION": {
+    "Progressive Rune: Flying Forest Rune": "Flying Forest - Flying Forest's Rune",
+    "Progressive Rune: Root's Rune": "The Root - Root's Rune",
+    "Progressive Rune: Hunter's Domain Rune": "Hunters Domain - Hunter's Domain's Rune",
+    "Progressive Rune: Quarry's Rune": "The Quarry - Quarry's Rune",
+    "Progressive Rune: Air Post Rune": "The Air Post - Air Post's Rune",
+    "Progressive Rune: Forgotten Island Rune": "Forgotten Island - Forgotten Island's Rune"
+  },
+  "ITEM_COMBAT_BONUS_CAP_PERCENT": 25
+}

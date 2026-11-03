@@ -1,0 +1,356 @@
+{
+  "SPECIAL_LOCATION_CONDITIONS": {
+    "Flying Forest - Map Discovery": [
+      [
+        4347564,
+        2
+      ]
+    ],
+    "The Root - Root's Rune": [
+      [
+        4347060,
+        2
+      ]
+    ],
+    "Hunters Domain - Hunter's Domain's Rune": [
+      [
+        4347164,
+        2
+      ]
+    ],
+    "The Quarry - Quarry's Rune": [
+      [
+        4347212,
+        2
+      ]
+    ],
+    "The Air Post - Air Post's Rune": [
+      [
+        4347252,
+        2
+      ]
+    ],
+    "Forgotten Island - Forgotten Island's Rune": [
+      [
+        4347284,
+        2
+      ]
+    ],
+    "Hunters Domain - Boss Defeated": [
+      [
+        4347116,
+        2
+      ]
+    ],
+    "The Root - Map Discovery": [
+      [
+        4347556,
+        2
+      ]
+    ],
+    "The Quarry - Map Discovery": [
+      [
+        4347580,
+        2
+      ]
+    ],
+    "The Air Post - Map Discovery": [
+      [
+        4347588,
+        2
+      ]
+    ],
+    "Wolfen City - Map Discovery": [
+      [
+        4347604,
+        2
+      ]
+    ],
+    "Amber Quarry - Brazul First Encounter": [
+      [
+        4347180,
+        2
+      ]
+    ],
+    "The Fortress - Brazul Final Defeated": [
+      [
+        4347324,
+        2
+      ]
+    ],
+    "Flying Forest - Flying Forest's Rune": [
+      [
+        4347108,
+        2
+      ]
+    ],
+    "Flying Forest - HP Upgrade": [
+      [
+        4347372,
+        2
+      ]
+    ],
+    "Forgotten Island - Frank Exorcised": [
+      [
+        4346868,
+        1
+      ],
+      [
+        4347268,
+        2
+      ]
+    ]
+  },
+  "SPECIAL_LOCATION_ZONES": {
+    "Flying Forest - Map Discovery": "Flying Forest",
+    "The Root - Root's Rune": "The Root",
+    "Hunters Domain - Hunter's Domain's Rune": "Hunters Domain",
+    "The Quarry - Quarry's Rune": "The Quarry",
+    "The Air Post - Air Post's Rune": "The Air Post",
+    "Forgotten Island - Forgotten Island's Rune": "Forgotten Island",
+    "Hunters Domain - Boss Defeated": "Hunters Domain",
+    "The Root - Map Discovery": "The Root",
+    "The Quarry - Map Discovery": "The Quarry",
+    "The Air Post - Map Discovery": "The Air Post",
+    "Wolfen City - Map Discovery": "Wolfen City",
+    "Amber Quarry - Brazul First Encounter": "Amber Quarry",
+    "The Fortress - Brazul Final Defeated": "The Fortress",
+    "Flying Forest - Flying Forest's Rune": "Flying Forest",
+    "Flying Forest - HP Upgrade": "Flying Forest",
+    "Forgotten Island - Frank Exorcised": "Forgotten Island"
+  },
+  "SUBZONE_PLAYTEST_RANGES": {
+    "Nativs City": [
+      [
+        1,
+        1,
+        "Nativs City",
+        "single"
+      ]
+    ],
+    "Flying Forest": [
+      [
+        1,
+        13,
+        "Entrance",
+        "confirmed"
+      ],
+      [
+        14,
+        20,
+        "Wolfun Camp",
+        "confirmed"
+      ],
+      [
+        21,
+        23,
+        "Brazul's Crow Chase",
+        "confirmed by player 2026-10-29"
+      ],
+      [
+        24,
+        25,
+        "Wolfun Camp",
+        "confirmed"
+      ],
+      [
+        26,
+        33,
+        "Wolfun Factory",
+        "strong"
+      ],
+      [
+        34,
+        34,
+        "Brazul's Crow Chase",
+        "strong"
+      ],
+      [
+        35,
+        37,
+        "Wolfun Factory",
+        "confirmed by player 2026-10-29"
+      ]
+    ],
+    "Hunters Domain": [
+      [
+        1,
+        8,
+        "Entrance",
+        "provisional"
+      ],
+      [
+        9,
+        25,
+        "Wolfun Camp",
+        "provisional"
+      ],
+      [
+        26,
+        35,
+        "Hunter's Dungeon",
+        "provisional"
+      ],
+      [
+        36,
+        46,
+        "Hilltop Fort",
+        "provisional"
+      ]
+    ],
+    "Wind Tower": [
+      [
+        1,
+        2,
+        "Wind Tower",
+        "confirmed"
+      ]
+    ],
+    "The Quarry": [
+      [
+        1,
+        7,
+        "Wolfun Camp",
+        "provisional"
+      ],
+      [
+        8,
+        10,
+        "Wolfun Convoy Chase",
+        "provisional"
+      ],
+      [
+        11,
+        19,
+        "Quarry",
+        "provisional"
+      ],
+      [
+        20,
+        31,
+        "Arena",
+        "strong"
+      ]
+    ],
+    "Amber Quarry": [
+      [
+        1,
+        14,
+        "Amber Quarry",
+        "confirmed"
+      ]
+    ],
+    "The Root": [
+      [
+        1,
+        1,
+        "Wolfun Bridge",
+        "strong"
+      ],
+      [
+        2,
+        5,
+        "Wolfun Camp 1",
+        "provisional"
+      ],
+      [
+        6,
+        7,
+        "Wolfun Camp 2",
+        "provisional"
+      ]
+    ],
+    "The Air Post": [
+      [
+        1,
+        2,
+        "Entrance",
+        "confirmed"
+      ],
+      [
+        3,
+        20,
+        "Dark Island",
+        "provisional"
+      ],
+      [
+        21,
+        27,
+        "Wolfun Guard Room",
+        "provisional"
+      ],
+      [
+        28,
+        34,
+        "Energy Field Control Room",
+        "provisional"
+      ],
+      [
+        35,
+        48,
+        "Air Post Blowers",
+        "provisional"
+      ],
+      [
+        49,
+        53,
+        "Wolfun Ventilation Zone",
+        "provisional"
+      ],
+      [
+        54,
+        61,
+        "Forgotten Island Cannon Room",
+        "provisional"
+      ]
+    ],
+    "Forgotten Island": [
+      [
+        1,
+        3,
+        "Entrance",
+        "confirmed"
+      ],
+      [
+        4,
+        4,
+        "Hell's Road",
+        "confirmed"
+      ],
+      [
+        5,
+        8,
+        "Laboratory Entrance",
+        "confirmed"
+      ]
+    ],
+    "Wolfen City": [
+      [
+        1,
+        5,
+        "Entrance",
+        "provisional"
+      ],
+      [
+        6,
+        36,
+        "Wolfen City",
+        "provisional"
+      ],
+      [
+        37,
+        40,
+        "Wolfun Reserve",
+        "strong"
+      ]
+    ],
+    "The Fortress": [
+      [
+        1,
+        13,
+        "Fortress Arena",
+        "confirmed"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,304 @@
+{
+  "SHOP_LOCATION_CONDITIONS": {
+    "Nativs City - Shop - Basic Boomy": [
+      7317488,
+      8
+    ],
+    "Nativs City - Shop - Yellow Bracelet": [
+      7324888,
+      16
+    ],
+    "Nativs City - Shop - Telescope": [
+      7324888,
+      2
+    ],
+    "Nativs City - Shop - Magic Board": [
+      7324888,
+      4
+    ],
+    "Nativs City - Shop - Green Bracelet": [
+      7324944,
+      2
+    ],
+    "Nativs City - Shop - Climbing Gloves": [
+      7324944,
+      8
+    ],
+    "Nativs City - Shop - Extra Energy Bar 1": [
+      7324904,
+      4
+    ],
+    "Nativs City - Shop - Blue Bracelet": [
+      7324904,
+      1
+    ],
+    "Nativs City - Shop - Jamgut Birdcall": [
+      7324904,
+      2
+    ],
+    "Nativs City - Shop - Speed Board": [
+      7324912,
+      1
+    ],
+    "Nativs City - Shop - Golden Boomy": [
+      7324896,
+      16
+    ],
+    "Nativs City - Shop - Silver Bracelet": [
+      7324896,
+      8
+    ],
+    "Nativs City - Shop - Silver Boomy": [
+      7324920,
+      8
+    ],
+    "Nativs City - Shop - Brown Bracelet": [
+      7324920,
+      4
+    ],
+    "Nativs City - Shop - Magic Bouncers": [
+      7324920,
+      16
+    ],
+    "Nativs City - Shop - Extra Energy Bar 2": [
+      7324928,
+      4
+    ],
+    "Nativs City - Shop - Black Bracelet": [
+      7324912,
+      8
+    ],
+    "Nativs City - Shop - Gold Bracelet": [
+      7324928,
+      8
+    ]
+  },
+  "SHOP_LOCATION_ZONES": {
+    "Nativs City - Shop - Basic Boomy": "Nativs City",
+    "Nativs City - Shop - Yellow Bracelet": "Nativs City",
+    "Nativs City - Shop - Telescope": "Nativs City",
+    "Nativs City - Shop - Magic Board": "Nativs City",
+    "Nativs City - Shop - Green Bracelet": "Nativs City",
+    "Nativs City - Shop - Climbing Gloves": "Nativs City",
+    "Nativs City - Shop - Extra Energy Bar 1": "Nativs City",
+    "Nativs City - Shop - Blue Bracelet": "Nativs City",
+    "Nativs City - Shop - Jamgut Birdcall": "Nativs City",
+    "Nativs City - Shop - Speed Board": "Nativs City",
+    "Nativs City - Shop - Golden Boomy": "Nativs City",
+    "Nativs City - Shop - Silver Bracelet": "Nativs City",
+    "Nativs City - Shop - Silver Boomy": "Nativs City",
+    "Nativs City - Shop - Brown Bracelet": "Nativs City",
+    "Nativs City - Shop - Magic Bouncers": "Nativs City",
+    "Nativs City - Shop - Extra Energy Bar 2": "Nativs City",
+    "Nativs City - Shop - Black Bracelet": "Nativs City",
+    "Nativs City - Shop - Gold Bracelet": "Nativs City"
+  },
+  "SHOP_VANILLA_REWARD_STATE": {
+    "Nativs City - Shop - Basic Boomy": {
+      "address": 4346908,
+      "kind": "u32"
+    },
+    "Nativs City - Shop - Yellow Bracelet": {
+      "address": 4346916,
+      "kind": "u32"
+    },
+    "Nativs City - Shop - Telescope": {
+      "address": 4346948,
+      "kind": "u32"
+    },
+    "Nativs City - Shop - Magic Board": {
+      "address": 4346964,
+      "kind": "u32"
+    },
+    "Nativs City - Shop - Green Bracelet": {
+      "address": 4346916,
+      "kind": "u32"
+    },
+    "Nativs City - Shop - Climbing Gloves": {
+      "address": 4346900,
+      "kind": "u32"
+    },
+    "Nativs City - Shop - Extra Energy Bar 1": {
+      "address": 4346996,
+      "kind": "life_gauge"
+    },
+    "Nativs City - Shop - Blue Bracelet": {
+      "address": 4346916,
+      "kind": "u32"
+    },
+    "Nativs City - Shop - Jamgut Birdcall": {
+      "address": 4346940,
+      "kind": "u32"
+    },
+    "Nativs City - Shop - Speed Board": {
+      "address": 4346964,
+      "kind": "u32"
+    },
+    "Nativs City - Shop - Golden Boomy": {
+      "address": 4346908,
+      "kind": "u32"
+    },
+    "Nativs City - Shop - Silver Bracelet": {
+      "address": 4346916,
+      "kind": "u32"
+    },
+    "Nativs City - Shop - Silver Boomy": {
+      "address": 4346908,
+      "kind": "u32"
+    },
+    "Nativs City - Shop - Brown Bracelet": {
+      "address": 4346916,
+      "kind": "u32"
+    },
+    "Nativs City - Shop - Magic Bouncers": {
+      "address": 4346892,
+      "kind": "u32"
+    },
+    "Nativs City - Shop - Extra Energy Bar 2": {
+      "address": 4346996,
+      "kind": "life_gauge"
+    },
+    "Nativs City - Shop - Black Bracelet": {
+      "address": 4346916,
+      "kind": "u32"
+    },
+    "Nativs City - Shop - Gold Bracelet": {
+      "address": 4346916,
+      "kind": "u32"
+    }
+  },
+  "SHOP_LIVE_REWARD_RULES": {
+    "Nativs City - Shop - Basic Boomy": {
+      "address": 4346908,
+      "mode": "level_gain_to",
+      "threshold": 1
+    },
+    "Nativs City - Shop - Yellow Bracelet": {
+      "address": 4346916,
+      "mode": "bit_gain",
+      "mask": 2
+    },
+    "Nativs City - Shop - Telescope": {
+      "address": 4346948,
+      "mode": "bool_gain"
+    },
+    "Nativs City - Shop - Magic Board": {
+      "address": 4346964,
+      "mode": "level_gain_to",
+      "threshold": 1
+    },
+    "Nativs City - Shop - Green Bracelet": {
+      "address": 4346916,
+      "mode": "bit_gain",
+      "mask": 4
+    },
+    "Nativs City - Shop - Climbing Gloves": {
+      "address": 4346900,
+      "mode": "bool_gain"
+    },
+    "Nativs City - Shop - Extra Energy Bar 1": {
+      "address": 4346996,
+      "mode": "life_gain",
+      "threshold": 100
+    },
+    "Nativs City - Shop - Blue Bracelet": {
+      "address": 4346916,
+      "mode": "bit_gain",
+      "mask": 8
+    },
+    "Nativs City - Shop - Jamgut Birdcall": {
+      "address": 4346940,
+      "mode": "bool_gain"
+    },
+    "Nativs City - Shop - Speed Board": {
+      "address": 4346964,
+      "mode": "level_gain_to",
+      "threshold": 2
+    },
+    "Nativs City - Shop - Golden Boomy": {
+      "address": 4346908,
+      "mode": "level_gain_to",
+      "threshold": 3
+    },
+    "Nativs City - Shop - Silver Bracelet": {
+      "address": 4346916,
+      "mode": "bit_gain",
+      "mask": 64
+    },
+    "Nativs City - Shop - Silver Boomy": {
+      "address": 4346908,
+      "mode": "level_gain_to",
+      "threshold": 2
+    },
+    "Nativs City - Shop - Brown Bracelet": {
+      "address": 4346916,
+      "mode": "bit_gain",
+      "mask": 16
+    },
+    "Nativs City - Shop - Magic Bouncers": {
+      "address": 4346892,
+      "mode": "bool_gain"
+    },
+    "Nativs City - Shop - Extra Energy Bar 2": {
+      "address": 4346996,
+      "mode": "life_gain",
+      "threshold": 150
+    },
+    "Nativs City - Shop - Black Bracelet": {
+      "address": 4346916,
+      "mode": "bit_gain",
+      "mask": 32
+    },
+    "Nativs City - Shop - Gold Bracelet": {
+      "address": 4346916,
+      "mode": "bit_gain",
+      "mask": 128
+    }
+  },
+  "SHOP_UNLOCK_THRESHOLDS": [
+    1,
+    10,
+    20,
+    30,
+    50,
+    75,
+    110,
+    200
+  ],
+  "SHOP_UNLOCK_GROUPS": {
+    "1": [
+      "Nativs City - Shop - Basic Boomy"
+    ],
+    "10": [
+      "Nativs City - Shop - Yellow Bracelet",
+      "Nativs City - Shop - Telescope",
+      "Nativs City - Shop - Magic Board"
+    ],
+    "20": [
+      "Nativs City - Shop - Green Bracelet",
+      "Nativs City - Shop - Climbing Gloves"
+    ],
+    "30": [
+      "Nativs City - Shop - Extra Energy Bar 1",
+      "Nativs City - Shop - Blue Bracelet",
+      "Nativs City - Shop - Jamgut Birdcall"
+    ],
+    "50": [
+      "Nativs City - Shop - Brown Bracelet",
+      "Nativs City - Shop - Silver Boomy",
+      "Nativs City - Shop - Magic Bouncers"
+    ],
+    "75": [
+      "Nativs City - Shop - Black Bracelet",
+      "Nativs City - Shop - Speed Board",
+      "Nativs City - Shop - Golden Boomy"
+    ],
+    "110": [
+      "Nativs City - Shop - Silver Bracelet"
+    ],
+    "200": [
+      "Nativs City - Shop - Gold Bracelet",
+      "Nativs City - Shop - Extra Energy Bar 2"
+    ]
+  }
+}

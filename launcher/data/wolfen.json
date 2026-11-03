@@ -1,0 +1,1512 @@
+{
+  "WOLFEN_KEY_TO_LOCATION": {
+    "984": "Nativs City - Wolfen 01",
+    "2342": "Flying Forest - Entrance - Wolfen 01 - Scrawny Blue Outfit (Fists)",
+    "6134": "Flying Forest - Entrance - Wolfen 02 - Scrawny Blue Outfit (Fists)",
+    "5272": "Flying Forest - Entrance - Wolfen 03 - Scrawny Blue Outfit (Club)",
+    "5456": "Flying Forest - Entrance - Wolfen 04 - Scrawny Blue Outfit (Fists)",
+    "5454": "Flying Forest - Entrance - Wolfen 05 - Scrawny Blue Outfit (Fists)",
+    "5455": "Flying Forest - Entrance - Wolfen 06 - Scrawny Yellow Outfit (Fists)",
+    "2260": "Flying Forest - Entrance - Wolfen 07 - Scrawny Blue Outfit (Fists)",
+    "2335": "Flying Forest - Entrance - Wolfen 08 - Grunt Blue Outfit (Fists)",
+    "2297": "Flying Forest - Entrance - Wolfen 09 - Scrawny Blue Outfit (Fists)",
+    "3235": "Flying Forest - Entrance - Wolfen 10 - Scrawny Yellow Outfit (Fists)",
+    "3237": "Flying Forest - Entrance - Wolfen 11 - Scrawny Yellow Outfit (Fists)",
+    "2351": "Flying Forest - Entrance - Wolfen 12",
+    "2398": "Flying Forest - Entrance - Wolfen 13 - Scrawny Blue Outfit (Fists)",
+    "4672": "Flying Forest - Wolfun Camp - Wolfen 14 - Scrawny Blue Outfit (Club)",
+    "3270": "Flying Forest - Wolfun Camp - Wolfen 15 - Scrawny Blue Outfit (Club)",
+    "2354": "Flying Forest - Wolfun Camp - Wolfen 16 - Scrawny Blue Outfit (Fists)",
+    "3210": "Flying Forest - Wolfun Camp - Wolfen 17 - Scrawny Blue Outfit (Club)",
+    "2656": "Flying Forest - Wolfun Camp - Wolfen 18 - Scrawny Blue Outfit (Gun)",
+    "2462": "Flying Forest - Wolfun Camp - Wolfen 19 - Scrawny Blue Outfit (Fists)",
+    "7077": "Flying Forest - Wolfun Camp - Wolfen 20 - Scrawny Blue Outfit (Club)",
+    "3112": "Flying Forest - Brazul's Crow Chase - Wolfen 21 - Scrawny Blue Outfit (Fists)",
+    "2453": "Flying Forest - Brazul's Crow Chase - Wolfen 22 - Scrawny Blue Outfit (Fists)",
+    "2451": "Flying Forest - Brazul's Crow Chase - Wolfen 23 - Scrawny Blue Outfit (Fists)",
+    "2688": "Flying Forest - Wolfun Camp - Wolfen 24 - Scrawny Blue Outfit (Gun)",
+    "2689": "Flying Forest - Wolfun Camp - Wolfen 25",
+    "2727": "Flying Forest - Wolfun Factory - Wolfen 26",
+    "2726": "Flying Forest - Wolfun Factory - Wolfen 27",
+    "2828": "Flying Forest - Wolfun Factory - Wolfen 28",
+    "2621": "Flying Forest - Wolfun Factory - Wolfen 29",
+    "2614": "Flying Forest - Wolfun Factory - Wolfen 30",
+    "2616": "Flying Forest - Wolfun Factory - Wolfen 31",
+    "2620": "Flying Forest - Wolfun Factory - Wolfen 32",
+    "2618": "Flying Forest - Wolfun Factory - Wolfen 33",
+    "2619": "Flying Forest - Brazul's Crow Chase - Wolfen 34",
+    "2622": "Flying Forest - Wolfun Factory - Wolfen 35",
+    "2617": "Flying Forest - Wolfun Factory - Wolfen 36",
+    "2615": "Flying Forest - Wolfun Factory - Wolfen 37",
+    "3258": "Hunters Domain - Entrance - Wolfen 01 - Scrawny Blue Outfit (Fists)",
+    "3260": "Hunters Domain - Entrance - Wolfen 02 - Scrawny Blue Outfit (Gun)",
+    "2496": "Hunters Domain - Entrance - Wolfen 03 - Scrawny Blue Outfit (Fists)",
+    "3285": "Hunters Domain - Entrance - Wolfen 04 - Scrawny Blue Outfit (Fists)",
+    "3255": "Hunters Domain - Entrance - Wolfen 05 - Scrawny Blue Outfit (Club)",
+    "3604": "Hunters Domain - Entrance - Wolfen 06 - Scrawny Blue Outfit (Club)",
+    "2266": "Hunters Domain - Entrance - Wolfen 07 - Scrawny Yellow Outfit (Fists)",
+    "3601": "Hunters Domain - Entrance - Wolfen 08 - Scrawny Blue Outfit (Club)",
+    "10824": "Hunters Domain - Wolfun Camp - Wolfen 09 - Scrawny Blue Outfit (Gun)",
+    "3593": "Hunters Domain - Wolfun Camp - Wolfen 10 - Scrawny Blue Outfit (Gun)",
+    "3366": "Hunters Domain - Wolfun Camp - Wolfen 11 - Gun Blue Outfit",
+    "3368": "Hunters Domain - Wolfun Camp - Wolfen 12 - Gun Blue Outfit",
+    "3554": "Hunters Domain - Wolfun Camp - Wolfen 13 - Club Blue Outfit",
+    "3553": "Hunters Domain - Wolfun Camp - Wolfen 14 - Fists Black Outfit",
+    "3555": "Hunters Domain - Wolfun Camp - Wolfen 15 - Fists Black Outfit",
+    "8250": "Hunters Domain - Wolfun Camp - Wolfen 16 - Grunt Blue Outfit (Fists)",
+    "10794": "Hunters Domain - Wolfun Camp - Wolfen 17 - Scrawny Blue Outfit (Sniper)",
+    "10157": "Hunters Domain - Wolfun Camp - Wolfen 18 - Scrawny Blue Outfit (Sniper)",
+    "11224": "Hunters Domain - Wolfun Camp - Wolfen 19 - Grunt Blue Outfit (Fists)",
+    "8747": "Hunters Domain - Wolfun Camp - Wolfen 20 - Grunt Blue Outfit (Fists)",
+    "3775": "Hunters Domain - Wolfun Camp - Wolfen 21 - Scrawny Blue Outfit (Club)",
+    "3776": "Hunters Domain - Wolfun Camp - Wolfen 22 - Scrawny Blue Outfit (Club)",
+    "3941": "Hunters Domain - Wolfun Camp - Wolfen 23 - Scrawny Blue Outfit (Club)",
+    "3934": "Hunters Domain - Wolfun Camp - Wolfen 24 - Scrawny Blue Outfit (Club)",
+    "3936": "Hunters Domain - Wolfun Camp - Wolfen 25 - Scrawny Blue Outfit (Club)",
+    "10610": "Hunters Domain - Hunter's Dungeon - Wolfen 26 - Grunt Blue Outfit (Fists)",
+    "1742": "Hunters Domain - Hunter's Dungeon - Wolfen 27 - Scrawny Blue Outfit (Gun)",
+    "1744": "Hunters Domain - Hunter's Dungeon - Wolfen 28 - Scrawny Blue Outfit (Gun)",
+    "10313": "Hunters Domain - Hunter's Dungeon - Wolfen 29 - Grunt Blue Outfit (Fists)",
+    "10312": "Hunters Domain - Hunter's Dungeon - Wolfen 30 - Grunt Blue Outfit (Fists)",
+    "10804": "Hunters Domain - Hunter's Dungeon - Wolfen 31 - Scrawny Blue Outfit (Sniper)",
+    "10797": "Hunters Domain - Hunter's Dungeon - Wolfen 32 - Scrawny Blue Outfit (Sniper)",
+    "11444": "Hunters Domain - Hunter's Dungeon - Wolfen 33 - Scrawny Blue Outfit (Fists)",
+    "11443": "Hunters Domain - Hunter's Dungeon - Wolfen 34 - Grunt Blue Outfit (Fists)",
+    "10349": "Hunters Domain - Hunter's Dungeon - Wolfen 35 - Scrawny Blue Outfit (Gun)",
+    "10485": "Hunters Domain - Hilltop Fort - Wolfen 36 - Grunt Blue Outfit (Fists)",
+    "3469": "Hunters Domain - Hilltop Fort - Wolfen 37 - Scrawny Blue Outfit (Fists)",
+    "3467": "Hunters Domain - Hilltop Fort - Wolfen 38 - Scrawny Yellow Outfit (Fists)",
+    "3465": "Hunters Domain - Hilltop Fort - Wolfen 39 - Scrawny Yellow Outfit (Fists)",
+    "3466": "Hunters Domain - Hilltop Fort - Wolfen 40 - Scrawny Yellow Outfit (Fists)",
+    "6320": "Hunters Domain - Hilltop Fort - Wolfen 41 - Scrawny Blue Outfit (Gun)",
+    "10978": "Hunters Domain - Hilltop Fort - Wolfen 42 - Scrawny Blue Outfit (Sniper)",
+    "8743": "Hunters Domain - Hilltop Fort - Wolfen 43 - Grunt Blue Outfit (Fists)",
+    "9133": "Hunters Domain - Hilltop Fort - Wolfen 44 - Scrawny Blue Outfit (Fists)",
+    "11474": "Hunters Domain - Hilltop Fort - Wolfen 45 - Scrawny Blue Outfit (Fists)",
+    "11424": "Hunters Domain - Hilltop Fort - Wolfen 46 - Scrawny Blue Outfit (Fists)",
+    "8330": "Hunters Domain - Wind Tower - Wolfen 01 - Scrawny Blue Outfit (Rocket Gun)",
+    "1885": "Hunters Domain - Wind Tower - Wolfen 02 - Scrawny Blue Outfit (Gun)",
+    "10602": "The Quarry - Entrance - Wolfen 01",
+    "1130": "The Quarry - Entrance - Wolfen 02",
+    "5999": "The Quarry - Entrance - Wolfen 03",
+    "6010": "The Quarry - Entrance - Wolfen 04",
+    "1162": "The Quarry - Entrance - Wolfen 05 - Scrawny Blue Outfit (Club)",
+    "1142": "The Quarry - Entrance - Wolfen 06 - Scrawny Blue Outfit (Gun)",
+    "1143": "The Quarry - Entrance - Wolfen 07 - Scrawny Blue Outfit (Gun)",
+    "9644": "The Quarry - Quarry - Wolfen 08 - Scrawny Blue Outfit (Gun)",
+    "9646": "The Quarry - Quarry - Wolfen 09 - Grunt Blue Outfit (Fists)",
+    "9645": "The Quarry - Quarry - Wolfen 10 - Scrawny Yellow Outfit (Fists)",
+    "9466": "The Quarry - Quarry - Wolfen 11 - Scrawny Yellow Outfit (Fists)",
+    "9437": "The Quarry - Quarry - Wolfen 12 - Scrawny Yellow Outfit (Fists)",
+    "9436": "The Quarry - Quarry - Wolfen 13 - Grunt Blue Outfit (Fists)",
+    "1429": "The Quarry - Quarry - Wolfen 14",
+    "823": "The Quarry - Quarry - Wolfen 15",
+    "4232": "The Quarry - Quarry - Wolfen 16",
+    "9721": "The Quarry - Quarry - Wolfen 17 - Grunt Black Outfit (Fists)",
+    "1437": "The Quarry - Quarry - Wolfen 18",
+    "6017": "The Quarry - Quarry - Wolfen 19 - Grunt Black Outfit (Fists)",
+    "9392": "The Quarry - Arena - Wolfen 20",
+    "9394": "The Quarry - Arena - Wolfen 21",
+    "3868": "The Quarry - Arena - Wolfen 22",
+    "3267": "The Quarry - Arena - Wolfen 23",
+    "2556": "The Quarry - Arena - Wolfen 24",
+    "9339": "The Quarry - Arena - Wolfen 25",
+    "6526": "The Quarry - Arena - Wolfen 26",
+    "6527": "The Quarry - Arena - Wolfen 27",
+    "6078": "The Quarry - Arena - Wolfen 28",
+    "6096": "The Quarry - Arena - Wolfen 29",
+    "6079": "The Quarry - Arena - Wolfen 30",
+    "6093": "The Quarry - Arena - Wolfen 31",
+    "9845": "The Quarry - Amber Quarry - Wolfen 01 - Scrawny Blue Outfit (Fists)",
+    "9843": "The Quarry - Amber Quarry - Wolfen 02 - Scrawny Yellow Outfit (Fists)",
+    "9842": "The Quarry - Amber Quarry - Wolfen 03 - Grunt Black Outfit (Fists)",
+    "9988": "The Quarry - Amber Quarry - Wolfen 04 - Scrawny Blue Outfit (Fists)",
+    "9989": "The Quarry - Amber Quarry - Wolfen 05 - Scrawny Yellow Outfit (Fists)",
+    "9841": "The Quarry - Amber Quarry - Wolfen 06 - Grunt Black Outfit (Fists)",
+    "7569": "The Quarry - Amber Quarry - Wolfen 07 - Scrawny Blue Outfit (Fists)",
+    "9511": "The Quarry - Amber Quarry - Wolfen 08 - Grunt Blue Outfit (Fists)",
+    "9528": "The Quarry - Amber Quarry - Wolfen 09 - Scrawny Blue Outfit (Fists)",
+    "9538": "The Quarry - Amber Quarry - Wolfen 10 - Grunt Blue Outfit (Fists)",
+    "9513": "The Quarry - Amber Quarry - Wolfen 11 - Scrawny Blue Outfit (Sniper)",
+    "9518": "The Quarry - Amber Quarry - Wolfen 12 - Scrawny Blue Outfit (Sniper)",
+    "9515": "The Quarry - Amber Quarry - Wolfen 13 - Scrawny Blue Outfit (Sniper)",
+    "9516": "The Quarry - Amber Quarry - Wolfen 14 - Scrawny Blue Outfit (Sniper)",
+    "3486": "The Root - Wolfun Bridge - Wolfen 01 - Scrawny Blue Outfit (Rocket Gun)",
+    "336": "The Root - Wolfun Camp 1 - Wolfen 02 - Scrawny Blue Outfit (Fists)",
+    "331": "The Root - Wolfun Camp 1 - Wolfen 03 - Scrawny Blue Outfit (Gun)",
+    "330": "The Root - Wolfun Camp 1 - Wolfen 04 - Scrawny Blue Outfit (Gun)",
+    "312": "The Root - Wolfun Camp 1 - Wolfen 05 - Scrawny Blue Outfit (Gun)",
+    "3732": "The Root - Wolfun Camp 2 - Wolfen 06 - Scrawny Blue Outfit (Sniper)",
+    "3731": "The Root - Wolfun Camp 2 - Wolfen 07 - Scrawny Blue Outfit (Sniper)",
+    "9940": "The Air Post - Entrance - Wolfen 01 - Scrawny Blue Outfit (Sniper)",
+    "9943": "The Air Post - Entrance - Wolfen 02 - Scrawny Blue Outfit (Sniper)",
+    "1357": "The Air Post - Dark Island - Wolfen 03 - Scrawny Blue Outfit (Gun)",
+    "1912": "The Air Post - Dark Island - Wolfen 04 - Scrawny Blue Outfit (Gun)",
+    "8421": "The Air Post - Dark Island - Wolfen 05 - Scrawny Blue Outfit (Fists)",
+    "7285": "The Air Post - Dark Island - Wolfen 06 - Scrawny Blue Outfit (Club)",
+    "9944": "The Air Post - Dark Island - Wolfen 07 - Scrawny Blue Outfit (Sniper)",
+    "1327": "The Air Post - Dark Island - Wolfen 08 - Scrawny Blue Outfit (Gun)",
+    "8758": "The Air Post - Dark Island - Wolfen 09 - Scrawny Blue Outfit (Club)",
+    "10078": "The Air Post - Dark Island - Wolfen 10 - Grunt Black Outfit (Fists)",
+    "10079": "The Air Post - Dark Island - Wolfen 11 - Grunt Yellow Outfit (Club)",
+    "4432": "The Air Post - Dark Island - Wolfen 12 - Scrawny Blue Outfit (Gun)",
+    "4433": "The Air Post - Dark Island - Wolfen 13 - Scrawny Blue Outfit (Gun)",
+    "1449": "The Air Post - Dark Island - Wolfen 14 - Scrawny Blue Outfit (Gun)",
+    "10403": "The Air Post - Dark Island - Wolfen 15 - Scrawny Blue Outfit (Gun)",
+    "11391": "The Air Post - Dark Island - Wolfen 16 - Grunt Brown Outfit (Club)",
+    "917": "The Air Post - Dark Island - Wolfen 17 - Scrawny Blue Outfit (Gun)",
+    "1034": "The Air Post - Dark Island - Wolfen 18 - Scrawny Blue Outfit (Gun)",
+    "1010": "The Air Post - Dark Island - Wolfen 19 - Scrawny Blue Outfit (Gun)",
+    "11389": "The Air Post - Dark Island - Wolfen 20 - Grunt Yellow Outfit (Fists)",
+    "11751": "The Air Post - Wolfun Guard Room - Wolfen 21 - Scrawny Blue Outfit (Sniper)",
+    "11393": "The Air Post - Wolfun Guard Room - Wolfen 22 - Grunt Yellow Outfit (Club)",
+    "4621": "The Air Post - Wolfun Guard Room - Wolfen 23 - Scrawny Blue Outfit (Gun)",
+    "4624": "The Air Post - Wolfun Guard Room - Wolfen 24 - Scrawny Blue Outfit (Gun)",
+    "4627": "The Air Post - Wolfun Guard Room - Wolfen 25 - Scrawny Blue Outfit (Gun)",
+    "4622": "The Air Post - Wolfun Guard Room - Wolfen 26 - Scrawny Blue Outfit (Gun)",
+    "1518": "The Air Post - Wolfun Guard Room - Wolfen 27 - Scrawny Yellow Outfit (Gun)",
+    "7445": "The Air Post - Energy Field Control Room - Wolfen 28 - Scrawny Blue Outfit (Fists)",
+    "9817": "The Air Post - Energy Field Control Room - Wolfen 29 - Grunt Black Outfit (Fists)",
+    "9801": "The Air Post - Energy Field Control Room - Wolfen 30 - Scrawny Blue Outfit (Rocket Gun)",
+    "418": "The Air Post - Energy Field Control Room - Wolfen 31 - Scrawny Blue Outfit (Gun)",
+    "420": "The Air Post - Energy Field Control Room - Wolfen 32 - Scrawny Blue Outfit (Gun)",
+    "430": "The Air Post - Energy Field Control Room - Wolfen 33 - Scrawny Blue Outfit (Gun)",
+    "7602": "The Air Post - Energy Field Control Room - Wolfen 34 - Scrawny Blue Outfit (Gun)",
+    "9398": "The Air Post - Air Post Blowers - Wolfen 35 - Grunt Blue Outfit (Fists)",
+    "7795": "The Air Post - Air Post Blowers - Wolfen 36 - Scrawny Blue Outfit (Gun)",
+    "7792": "The Air Post - Air Post Blowers - Wolfen 37 - Scrawny Blue Outfit (Gun)",
+    "7791": "The Air Post - Air Post Blowers - Wolfen 38 - Scrawny Blue Outfit (Gun)",
+    "7793": "The Air Post - Air Post Blowers - Wolfen 39 - Scrawny Blue Outfit (Gun)",
+    "7790": "The Air Post - Air Post Blowers - Wolfen 40 - Scrawny Blue Outfit (Gun)",
+    "7794": "The Air Post - Air Post Blowers - Wolfen 41 - Scrawny Blue Outfit (Gun)",
+    "4756": "The Air Post - Air Post Blowers - Wolfen 42 - Scrawny Blue Outfit (Gun)",
+    "4757": "The Air Post - Air Post Blowers - Wolfen 43 - Scrawny Blue Outfit (Gun)",
+    "4755": "The Air Post - Air Post Blowers - Wolfen 44 - Scrawny Blue Outfit (Gun)",
+    "4758": "The Air Post - Air Post Blowers - Wolfen 45 - Scrawny Blue Outfit (Gun)",
+    "4754": "The Air Post - Air Post Blowers - Wolfen 46 - Scrawny Blue Outfit (Gun)",
+    "4759": "The Air Post - Air Post Blowers - Wolfen 47 - Scrawny Blue Outfit (Gun)",
+    "646": "The Air Post - Air Post Blowers - Wolfen 48 - Scrawny Blue Outfit (Gun)",
+    "9598": "The Air Post - Wolfun Ventilation Zone - Wolfen 49 - Grunt Blue Outfit (Club)",
+    "9597": "The Air Post - Wolfun Ventilation Zone - Wolfen 50 - Grunt Yellow Outfit (Club)",
+    "9600": "The Air Post - Wolfun Ventilation Zone - Wolfen 51 - Grunt Yellow Outfit (Fists)",
+    "10613": "The Air Post - Wolfun Ventilation Zone - Wolfen 52 - Scrawny Blue Outfit (Rocket Gun)",
+    "9856": "The Air Post - Wolfun Ventilation Zone - Wolfen 53 - Scrawny Blue Outfit (Rocket Gun)",
+    "10067": "The Air Post - Forgotten Island Cannon Room - Wolfen 54 - Grunt Yellow Outfit (Fists)",
+    "9946": "The Air Post - Forgotten Island Cannon Room - Wolfen 55 - Scrawny Blue Outfit (Sniper)",
+    "9949": "The Air Post - Forgotten Island Cannon Room - Wolfen 56 - Scrawny Blue Outfit (Sniper)",
+    "9950": "The Air Post - Forgotten Island Cannon Room - Wolfen 57 - Scrawny Blue Outfit (Sniper)",
+    "10380": "The Air Post - Forgotten Island Cannon Room - Wolfen 58 - Scrawny Blue Outfit (Rocket Gun)",
+    "9204": "The Air Post - Forgotten Island Cannon Room - Wolfen 59 - Scrawny Blue Outfit (Club)",
+    "9203": "The Air Post - Forgotten Island Cannon Room - Wolfen 60 - Scrawny Blue Outfit (Club)",
+    "9595": "The Air Post - Forgotten Island Cannon Room - Wolfen 61 - Grunt Black Outfit (Fists)",
+    "2054": "Forgotten Island - Entrance - Wolfen 01",
+    "2084": "Forgotten Island - Entrance - Wolfen 02",
+    "2102": "Forgotten Island - Entrance - Wolfen 03",
+    "6811": "Forgotten Island - Hell's Road - Wolfen 04 - Scrawny Yellow Outfit (Fists)",
+    "5060": "Forgotten Island - Laboratory Entrance - Wolfen 05 - Grunt Yellow Outfit (Club)",
+    "5059": "Forgotten Island - Laboratory Entrance - Wolfen 06 - Grunt Blue Outfit (Fists)",
+    "6215": "Forgotten Island - Laboratory Entrance - Wolfen 07 - Scrawny Yellow Outfit (Rocket Gun)",
+    "4944": "Forgotten Island - Laboratory Entrance - Wolfen 08 - Kronos Black Outfit (Fists)",
+    "1434": "Wolfen City - Entrance - Wolfen 02 - Grunt Yellow Outfit (Fists)",
+    "1443": "Wolfen City - Entrance - Wolfen 03 - Scrawny Blue Outfit (Fists)",
+    "1422": "Wolfen City - Entrance - Wolfen 04 - Grunt Yellow Outfit (Fists)",
+    "494": "Wolfen City - Entrance - Wolfen 05 - Scrawny Blue Outfit (Fists)",
+    "3678": "Wolfen City - Wolfen 06 - Scrawny Blue Outfit (Club)",
+    "3677": "Wolfen City - Wolfen 07 - Scrawny Blue Outfit (Club)",
+    "1750": "Wolfen City - Wolfen 08 - Kronos Black Outfit (Fists)",
+    "1680": "Wolfen City - Wolfen 09 - Grunt Blue Outfit (Club)",
+    "3734": "Wolfen City - Wolfen 10 - Kronos Black Outfit (Fists)",
+    "807": "Wolfen City - Wolfen 11 - Scrawny Yellow Outfit (Gun)",
+    "1652": "Wolfen City - Wolfen 12 - Grunt Blue Outfit (Fists)",
+    "3733": "Wolfen City - Wolfen 13 - Scrawny Blue Outfit (Sniper)",
+    "3687": "Wolfen City - Wolfen 14 - Scrawny Blue Outfit (Sniper)",
+    "778": "Wolfen City - Wolfen 15 - Scrawny Yellow Outfit (Gun)",
+    "1641": "Wolfen City - Wolfen 16 - Kronos Black Outfit (Fists)",
+    "3699": "Wolfen City - Wolfen 17 - Grunt Yellow Outfit (Fists)",
+    "1822": "Wolfen City - Wolfen 18 - Grunt Blue Outfit (Club)",
+    "1787": "Wolfen City - Wolfen 19 - Scrawny Blue Outfit (Gun)",
+    "752": "Wolfen City - Wolfen 20 - Grunt Blue Outfit (Club)",
+    "1374": "Wolfen City - Wolfen 21 - Kronos Black Outfit (Fists)",
+    "770": "Wolfen City - Wolfen 22 - Scrawny Yellow Outfit (Gun)",
+    "771": "Wolfen City - Wolfen 23 - Scrawny Yellow Outfit (Gun)",
+    "3791": "Wolfen City - Wolfen 24 - Scrawny Blue Outfit (Gun)",
+    "3761": "Wolfen City - Wolfen 25 - Scrawny Blue Outfit (Gun)",
+    "3762": "Wolfen City - Wolfen 26 - Scrawny Blue Outfit (Gun)",
+    "2333": "Wolfen City - Wolfen 27 - Grunt Blue Outfit (Fists)",
+    "2341": "Wolfen City - Wolfen 28 - Grunt Blue Outfit (Fists)",
+    "2337": "Wolfen City - Wolfen 30",
+    "2339": "Wolfen City - Wolfen 31",
+    "1842": "Wolfen City - Wolfen 32 - Scrawny Blue Outfit (Sniper)",
+    "2004": "Wolfen City - Wolfen 33 - Kronos Black Outfit (Fists)",
+    "1998": "Wolfen City - Wolfen 34 - Scrawny Blue Outfit (Sniper)",
+    "1999": "Wolfen City - Wolfen 35 - Scrawny Blue Outfit (Sniper)",
+    "1989": "Wolfen City - Wolfen 36 - Scrawny Blue Outfit (Sniper)",
+    "1267": "Wolfen City - Wolfun Reserve - Wolfen 37 - Scrawny Blue Outfit (Fists)",
+    "1268": "Wolfen City - Wolfun Reserve - Wolfen 38",
+    "1270": "Wolfen City - Wolfun Reserve - Wolfen 39 - Scrawny Blue Outfit (Fists)",
+    "1269": "Wolfen City - Wolfun Reserve - Wolfen 40 - Scrawny Blue Outfit (Fists)",
+    "1133": "The Fortress - Fortress Arena - Wolfen 01",
+    "1126": "The Fortress - Fortress Arena - Wolfen 02",
+    "1134": "The Fortress - Fortress Arena - Wolfen 03",
+    "1128": "The Fortress - Fortress Arena - Wolfen 05",
+    "1147": "The Fortress - Fortress Arena - Wolfen 06",
+    "1125": "The Fortress - Fortress Arena - Wolfen 07",
+    "1132": "The Fortress - Fortress Arena - Wolfen 08",
+    "1122": "The Fortress - Fortress Arena - Wolfen 09",
+    "1121": "The Fortress - Fortress Arena - Wolfen 10",
+    "1129": "The Fortress - Fortress Arena - Wolfen 11",
+    "1131": "The Fortress - Fortress Arena - Wolfen 12",
+    "1124": "The Fortress - Fortress Arena - Wolfen 13"
+  },
+  "WOLFEN_VTABLE": 4442224,
+  "WOLFEN_STATE_OFFSET": 2944,
+  "WOLFEN_STATE_PRESENT": 1,
+  "WOLFEN_STATE_FREED": 2,
+  "WOLFEN_DESCRIPTOR_OFFSET": 28,
+  "WOLFEN_KEY_OFFSET": 40,
+  "WOLFEN_HP_OFFSET": 728,
+  "WOLFEN_ZONE_KEY_TO_LOCATION": {
+    "Nativs City": {
+      "984": "Nativs City - Wolfen 01"
+    },
+    "Flying Forest": {
+      "2342": "Flying Forest - Entrance - Wolfen 01 - Scrawny Blue Outfit (Fists)",
+      "6134": "Flying Forest - Entrance - Wolfen 02 - Scrawny Blue Outfit (Fists)",
+      "5272": "Flying Forest - Entrance - Wolfen 03 - Scrawny Blue Outfit (Club)",
+      "5456": "Flying Forest - Entrance - Wolfen 04 - Scrawny Blue Outfit (Fists)",
+      "5454": "Flying Forest - Entrance - Wolfen 05 - Scrawny Blue Outfit (Fists)",
+      "5455": "Flying Forest - Entrance - Wolfen 06 - Scrawny Yellow Outfit (Fists)",
+      "2260": "Flying Forest - Entrance - Wolfen 07 - Scrawny Blue Outfit (Fists)",
+      "2335": "Flying Forest - Entrance - Wolfen 08 - Grunt Blue Outfit (Fists)",
+      "2297": "Flying Forest - Entrance - Wolfen 09 - Scrawny Blue Outfit (Fists)",
+      "3235": "Flying Forest - Entrance - Wolfen 10 - Scrawny Yellow Outfit (Fists)",
+      "3237": "Flying Forest - Entrance - Wolfen 11 - Scrawny Yellow Outfit (Fists)",
+      "2351": "Flying Forest - Entrance - Wolfen 12",
+      "2398": "Flying Forest - Entrance - Wolfen 13 - Scrawny Blue Outfit (Fists)",
+      "4672": "Flying Forest - Wolfun Camp - Wolfen 14 - Scrawny Blue Outfit (Club)",
+      "3270": "Flying Forest - Wolfun Camp - Wolfen 15 - Scrawny Blue Outfit (Club)",
+      "2354": "Flying Forest - Wolfun Camp - Wolfen 16 - Scrawny Blue Outfit (Fists)",
+      "3210": "Flying Forest - Wolfun Camp - Wolfen 17 - Scrawny Blue Outfit (Club)",
+      "2656": "Flying Forest - Wolfun Camp - Wolfen 18 - Scrawny Blue Outfit (Gun)",
+      "2462": "Flying Forest - Wolfun Camp - Wolfen 19 - Scrawny Blue Outfit (Fists)",
+      "7077": "Flying Forest - Wolfun Camp - Wolfen 20 - Scrawny Blue Outfit (Club)",
+      "3112": "Flying Forest - Brazul's Crow Chase - Wolfen 21 - Scrawny Blue Outfit (Fists)",
+      "2453": "Flying Forest - Brazul's Crow Chase - Wolfen 22 - Scrawny Blue Outfit (Fists)",
+      "2451": "Flying Forest - Brazul's Crow Chase - Wolfen 23 - Scrawny Blue Outfit (Fists)",
+      "2688": "Flying Forest - Wolfun Camp - Wolfen 24 - Scrawny Blue Outfit (Gun)",
+      "2689": "Flying Forest - Wolfun Camp - Wolfen 25",
+      "2727": "Flying Forest - Wolfun Factory - Wolfen 26",
+      "2726": "Flying Forest - Wolfun Factory - Wolfen 27",
+      "2828": "Flying Forest - Wolfun Factory - Wolfen 28",
+      "2621": "Flying Forest - Wolfun Factory - Wolfen 29",
+      "2614": "Flying Forest - Wolfun Factory - Wolfen 30",
+      "2616": "Flying Forest - Wolfun Factory - Wolfen 31",
+      "2620": "Flying Forest - Wolfun Factory - Wolfen 32",
+      "2618": "Flying Forest - Wolfun Factory - Wolfen 33",
+      "2619": "Flying Forest - Brazul's Crow Chase - Wolfen 34",
+      "2622": "Flying Forest - Wolfun Factory - Wolfen 35",
+      "2617": "Flying Forest - Wolfun Factory - Wolfen 36",
+      "2615": "Flying Forest - Wolfun Factory - Wolfen 37"
+    },
+    "Hunters Domain": {
+      "3258": "Hunters Domain - Entrance - Wolfen 01 - Scrawny Blue Outfit (Fists)",
+      "3260": "Hunters Domain - Entrance - Wolfen 02 - Scrawny Blue Outfit (Gun)",
+      "2496": "Hunters Domain - Entrance - Wolfen 03 - Scrawny Blue Outfit (Fists)",
+      "3285": "Hunters Domain - Entrance - Wolfen 04 - Scrawny Blue Outfit (Fists)",
+      "3255": "Hunters Domain - Entrance - Wolfen 05 - Scrawny Blue Outfit (Club)",
+      "3604": "Hunters Domain - Entrance - Wolfen 06 - Scrawny Blue Outfit (Club)",
+      "2266": "Hunters Domain - Entrance - Wolfen 07 - Scrawny Yellow Outfit (Fists)",
+      "3601": "Hunters Domain - Entrance - Wolfen 08 - Scrawny Blue Outfit (Club)",
+      "10824": "Hunters Domain - Wolfun Camp - Wolfen 09 - Scrawny Blue Outfit (Gun)",
+      "3593": "Hunters Domain - Wolfun Camp - Wolfen 10 - Scrawny Blue Outfit (Gun)",
+      "3366": "Hunters Domain - Wolfun Camp - Wolfen 11 - Gun Blue Outfit",
+      "3368": "Hunters Domain - Wolfun Camp - Wolfen 12 - Gun Blue Outfit",
+      "3554": "Hunters Domain - Wolfun Camp - Wolfen 13 - Club Blue Outfit",
+      "3553": "Hunters Domain - Wolfun Camp - Wolfen 14 - Fists Black Outfit",
+      "3555": "Hunters Domain - Wolfun Camp - Wolfen 15 - Fists Black Outfit",
+      "8250": "Hunters Domain - Wolfun Camp - Wolfen 16 - Grunt Blue Outfit (Fists)",
+      "10794": "Hunters Domain - Wolfun Camp - Wolfen 17 - Scrawny Blue Outfit (Sniper)",
+      "10157": "Hunters Domain - Wolfun Camp - Wolfen 18 - Scrawny Blue Outfit (Sniper)",
+      "11224": "Hunters Domain - Wolfun Camp - Wolfen 19 - Grunt Blue Outfit (Fists)",
+      "8747": "Hunters Domain - Wolfun Camp - Wolfen 20 - Grunt Blue Outfit (Fists)",
+      "3775": "Hunters Domain - Wolfun Camp - Wolfen 21 - Scrawny Blue Outfit (Club)",
+      "3776": "Hunters Domain - Wolfun Camp - Wolfen 22 - Scrawny Blue Outfit (Club)",
+      "3941": "Hunters Domain - Wolfun Camp - Wolfen 23 - Scrawny Blue Outfit (Club)",
+      "3934": "Hunters Domain - Wolfun Camp - Wolfen 24 - Scrawny Blue Outfit (Club)",
+      "3936": "Hunters Domain - Wolfun Camp - Wolfen 25 - Scrawny Blue Outfit (Club)",
+      "10610": "Hunters Domain - Hunter's Dungeon - Wolfen 26 - Grunt Blue Outfit (Fists)",
+      "1742": "Hunters Domain - Hunter's Dungeon - Wolfen 27 - Scrawny Blue Outfit (Gun)",
+      "1744": "Hunters Domain - Hunter's Dungeon - Wolfen 28 - Scrawny Blue Outfit (Gun)",
+      "10313": "Hunters Domain - Hunter's Dungeon - Wolfen 29 - Grunt Blue Outfit (Fists)",
+      "10312": "Hunters Domain - Hunter's Dungeon - Wolfen 30 - Grunt Blue Outfit (Fists)",
+      "10804": "Hunters Domain - Hunter's Dungeon - Wolfen 31 - Scrawny Blue Outfit (Sniper)",
+      "10797": "Hunters Domain - Hunter's Dungeon - Wolfen 32 - Scrawny Blue Outfit (Sniper)",
+      "11444": "Hunters Domain - Hunter's Dungeon - Wolfen 33 - Scrawny Blue Outfit (Fists)",
+      "11443": "Hunters Domain - Hunter's Dungeon - Wolfen 34 - Grunt Blue Outfit (Fists)",
+      "10349": "Hunters Domain - Hunter's Dungeon - Wolfen 35 - Scrawny Blue Outfit (Gun)",
+      "10485": "Hunters Domain - Hilltop Fort - Wolfen 36 - Grunt Blue Outfit (Fists)",
+      "3469": "Hunters Domain - Hilltop Fort - Wolfen 37 - Scrawny Blue Outfit (Fists)",
+      "3467": "Hunters Domain - Hilltop Fort - Wolfen 38 - Scrawny Yellow Outfit (Fists)",
+      "3465": "Hunters Domain - Hilltop Fort - Wolfen 39 - Scrawny Yellow Outfit (Fists)",
+      "3466": "Hunters Domain - Hilltop Fort - Wolfen 40 - Scrawny Yellow Outfit (Fists)",
+      "6320": "Hunters Domain - Hilltop Fort - Wolfen 41 - Scrawny Blue Outfit (Gun)",
+      "10978": "Hunters Domain - Hilltop Fort - Wolfen 42 - Scrawny Blue Outfit (Sniper)",
+      "8743": "Hunters Domain - Hilltop Fort - Wolfen 43 - Grunt Blue Outfit (Fists)",
+      "9133": "Hunters Domain - Hilltop Fort - Wolfen 44 - Scrawny Blue Outfit (Fists)",
+      "11474": "Hunters Domain - Hilltop Fort - Wolfen 45 - Scrawny Blue Outfit (Fists)",
+      "11424": "Hunters Domain - Hilltop Fort - Wolfen 46 - Scrawny Blue Outfit (Fists)"
+    },
+    "Wind Tower": {
+      "8330": "Hunters Domain - Wind Tower - Wolfen 01 - Scrawny Blue Outfit (Rocket Gun)",
+      "1885": "Hunters Domain - Wind Tower - Wolfen 02 - Scrawny Blue Outfit (Gun)"
+    },
+    "The Quarry": {
+      "10602": "The Quarry - Entrance - Wolfen 01",
+      "1130": "The Quarry - Entrance - Wolfen 02",
+      "5999": "The Quarry - Entrance - Wolfen 03",
+      "6010": "The Quarry - Entrance - Wolfen 04",
+      "1162": "The Quarry - Entrance - Wolfen 05 - Scrawny Blue Outfit (Club)",
+      "1142": "The Quarry - Entrance - Wolfen 06 - Scrawny Blue Outfit (Gun)",
+      "1143": "The Quarry - Entrance - Wolfen 07 - Scrawny Blue Outfit (Gun)",
+      "9644": "The Quarry - Quarry - Wolfen 08 - Scrawny Blue Outfit (Gun)",
+      "9646": "The Quarry - Quarry - Wolfen 09 - Grunt Blue Outfit (Fists)",
+      "9645": "The Quarry - Quarry - Wolfen 10 - Scrawny Yellow Outfit (Fists)",
+      "9466": "The Quarry - Quarry - Wolfen 11 - Scrawny Yellow Outfit (Fists)",
+      "9437": "The Quarry - Quarry - Wolfen 12 - Scrawny Yellow Outfit (Fists)",
+      "9436": "The Quarry - Quarry - Wolfen 13 - Grunt Blue Outfit (Fists)",
+      "1429": "The Quarry - Quarry - Wolfen 14",
+      "823": "The Quarry - Quarry - Wolfen 15",
+      "4232": "The Quarry - Quarry - Wolfen 16",
+      "9721": "The Quarry - Quarry - Wolfen 17 - Grunt Black Outfit (Fists)",
+      "1437": "The Quarry - Quarry - Wolfen 18",
+      "6017": "The Quarry - Quarry - Wolfen 19 - Grunt Black Outfit (Fists)",
+      "9392": "The Quarry - Arena - Wolfen 20",
+      "9394": "The Quarry - Arena - Wolfen 21",
+      "3868": "The Quarry - Arena - Wolfen 22",
+      "3267": "The Quarry - Arena - Wolfen 23",
+      "2556": "The Quarry - Arena - Wolfen 24",
+      "9339": "The Quarry - Arena - Wolfen 25",
+      "6526": "The Quarry - Arena - Wolfen 26",
+      "6527": "The Quarry - Arena - Wolfen 27",
+      "6078": "The Quarry - Arena - Wolfen 28",
+      "6096": "The Quarry - Arena - Wolfen 29",
+      "6079": "The Quarry - Arena - Wolfen 30",
+      "6093": "The Quarry - Arena - Wolfen 31"
+    },
+    "Amber Quarry": {
+      "9845": "The Quarry - Amber Quarry - Wolfen 01 - Scrawny Blue Outfit (Fists)",
+      "9843": "The Quarry - Amber Quarry - Wolfen 02 - Scrawny Yellow Outfit (Fists)",
+      "9842": "The Quarry - Amber Quarry - Wolfen 03 - Grunt Black Outfit (Fists)",
+      "9988": "The Quarry - Amber Quarry - Wolfen 04 - Scrawny Blue Outfit (Fists)",
+      "9989": "The Quarry - Amber Quarry - Wolfen 05 - Scrawny Yellow Outfit (Fists)",
+      "9841": "The Quarry - Amber Quarry - Wolfen 06 - Grunt Black Outfit (Fists)",
+      "7569": "The Quarry - Amber Quarry - Wolfen 07 - Scrawny Blue Outfit (Fists)",
+      "9511": "The Quarry - Amber Quarry - Wolfen 08 - Grunt Blue Outfit (Fists)",
+      "9528": "The Quarry - Amber Quarry - Wolfen 09 - Scrawny Blue Outfit (Fists)",
+      "9538": "The Quarry - Amber Quarry - Wolfen 10 - Grunt Blue Outfit (Fists)",
+      "9513": "The Quarry - Amber Quarry - Wolfen 11 - Scrawny Blue Outfit (Sniper)",
+      "9518": "The Quarry - Amber Quarry - Wolfen 12 - Scrawny Blue Outfit (Sniper)",
+      "9515": "The Quarry - Amber Quarry - Wolfen 13 - Scrawny Blue Outfit (Sniper)",
+      "9516": "The Quarry - Amber Quarry - Wolfen 14 - Scrawny Blue Outfit (Sniper)"
+    },
+    "The Root": {
+      "3486": "The Root - Wolfun Bridge - Wolfen 01 - Scrawny Blue Outfit (Rocket Gun)",
+      "336": "The Root - Wolfun Camp 1 - Wolfen 02 - Scrawny Blue Outfit (Fists)",
+      "331": "The Root - Wolfun Camp 1 - Wolfen 03 - Scrawny Blue Outfit (Gun)",
+      "330": "The Root - Wolfun Camp 1 - Wolfen 04 - Scrawny Blue Outfit (Gun)",
+      "312": "The Root - Wolfun Camp 1 - Wolfen 05 - Scrawny Blue Outfit (Gun)",
+      "3732": "The Root - Wolfun Camp 2 - Wolfen 06 - Scrawny Blue Outfit (Sniper)",
+      "3731": "The Root - Wolfun Camp 2 - Wolfen 07 - Scrawny Blue Outfit (Sniper)"
+    },
+    "The Air Post": {
+      "9940": "The Air Post - Entrance - Wolfen 01 - Scrawny Blue Outfit (Sniper)",
+      "9943": "The Air Post - Entrance - Wolfen 02 - Scrawny Blue Outfit (Sniper)",
+      "1357": "The Air Post - Dark Island - Wolfen 03 - Scrawny Blue Outfit (Gun)",
+      "1912": "The Air Post - Dark Island - Wolfen 04 - Scrawny Blue Outfit (Gun)",
+      "8421": "The Air Post - Dark Island - Wolfen 05 - Scrawny Blue Outfit (Fists)",
+      "7285": "The Air Post - Dark Island - Wolfen 06 - Scrawny Blue Outfit (Club)",
+      "9944": "The Air Post - Dark Island - Wolfen 07 - Scrawny Blue Outfit (Sniper)",
+      "1327": "The Air Post - Dark Island - Wolfen 08 - Scrawny Blue Outfit (Gun)",
+      "8758": "The Air Post - Dark Island - Wolfen 09 - Scrawny Blue Outfit (Club)",
+      "10078": "The Air Post - Dark Island - Wolfen 10 - Grunt Black Outfit (Fists)",
+      "10079": "The Air Post - Dark Island - Wolfen 11 - Grunt Yellow Outfit (Club)",
+      "4432": "The Air Post - Dark Island - Wolfen 12 - Scrawny Blue Outfit (Gun)",
+      "4433": "The Air Post - Dark Island - Wolfen 13 - Scrawny Blue Outfit (Gun)",
+      "1449": "The Air Post - Dark Island - Wolfen 14 - Scrawny Blue Outfit (Gun)",
+      "10403": "The Air Post - Dark Island - Wolfen 15 - Scrawny Blue Outfit (Gun)",
+      "11391": "The Air Post - Dark Island - Wolfen 16 - Grunt Brown Outfit (Club)",
+      "917": "The Air Post - Dark Island - Wolfen 17 - Scrawny Blue Outfit (Gun)",
+      "1034": "The Air Post - Dark Island - Wolfen 18 - Scrawny Blue Outfit (Gun)",
+      "1010": "The Air Post - Dark Island - Wolfen 19 - Scrawny Blue Outfit (Gun)",
+      "11389": "The Air Post - Dark Island - Wolfen 20 - Grunt Yellow Outfit (Fists)",
+      "11751": "The Air Post - Wolfun Guard Room - Wolfen 21 - Scrawny Blue Outfit (Sniper)",
+      "11393": "The Air Post - Wolfun Guard Room - Wolfen 22 - Grunt Yellow Outfit (Club)",
+      "4621": "The Air Post - Wolfun Guard Room - Wolfen 23 - Scrawny Blue Outfit (Gun)",
+      "4624": "The Air Post - Wolfun Guard Room - Wolfen 24 - Scrawny Blue Outfit (Gun)",
+      "4627": "The Air Post - Wolfun Guard Room - Wolfen 25 - Scrawny Blue Outfit (Gun)",
+      "4622": "The Air Post - Wolfun Guard Room - Wolfen 26 - Scrawny Blue Outfit (Gun)",
+      "1518": "The Air Post - Wolfun Guard Room - Wolfen 27 - Scrawny Yellow Outfit (Gun)",
+      "7445": "The Air Post - Energy Field Control Room - Wolfen 28 - Scrawny Blue Outfit (Fists)",
+      "9817": "The Air Post - Energy Field Control Room - Wolfen 29 - Grunt Black Outfit (Fists)",
+      "9801": "The Air Post - Energy Field Control Room - Wolfen 30 - Scrawny Blue Outfit (Rocket Gun)",
+      "418": "The Air Post - Energy Field Control Room - Wolfen 31 - Scrawny Blue Outfit (Gun)",
+      "420": "The Air Post - Energy Field Control Room - Wolfen 32 - Scrawny Blue Outfit (Gun)",
+      "430": "The Air Post - Energy Field Control Room - Wolfen 33 - Scrawny Blue Outfit (Gun)",
+      "7602": "The Air Post - Energy Field Control Room - Wolfen 34 - Scrawny Blue Outfit (Gun)",
+      "9398": "The Air Post - Air Post Blowers - Wolfen 35 - Grunt Blue Outfit (Fists)",
+      "7795": "The Air Post - Air Post Blowers - Wolfen 36 - Scrawny Blue Outfit (Gun)",
+      "7792": "The Air Post - Air Post Blowers - Wolfen 37 - Scrawny Blue Outfit (Gun)",
+      "7791": "The Air Post - Air Post Blowers - Wolfen 38 - Scrawny Blue Outfit (Gun)",
+      "7793": "The Air Post - Air Post Blowers - Wolfen 39 - Scrawny Blue Outfit (Gun)",
+      "7790": "The Air Post - Air Post Blowers - Wolfen 40 - Scrawny Blue Outfit (Gun)",
+      "7794": "The Air Post - Air Post Blowers - Wolfen 41 - Scrawny Blue Outfit (Gun)",
+      "4756": "The Air Post - Air Post Blowers - Wolfen 42 - Scrawny Blue Outfit (Gun)",
+      "4757": "The Air Post - Air Post Blowers - Wolfen 43 - Scrawny Blue Outfit (Gun)",
+      "4755": "The Air Post - Air Post Blowers - Wolfen 44 - Scrawny Blue Outfit (Gun)",
+      "4758": "The Air Post - Air Post Blowers - Wolfen 45 - Scrawny Blue Outfit (Gun)",
+      "4754": "The Air Post - Air Post Blowers - Wolfen 46 - Scrawny Blue Outfit (Gun)",
+      "4759": "The Air Post - Air Post Blowers - Wolfen 47 - Scrawny Blue Outfit (Gun)",
+      "646": "The Air Post - Air Post Blowers - Wolfen 48 - Scrawny Blue Outfit (Gun)",
+      "9598": "The Air Post - Wolfun Ventilation Zone - Wolfen 49 - Grunt Blue Outfit (Club)",
+      "9597": "The Air Post - Wolfun Ventilation Zone - Wolfen 50 - Grunt Yellow Outfit (Club)",
+      "9600": "The Air Post - Wolfun Ventilation Zone - Wolfen 51 - Grunt Yellow Outfit (Fists)",
+      "10613": "The Air Post - Wolfun Ventilation Zone - Wolfen 52 - Scrawny Blue Outfit (Rocket Gun)",
+      "9856": "The Air Post - Wolfun Ventilation Zone - Wolfen 53 - Scrawny Blue Outfit (Rocket Gun)",
+      "10067": "The Air Post - Forgotten Island Cannon Room - Wolfen 54 - Grunt Yellow Outfit (Fists)",
+      "9946": "The Air Post - Forgotten Island Cannon Room - Wolfen 55 - Scrawny Blue Outfit (Sniper)",
+      "9949": "The Air Post - Forgotten Island Cannon Room - Wolfen 56 - Scrawny Blue Outfit (Sniper)",
+      "9950": "The Air Post - Forgotten Island Cannon Room - Wolfen 57 - Scrawny Blue Outfit (Sniper)",
+      "10380": "The Air Post - Forgotten Island Cannon Room - Wolfen 58 - Scrawny Blue Outfit (Rocket Gun)",
+      "9204": "The Air Post - Forgotten Island Cannon Room - Wolfen 59 - Scrawny Blue Outfit (Club)",
+      "9203": "The Air Post - Forgotten Island Cannon Room - Wolfen 60 - Scrawny Blue Outfit (Club)",
+      "9595": "The Air Post - Forgotten Island Cannon Room - Wolfen 61 - Grunt Black Outfit (Fists)"
+    },
+    "Forgotten Island": {
+      "2054": "Forgotten Island - Entrance - Wolfen 01",
+      "2084": "Forgotten Island - Entrance - Wolfen 02",
+      "2102": "Forgotten Island - Entrance - Wolfen 03",
+      "6811": "Forgotten Island - Hell's Road - Wolfen 04 - Scrawny Yellow Outfit (Fists)",
+      "5060": "Forgotten Island - Laboratory Entrance - Wolfen 05 - Grunt Yellow Outfit (Club)",
+      "5059": "Forgotten Island - Laboratory Entrance - Wolfen 06 - Grunt Blue Outfit (Fists)",
+      "6215": "Forgotten Island - Laboratory Entrance - Wolfen 07 - Scrawny Yellow Outfit (Rocket Gun)",
+      "4944": "Forgotten Island - Laboratory Entrance - Wolfen 08 - Kronos Black Outfit (Fists)"
+    },
+    "Wolfen City": {
+      "2688": "Wolfen City - Entrance - Wolfen 01 - Scrawny Blue Outfit (Gun)",
+      "1434": "Wolfen City - Entrance - Wolfen 02 - Grunt Yellow Outfit (Fists)",
+      "1443": "Wolfen City - Entrance - Wolfen 03 - Scrawny Blue Outfit (Fists)",
+      "1422": "Wolfen City - Entrance - Wolfen 04 - Grunt Yellow Outfit (Fists)",
+      "494": "Wolfen City - Entrance - Wolfen 05 - Scrawny Blue Outfit (Fists)",
+      "3678": "Wolfen City - Wolfen 06 - Scrawny Blue Outfit (Club)",
+      "3677": "Wolfen City - Wolfen 07 - Scrawny Blue Outfit (Club)",
+      "1750": "Wolfen City - Wolfen 08 - Kronos Black Outfit (Fists)",
+      "1680": "Wolfen City - Wolfen 09 - Grunt Blue Outfit (Club)",
+      "3734": "Wolfen City - Wolfen 10 - Kronos Black Outfit (Fists)",
+      "807": "Wolfen City - Wolfen 11 - Scrawny Yellow Outfit (Gun)",
+      "1652": "Wolfen City - Wolfen 12 - Grunt Blue Outfit (Fists)",
+      "3733": "Wolfen City - Wolfen 13 - Scrawny Blue Outfit (Sniper)",
+      "3687": "Wolfen City - Wolfen 14 - Scrawny Blue Outfit (Sniper)",
+      "778": "Wolfen City - Wolfen 15 - Scrawny Yellow Outfit (Gun)",
+      "1641": "Wolfen City - Wolfen 16 - Kronos Black Outfit (Fists)",
+      "3699": "Wolfen City - Wolfen 17 - Grunt Yellow Outfit (Fists)",
+      "1822": "Wolfen City - Wolfen 18 - Grunt Blue Outfit (Club)",
+      "1787": "Wolfen City - Wolfen 19 - Scrawny Blue Outfit (Gun)",
+      "752": "Wolfen City - Wolfen 20 - Grunt Blue Outfit (Club)",
+      "1374": "Wolfen City - Wolfen 21 - Kronos Black Outfit (Fists)",
+      "770": "Wolfen City - Wolfen 22 - Scrawny Yellow Outfit (Gun)",
+      "771": "Wolfen City - Wolfen 23 - Scrawny Yellow Outfit (Gun)",
+      "3791": "Wolfen City - Wolfen 24 - Scrawny Blue Outfit (Gun)",
+      "3761": "Wolfen City - Wolfen 25 - Scrawny Blue Outfit (Gun)",
+      "3762": "Wolfen City - Wolfen 26 - Scrawny Blue Outfit (Gun)",
+      "2333": "Wolfen City - Wolfen 27 - Grunt Blue Outfit (Fists)",
+      "2341": "Wolfen City - Wolfen 28 - Grunt Blue Outfit (Fists)",
+      "2335": "Wolfen City - Wolfen 29 - Grunt Blue Outfit (Fists)",
+      "2337": "Wolfen City - Wolfen 30",
+      "2339": "Wolfen City - Wolfen 31",
+      "1842": "Wolfen City - Wolfen 32 - Scrawny Blue Outfit (Sniper)",
+      "2004": "Wolfen City - Wolfen 33 - Kronos Black Outfit (Fists)",
+      "1998": "Wolfen City - Wolfen 34 - Scrawny Blue Outfit (Sniper)",
+      "1999": "Wolfen City - Wolfen 35 - Scrawny Blue Outfit (Sniper)",
+      "1989": "Wolfen City - Wolfen 36 - Scrawny Blue Outfit (Sniper)",
+      "1267": "Wolfen City - Wolfun Reserve - Wolfen 37 - Scrawny Blue Outfit (Fists)",
+      "1268": "Wolfen City - Wolfun Reserve - Wolfen 38",
+      "1270": "Wolfen City - Wolfun Reserve - Wolfen 39 - Scrawny Blue Outfit (Fists)",
+      "1269": "Wolfen City - Wolfun Reserve - Wolfen 40 - Scrawny Blue Outfit (Fists)"
+    },
+    "The Fortress": {
+      "1133": "The Fortress - Fortress Arena - Wolfen 01",
+      "1126": "The Fortress - Fortress Arena - Wolfen 02",
+      "1134": "The Fortress - Fortress Arena - Wolfen 03",
+      "1128": "The Fortress - Fortress Arena - Wolfen 05",
+      "1147": "The Fortress - Fortress Arena - Wolfen 06",
+      "1125": "The Fortress - Fortress Arena - Wolfen 07",
+      "1132": "The Fortress - Fortress Arena - Wolfen 08",
+      "1122": "The Fortress - Fortress Arena - Wolfen 09",
+      "1121": "The Fortress - Fortress Arena - Wolfen 10",
+      "1129": "The Fortress - Fortress Arena - Wolfen 11",
+      "1131": "The Fortress - Fortress Arena - Wolfen 12",
+      "1124": "The Fortress - Fortress Arena - Wolfen 13",
+      "1130": "The Fortress - Fortress Arena - Wolfen 04 - Scrawny"
+    }
+  },
+  "WOLFEN_KEY_TO_ZONES": {
+    "984": [
+      "Nativs City"
+    ],
+    "2342": [
+      "Flying Forest"
+    ],
+    "6134": [
+      "Flying Forest"
+    ],
+    "5272": [
+      "Flying Forest"
+    ],
+    "5456": [
+      "Flying Forest"
+    ],
+    "5454": [
+      "Flying Forest"
+    ],
+    "5455": [
+      "Flying Forest"
+    ],
+    "2260": [
+      "Flying Forest"
+    ],
+    "2335": [
+      "Flying Forest",
+      "Wolfen City"
+    ],
+    "2297": [
+      "Flying Forest"
+    ],
+    "3235": [
+      "Flying Forest"
+    ],
+    "3237": [
+      "Flying Forest"
+    ],
+    "2351": [
+      "Flying Forest"
+    ],
+    "2398": [
+      "Flying Forest"
+    ],
+    "4672": [
+      "Flying Forest"
+    ],
+    "3270": [
+      "Flying Forest"
+    ],
+    "2354": [
+      "Flying Forest"
+    ],
+    "3210": [
+      "Flying Forest"
+    ],
+    "2656": [
+      "Flying Forest"
+    ],
+    "2462": [
+      "Flying Forest"
+    ],
+    "7077": [
+      "Flying Forest"
+    ],
+    "3112": [
+      "Flying Forest"
+    ],
+    "2453": [
+      "Flying Forest"
+    ],
+    "2451": [
+      "Flying Forest"
+    ],
+    "2688": [
+      "Flying Forest",
+      "Wolfen City"
+    ],
+    "2689": [
+      "Flying Forest"
+    ],
+    "2727": [
+      "Flying Forest"
+    ],
+    "2726": [
+      "Flying Forest"
+    ],
+    "2828": [
+      "Flying Forest"
+    ],
+    "2621": [
+      "Flying Forest"
+    ],
+    "2614": [
+      "Flying Forest"
+    ],
+    "2616": [
+      "Flying Forest"
+    ],
+    "2620": [
+      "Flying Forest"
+    ],
+    "2618": [
+      "Flying Forest"
+    ],
+    "2619": [
+      "Flying Forest"
+    ],
+    "2622": [
+      "Flying Forest"
+    ],
+    "2617": [
+      "Flying Forest"
+    ],
+    "2615": [
+      "Flying Forest"
+    ],
+    "3258": [
+      "Hunters Domain"
+    ],
+    "3260": [
+      "Hunters Domain"
+    ],
+    "2496": [
+      "Hunters Domain"
+    ],
+    "3285": [
+      "Hunters Domain"
+    ],
+    "3255": [
+      "Hunters Domain"
+    ],
+    "3604": [
+      "Hunters Domain"
+    ],
+    "2266": [
+      "Hunters Domain"
+    ],
+    "3601": [
+      "Hunters Domain"
+    ],
+    "10824": [
+      "Hunters Domain"
+    ],
+    "3593": [
+      "Hunters Domain"
+    ],
+    "3366": [
+      "Hunters Domain"
+    ],
+    "3368": [
+      "Hunters Domain"
+    ],
+    "3554": [
+      "Hunters Domain"
+    ],
+    "3553": [
+      "Hunters Domain"
+    ],
+    "3555": [
+      "Hunters Domain"
+    ],
+    "8250": [
+      "Hunters Domain"
+    ],
+    "10794": [
+      "Hunters Domain"
+    ],
+    "10157": [
+      "Hunters Domain"
+    ],
+    "11224": [
+      "Hunters Domain"
+    ],
+    "8747": [
+      "Hunters Domain"
+    ],
+    "3775": [
+      "Hunters Domain"
+    ],
+    "3776": [
+      "Hunters Domain"
+    ],
+    "3941": [
+      "Hunters Domain"
+    ],
+    "3934": [
+      "Hunters Domain"
+    ],
+    "3936": [
+      "Hunters Domain"
+    ],
+    "10610": [
+      "Hunters Domain"
+    ],
+    "1742": [
+      "Hunters Domain"
+    ],
+    "1744": [
+      "Hunters Domain"
+    ],
+    "10313": [
+      "Hunters Domain"
+    ],
+    "10312": [
+      "Hunters Domain"
+    ],
+    "10804": [
+      "Hunters Domain"
+    ],
+    "10797": [
+      "Hunters Domain"
+    ],
+    "11444": [
+      "Hunters Domain"
+    ],
+    "11443": [
+      "Hunters Domain"
+    ],
+    "10349": [
+      "Hunters Domain"
+    ],
+    "10485": [
+      "Hunters Domain"
+    ],
+    "3469": [
+      "Hunters Domain"
+    ],
+    "3467": [
+      "Hunters Domain"
+    ],
+    "3465": [
+      "Hunters Domain"
+    ],
+    "3466": [
+      "Hunters Domain"
+    ],
+    "6320": [
+      "Hunters Domain"
+    ],
+    "10978": [
+      "Hunters Domain"
+    ],
+    "8743": [
+      "Hunters Domain"
+    ],
+    "9133": [
+      "Hunters Domain"
+    ],
+    "11474": [
+      "Hunters Domain"
+    ],
+    "11424": [
+      "Hunters Domain"
+    ],
+    "8330": [
+      "Wind Tower"
+    ],
+    "1885": [
+      "Wind Tower"
+    ],
+    "10602": [
+      "The Quarry"
+    ],
+    "1130": [
+      "The Quarry",
+      "The Fortress"
+    ],
+    "5999": [
+      "The Quarry"
+    ],
+    "6010": [
+      "The Quarry"
+    ],
+    "1162": [
+      "The Quarry"
+    ],
+    "1142": [
+      "The Quarry"
+    ],
+    "1143": [
+      "The Quarry"
+    ],
+    "9644": [
+      "The Quarry"
+    ],
+    "9646": [
+      "The Quarry"
+    ],
+    "9645": [
+      "The Quarry"
+    ],
+    "9466": [
+      "The Quarry"
+    ],
+    "9437": [
+      "The Quarry"
+    ],
+    "9436": [
+      "The Quarry"
+    ],
+    "1429": [
+      "The Quarry"
+    ],
+    "823": [
+      "The Quarry"
+    ],
+    "4232": [
+      "The Quarry"
+    ],
+    "9721": [
+      "The Quarry"
+    ],
+    "1437": [
+      "The Quarry"
+    ],
+    "6017": [
+      "The Quarry"
+    ],
+    "9392": [
+      "The Quarry"
+    ],
+    "9394": [
+      "The Quarry"
+    ],
+    "3868": [
+      "The Quarry"
+    ],
+    "3267": [
+      "The Quarry"
+    ],
+    "2556": [
+      "The Quarry"
+    ],
+    "9339": [
+      "The Quarry"
+    ],
+    "6526": [
+      "The Quarry"
+    ],
+    "6527": [
+      "The Quarry"
+    ],
+    "6078": [
+      "The Quarry"
+    ],
+    "6096": [
+      "The Quarry"
+    ],
+    "6079": [
+      "The Quarry"
+    ],
+    "6093": [
+      "The Quarry"
+    ],
+    "9845": [
+      "Amber Quarry"
+    ],
+    "9843": [
+      "Amber Quarry"
+    ],
+    "9842": [
+      "Amber Quarry"
+    ],
+    "9988": [
+      "Amber Quarry"
+    ],
+    "9989": [
+      "Amber Quarry"
+    ],
+    "9841": [
+      "Amber Quarry"
+    ],
+    "7569": [
+      "Amber Quarry"
+    ],
+    "9511": [
+      "Amber Quarry"
+    ],
+    "9528": [
+      "Amber Quarry"
+    ],
+    "9538": [
+      "Amber Quarry"
+    ],
+    "9513": [
+      "Amber Quarry"
+    ],
+    "9518": [
+      "Amber Quarry"
+    ],
+    "9515": [
+      "Amber Quarry"
+    ],
+    "9516": [
+      "Amber Quarry"
+    ],
+    "3486": [
+      "The Root"
+    ],
+    "336": [
+      "The Root"
+    ],
+    "331": [
+      "The Root"
+    ],
+    "330": [
+      "The Root"
+    ],
+    "312": [
+      "The Root"
+    ],
+    "3732": [
+      "The Root"
+    ],
+    "3731": [
+      "The Root"
+    ],
+    "9940": [
+      "The Air Post"
+    ],
+    "9943": [
+      "The Air Post"
+    ],
+    "1357": [
+      "The Air Post"
+    ],
+    "1912": [
+      "The Air Post"
+    ],
+    "8421": [
+      "The Air Post"
+    ],
+    "7285": [
+      "The Air Post"
+    ],
+    "9944": [
+      "The Air Post"
+    ],
+    "1327": [
+      "The Air Post"
+    ],
+    "8758": [
+      "The Air Post"
+    ],
+    "10078": [
+      "The Air Post"
+    ],
+    "10079": [
+      "The Air Post"
+    ],
+    "4432": [
+      "The Air Post"
+    ],
+    "4433": [
+      "The Air Post"
+    ],
+    "1449": [
+      "The Air Post"
+    ],
+    "10403": [
+      "The Air Post"
+    ],
+    "11391": [
+      "The Air Post"
+    ],
+    "917": [
+      "The Air Post"
+    ],
+    "1034": [
+      "The Air Post"
+    ],
+    "1010": [
+      "The Air Post"
+    ],
+    "11389": [
+      "The Air Post"
+    ],
+    "11751": [
+      "The Air Post"
+    ],
+    "11393": [
+      "The Air Post"
+    ],
+    "4621": [
+      "The Air Post"
+    ],
+    "4624": [
+      "The Air Post"
+    ],
+    "4627": [
+      "The Air Post"
+    ],
+    "4622": [
+      "The Air Post"
+    ],
+    "1518": [
+      "The Air Post"
+    ],
+    "7445": [
+      "The Air Post"
+    ],
+    "9817": [
+      "The Air Post"
+    ],
+    "9801": [
+      "The Air Post"
+    ],
+    "418": [
+      "The Air Post"
+    ],
+    "420": [
+      "The Air Post"
+    ],
+    "430": [
+      "The Air Post"
+    ],
+    "7602": [
+      "The Air Post"
+    ],
+    "9398": [
+      "The Air Post"
+    ],
+    "7795": [
+      "The Air Post"
+    ],
+    "7792": [
+      "The Air Post"
+    ],
+    "7791": [
+      "The Air Post"
+    ],
+    "7793": [
+      "The Air Post"
+    ],
+    "7790": [
+      "The Air Post"
+    ],
+    "7794": [
+      "The Air Post"
+    ],
+    "4756": [
+      "The Air Post"
+    ],
+    "4757": [
+      "The Air Post"
+    ],
+    "4755": [
+      "The Air Post"
+    ],
+    "4758": [
+      "The Air Post"
+    ],
+    "4754": [
+      "The Air Post"
+    ],
+    "4759": [
+      "The Air Post"
+    ],
+    "646": [
+      "The Air Post"
+    ],
+    "9598": [
+      "The Air Post"
+    ],
+    "9597": [
+      "The Air Post"
+    ],
+    "9600": [
+      "The Air Post"
+    ],
+    "10613": [
+      "The Air Post"
+    ],
+    "9856": [
+      "The Air Post"
+    ],
+    "10067": [
+      "The Air Post"
+    ],
+    "9946": [
+      "The Air Post"
+    ],
+    "9949": [
+      "The Air Post"
+    ],
+    "9950": [
+      "The Air Post"
+    ],
+    "10380": [
+      "The Air Post"
+    ],
+    "9204": [
+      "The Air Post"
+    ],
+    "9203": [
+      "The Air Post"
+    ],
+    "9595": [
+      "The Air Post"
+    ],
+    "2054": [
+      "Forgotten Island"
+    ],
+    "2084": [
+      "Forgotten Island"
+    ],
+    "2102": [
+      "Forgotten Island"
+    ],
+    "6811": [
+      "Forgotten Island"
+    ],
+    "5060": [
+      "Forgotten Island"
+    ],
+    "5059": [
+      "Forgotten Island"
+    ],
+    "6215": [
+      "Forgotten Island"
+    ],
+    "4944": [
+      "Forgotten Island"
+    ],
+    "1434": [
+      "Wolfen City"
+    ],
+    "1443": [
+      "Wolfen City"
+    ],
+    "1422": [
+      "Wolfen City"
+    ],
+    "494": [
+      "Wolfen City"
+    ],
+    "3678": [
+      "Wolfen City"
+    ],
+    "3677": [
+      "Wolfen City"
+    ],
+    "1750": [
+      "Wolfen City"
+    ],
+    "1680": [
+      "Wolfen City"
+    ],
+    "3734": [
+      "Wolfen City"
+    ],
+    "807": [
+      "Wolfen City"
+    ],
+    "1652": [
+      "Wolfen City"
+    ],
+    "3733": [
+      "Wolfen City"
+    ],
+    "3687": [
+      "Wolfen City"
+    ],
+    "778": [
+      "Wolfen City"
+    ],
+    "1641": [
+      "Wolfen City"
+    ],
+    "3699": [
+      "Wolfen City"
+    ],
+    "1822": [
+      "Wolfen City"
+    ],
+    "1787": [
+      "Wolfen City"
+    ],
+    "752": [
+      "Wolfen City"
+    ],
+    "1374": [
+      "Wolfen City"
+    ],
+    "770": [
+      "Wolfen City"
+    ],
+    "771": [
+      "Wolfen City"
+    ],
+    "3791": [
+      "Wolfen City"
+    ],
+    "3761": [
+      "Wolfen City"
+    ],
+    "3762": [
+      "Wolfen City"
+    ],
+    "2333": [
+      "Wolfen City"
+    ],
+    "2341": [
+      "Wolfen City"
+    ],
+    "2337": [
+      "Wolfen City"
+    ],
+    "2339": [
+      "Wolfen City"
+    ],
+    "1842": [
+      "Wolfen City"
+    ],
+    "2004": [
+      "Wolfen City"
+    ],
+    "1998": [
+      "Wolfen City"
+    ],
+    "1999": [
+      "Wolfen City"
+    ],
+    "1989": [
+      "Wolfen City"
+    ],
+    "1267": [
+      "Wolfen City"
+    ],
+    "1268": [
+      "Wolfen City"
+    ],
+    "1270": [
+      "Wolfen City"
+    ],
+    "1269": [
+      "Wolfen City"
+    ],
+    "1133": [
+      "The Fortress"
+    ],
+    "1126": [
+      "The Fortress"
+    ],
+    "1134": [
+      "The Fortress"
+    ],
+    "1128": [
+      "The Fortress"
+    ],
+    "1147": [
+      "The Fortress"
+    ],
+    "1125": [
+      "The Fortress"
+    ],
+    "1132": [
+      "The Fortress"
+    ],
+    "1122": [
+      "The Fortress"
+    ],
+    "1121": [
+      "The Fortress"
+    ],
+    "1129": [
+      "The Fortress"
+    ],
+    "1131": [
+      "The Fortress"
+    ],
+    "1124": [
+      "The Fortress"
+    ]
+  },
+  "WOLFEN_LOCATION_DESCRIPTIONS": {
+    "Flying Forest - Entrance - Wolfen 01 - Scrawny Blue Outfit (Fists)": "Validation duplicate-key reconstruction (0x091F); exact 01/02 order to confirm in live playtest.",
+    "Flying Forest - Entrance - Wolfen 02 - Scrawny Blue Outfit (Fists)": "Validation duplicate-key reconstruction (0x0A80); exact 01/02 order to confirm in live playtest.",
+    "Flying Forest - Entrance - Wolfen 03 - Scrawny Blue Outfit (Club)": "Scrawny / Fists / Blue Outfit",
+    "Flying Forest - Entrance - Wolfen 04 - Scrawny Blue Outfit (Fists)": "Scrawny / Fists / Blue Outfit",
+    "Flying Forest - Entrance - Wolfen 05 - Scrawny Blue Outfit (Fists)": "Scrawny / Spiked Club / Blue Outfit",
+    "Flying Forest - Entrance - Wolfen 06 - Scrawny Yellow Outfit (Fists)": "Wolfen on cannon",
+    "Flying Forest - Entrance - Wolfen 07 - Scrawny Blue Outfit (Fists)": "Wolfen / Fists / Blue Outfit",
+    "Flying Forest - Entrance - Wolfen 08 - Grunt Blue Outfit (Fists)": "Wolfen / Fists / Yellow Outfit",
+    "Hunters Domain - Wolfun Camp - Wolfen 11 - Gun Blue Outfit": "Gun / Blue Outfit",
+    "Hunters Domain - Wolfun Camp - Wolfen 12 - Gun Blue Outfit": "Gun / Blue Outfit",
+    "Hunters Domain - Wolfun Camp - Wolfen 13 - Club Blue Outfit": "Club / Blue Outfit",
+    "Hunters Domain - Wolfun Camp - Wolfen 14 - Fists Black Outfit": "Fists / Black Outfit",
+    "Hunters Domain - Wolfun Camp - Wolfen 15 - Fists Black Outfit": "Fists / Black Outfit",
+    "Hunters Domain - Wolfun Camp - Wolfen 16 - Grunt Blue Outfit (Fists)": "Grunt / Fists / Blue Outfit",
+    "Hunters Domain - Wolfun Camp - Wolfen 17 - Scrawny Blue Outfit (Sniper)": "Scrawny / Sniper / Blue Outfit",
+    "Hunters Domain - Wolfun Camp - Wolfen 18 - Scrawny Blue Outfit (Sniper)": "Scrawny / Sniper / Blue Outfit",
+    "Hunters Domain - Wolfun Camp - Wolfen 19 - Grunt Blue Outfit (Fists)": "Grunt / Fists / Blue Outfit",
+    "Hunters Domain - Wolfun Camp - Wolfen 20 - Grunt Blue Outfit (Fists)": "Grunt / Fists / Blue Outfit",
+    "Hunters Domain - Wolfun Camp - Wolfen 21 - Scrawny Blue Outfit (Club)": "Scrawny / Club / Blue Outfit",
+    "Hunters Domain - Wolfun Camp - Wolfen 22 - Scrawny Blue Outfit (Club)": "Scrawny / Club / Blue Outfit",
+    "Hunters Domain - Wolfun Camp - Wolfen 23 - Scrawny Blue Outfit (Club)": "Scrawny / Club / Blue Outfit",
+    "Hunters Domain - Wolfun Camp - Wolfen 24 - Scrawny Blue Outfit (Club)": "Scrawny / Club / Blue Outfit",
+    "Hunters Domain - Wolfun Camp - Wolfen 25 - Scrawny Blue Outfit (Club)": "Scrawny / Club / Blue Outfit",
+    "Hunters Domain - Hunter's Dungeon - Wolfen 26 - Grunt Blue Outfit (Fists)": "Grunt / Fists / Blue Outfit",
+    "Hunters Domain - Hunter's Dungeon - Wolfen 27 - Scrawny Blue Outfit (Gun)": "Grunt / Fists / Blue Outfit",
+    "Hunters Domain - Hunter's Dungeon - Wolfen 28 - Scrawny Blue Outfit (Gun)": "Scrawny / Sniper / Blue Outfit",
+    "Hunters Domain - Hunter's Dungeon - Wolfen 29 - Grunt Blue Outfit (Fists)": "Scrawny / Sniper / Blue Outfit",
+    "Hunters Domain - Hunter's Dungeon - Wolfen 30 - Grunt Blue Outfit (Fists)": "Scrawny / Fists / Blue Outfit",
+    "Hunters Domain - Hunter's Dungeon - Wolfen 31 - Scrawny Blue Outfit (Sniper)": "Grunt / Fists / Blue Outfit",
+    "Hunters Domain - Hunter's Dungeon - Wolfen 32 - Scrawny Blue Outfit (Sniper)": "Scrawny / Gun / Blue Outfit",
+    "Hunters Domain - Hunter's Dungeon - Wolfen 33 - Scrawny Blue Outfit (Fists)": "Grunt / Fists / Blue Outfit",
+    "Hunters Domain - Hunter's Dungeon - Wolfen 34 - Grunt Blue Outfit (Fists)": "Scrawny / Fists / Blue Outfit",
+    "Hunters Domain - Hunter's Dungeon - Wolfen 35 - Scrawny Blue Outfit (Gun)": "Scrawny / Fists / Blue Outfit",
+    "Hunters Domain - Hilltop Fort - Wolfen 36 - Grunt Blue Outfit (Fists)": "Scrawny / Fists / Blue Outfit",
+    "Hunters Domain - Hilltop Fort - Wolfen 37 - Scrawny Blue Outfit (Fists)": "Scrawny / Fists / Yellow Outfit",
+    "Hunters Domain - Hilltop Fort - Wolfen 38 - Scrawny Yellow Outfit (Fists)": "Scrawny / Fists / Yellow Outfit",
+    "Hunters Domain - Hilltop Fort - Wolfen 39 - Scrawny Yellow Outfit (Fists)": "Scrawny / Fists / Yellow Outfit",
+    "Hunters Domain - Hilltop Fort - Wolfen 40 - Scrawny Yellow Outfit (Fists)": "Scrawny / Gun / Blue Outfit",
+    "Hunters Domain - Hilltop Fort - Wolfen 41 - Scrawny Blue Outfit (Gun)": "Scrawny / Sniper / Blue Outfit",
+    "Hunters Domain - Hilltop Fort - Wolfen 42 - Scrawny Blue Outfit (Sniper)": "Grunt / Fists / Blue Outfit",
+    "Hunters Domain - Hilltop Fort - Wolfen 43 - Grunt Blue Outfit (Fists)": "Scrawny / Fists / Blue Outfit",
+    "Hunters Domain - Hilltop Fort - Wolfen 44 - Scrawny Blue Outfit (Fists)": "Grunt / Fists / Blue Outfit",
+    "Hunters Domain - Hilltop Fort - Wolfen 45 - Scrawny Blue Outfit (Fists)": "Scrawny / Gun / Blue Outfit",
+    "Hunters Domain - Hilltop Fort - Wolfen 46 - Scrawny Blue Outfit (Fists)": "Scrawny / Gun / Blue Outfit",
+    "Hunters Domain - Wind Tower - Wolfen 01 - Scrawny Blue Outfit (Rocket Gun)": "Scrawny / Rocket Gun / Blue Outfit",
+    "Hunters Domain - Wind Tower - Wolfen 02 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "The Quarry - Entrance - Wolfen 05 - Scrawny Blue Outfit (Club)": "Scrawny / Club / Blue Outfit",
+    "The Quarry - Entrance - Wolfen 06 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "The Quarry - Entrance - Wolfen 07 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "The Quarry - Quarry - Wolfen 08 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "The Quarry - Quarry - Wolfen 09 - Grunt Blue Outfit (Fists)": "Grunt / Fists / Blue Outfit",
+    "The Quarry - Quarry - Wolfen 10 - Scrawny Yellow Outfit (Fists)": "Scrawny / Fists / Yellow Outfit",
+    "The Quarry - Quarry - Wolfen 11 - Scrawny Yellow Outfit (Fists)": "Scrawny / Fists / Yellow Outfit",
+    "The Quarry - Quarry - Wolfen 12 - Scrawny Yellow Outfit (Fists)": "Scrawny / Fists / Yellow Outfit",
+    "The Quarry - Quarry - Wolfen 13 - Grunt Blue Outfit (Fists)": "Grunt / Fists / Blue Outfit",
+    "The Quarry - Quarry - Wolfen 17 - Grunt Black Outfit (Fists)": "Grunt / Fists / Black Outfit",
+    "The Quarry - Quarry - Wolfen 19 - Grunt Black Outfit (Fists)": "Grunt / Fists / Black Outfit",
+    "The Quarry - Amber Quarry - Wolfen 01 - Scrawny Blue Outfit (Fists)": "Scrawny / Fists / Blue Outfit",
+    "The Quarry - Amber Quarry - Wolfen 02 - Scrawny Yellow Outfit (Fists)": "Scrawny / Fists / Yellow Outfit",
+    "The Quarry - Amber Quarry - Wolfen 03 - Grunt Black Outfit (Fists)": "Grunt / Fists / Black Outfit",
+    "The Quarry - Amber Quarry - Wolfen 04 - Scrawny Blue Outfit (Fists)": "Scrawny / Fists / Blue Outfit",
+    "The Quarry - Amber Quarry - Wolfen 05 - Scrawny Yellow Outfit (Fists)": "Scrawny / Fists / Yellow Outfit",
+    "The Quarry - Amber Quarry - Wolfen 06 - Grunt Black Outfit (Fists)": "Grunt / Fists / Black Outfit",
+    "The Quarry - Amber Quarry - Wolfen 07 - Scrawny Blue Outfit (Fists)": "Scrawny / Fists / Blue Outfit",
+    "The Quarry - Amber Quarry - Wolfen 08 - Grunt Blue Outfit (Fists)": "Grunt / Fists / Blue Outfit",
+    "The Quarry - Amber Quarry - Wolfen 09 - Scrawny Blue Outfit (Fists)": "Scrawny / Fists / Blue Outfit",
+    "The Quarry - Amber Quarry - Wolfen 10 - Grunt Blue Outfit (Fists)": "Grunt / Fists / Blue Outfit",
+    "The Quarry - Amber Quarry - Wolfen 11 - Scrawny Blue Outfit (Sniper)": "Scrawny / Sniper / Blue Outfit",
+    "The Quarry - Amber Quarry - Wolfen 12 - Scrawny Blue Outfit (Sniper)": "Scrawny / Sniper / Blue Outfit",
+    "The Quarry - Amber Quarry - Wolfen 13 - Scrawny Blue Outfit (Sniper)": "Scrawny / Sniper / Blue Outfit",
+    "The Quarry - Amber Quarry - Wolfen 14 - Scrawny Blue Outfit (Sniper)": "Scrawny / Sniper / Blue Outfit",
+    "The Root - Wolfun Bridge - Wolfen 01 - Scrawny Blue Outfit (Rocket Gun)": "Scrawny / Rocket Gun / Blue Outfit",
+    "The Root - Wolfun Camp 1 - Wolfen 02 - Scrawny Blue Outfit (Fists)": "Scrawny / Fists / Blue Outfit",
+    "The Root - Wolfun Camp 1 - Wolfen 03 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "The Root - Wolfun Camp 1 - Wolfen 04 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "The Root - Wolfun Camp 1 - Wolfen 05 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "The Root - Wolfun Camp 2 - Wolfen 06 - Scrawny Blue Outfit (Sniper)": "Scrawny / Sniper / Blue Outfit",
+    "The Root - Wolfun Camp 2 - Wolfen 07 - Scrawny Blue Outfit (Sniper)": "Scrawny / Sniper / Blue Outfit",
+    "The Air Post - Entrance - Wolfen 01 - Scrawny Blue Outfit (Sniper)": "Scrawny / Sniper / Blue Outfit",
+    "The Air Post - Entrance - Wolfen 02 - Scrawny Blue Outfit (Sniper)": "Scrawny / Sniper / Blue Outfit",
+    "The Air Post - Dark Island - Wolfen 03 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "The Air Post - Dark Island - Wolfen 04 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "The Air Post - Dark Island - Wolfen 05 - Scrawny Blue Outfit (Fists)": "Scrawny / Fists / Blue Outfit",
+    "The Air Post - Dark Island - Wolfen 06 - Scrawny Blue Outfit (Club)": "Scrawny / Club / Blue Outfit",
+    "The Air Post - Dark Island - Wolfen 07 - Scrawny Blue Outfit (Sniper)": "Scrawny / Sniper / Blue Outfit",
+    "The Air Post - Dark Island - Wolfen 08 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "The Air Post - Dark Island - Wolfen 09 - Scrawny Blue Outfit (Club)": "Scrawny / Club / Blue Outfit",
+    "The Air Post - Dark Island - Wolfen 10 - Grunt Black Outfit (Fists)": "Grunt / Fists / Black Outfit",
+    "The Air Post - Dark Island - Wolfen 11 - Grunt Yellow Outfit (Club)": "Grunt / Club / Yellow Outfit",
+    "The Air Post - Dark Island - Wolfen 12 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "The Air Post - Dark Island - Wolfen 13 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "The Air Post - Dark Island - Wolfen 14 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "The Air Post - Dark Island - Wolfen 15 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "The Air Post - Dark Island - Wolfen 16 - Grunt Brown Outfit (Club)": "Grunt / Club / Brown Outfit",
+    "The Air Post - Dark Island - Wolfen 17 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "The Air Post - Dark Island - Wolfen 18 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "The Air Post - Dark Island - Wolfen 19 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "The Air Post - Dark Island - Wolfen 20 - Grunt Yellow Outfit (Fists)": "Grunt / Fists / Yellow Outfit",
+    "The Air Post - Wolfun Guard Room - Wolfen 21 - Scrawny Blue Outfit (Sniper)": "Scrawny / Sniper / Blue Outfit",
+    "The Air Post - Wolfun Guard Room - Wolfen 22 - Grunt Yellow Outfit (Club)": "Grunt / Club / Yellow Outfit",
+    "The Air Post - Wolfun Guard Room - Wolfen 23 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "The Air Post - Wolfun Guard Room - Wolfen 24 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "The Air Post - Wolfun Guard Room - Wolfen 25 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "The Air Post - Wolfun Guard Room - Wolfen 26 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "The Air Post - Wolfun Guard Room - Wolfen 27 - Scrawny Yellow Outfit (Gun)": "Scrawny / Gun / Yellow Outfit",
+    "The Air Post - Energy Field Control Room - Wolfen 28 - Scrawny Blue Outfit (Fists)": "Scrawny / Fists / Blue Outfit",
+    "The Air Post - Energy Field Control Room - Wolfen 29 - Grunt Black Outfit (Fists)": "Grunt / Fists / Black Outfit",
+    "The Air Post - Energy Field Control Room - Wolfen 30 - Scrawny Blue Outfit (Rocket Gun)": "Scrawny / Rocket Gun / Blue Outfit",
+    "The Air Post - Energy Field Control Room - Wolfen 31 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "The Air Post - Energy Field Control Room - Wolfen 32 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "The Air Post - Energy Field Control Room - Wolfen 33 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "The Air Post - Energy Field Control Room - Wolfen 34 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "The Air Post - Air Post Blowers - Wolfen 35 - Grunt Blue Outfit (Fists)": "Grunt / Fists / Blue Outfit",
+    "The Air Post - Air Post Blowers - Wolfen 36 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "The Air Post - Air Post Blowers - Wolfen 37 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "The Air Post - Air Post Blowers - Wolfen 38 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "The Air Post - Air Post Blowers - Wolfen 39 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "The Air Post - Air Post Blowers - Wolfen 40 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "The Air Post - Air Post Blowers - Wolfen 41 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "The Air Post - Air Post Blowers - Wolfen 42 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "The Air Post - Air Post Blowers - Wolfen 43 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "The Air Post - Air Post Blowers - Wolfen 44 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "The Air Post - Air Post Blowers - Wolfen 45 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "The Air Post - Air Post Blowers - Wolfen 46 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "The Air Post - Air Post Blowers - Wolfen 47 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "The Air Post - Air Post Blowers - Wolfen 48 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "The Air Post - Wolfun Ventilation Zone - Wolfen 49 - Grunt Blue Outfit (Club)": "Grunt / Club / Blue Outfit",
+    "The Air Post - Wolfun Ventilation Zone - Wolfen 50 - Grunt Yellow Outfit (Club)": "Grunt / Club / Yellow Outfit",
+    "The Air Post - Wolfun Ventilation Zone - Wolfen 51 - Grunt Yellow Outfit (Fists)": "Grunt / Fists / Yellow Outfit",
+    "The Air Post - Wolfun Ventilation Zone - Wolfen 52 - Scrawny Blue Outfit (Rocket Gun)": "Scrawny / Rocket Gun / Blue Outfit",
+    "The Air Post - Wolfun Ventilation Zone - Wolfen 53 - Scrawny Blue Outfit (Rocket Gun)": "Scrawny / Rocket Gun / Blue Outfit",
+    "The Air Post - Forgotten Island Cannon Room - Wolfen 54 - Grunt Yellow Outfit (Fists)": "Grunt / Fists / Yellow Outfit",
+    "The Air Post - Forgotten Island Cannon Room - Wolfen 55 - Scrawny Blue Outfit (Sniper)": "Scrawny / Sniper / Blue Outfit",
+    "The Air Post - Forgotten Island Cannon Room - Wolfen 56 - Scrawny Blue Outfit (Sniper)": "Scrawny / Sniper / Blue Outfit",
+    "The Air Post - Forgotten Island Cannon Room - Wolfen 57 - Scrawny Blue Outfit (Sniper)": "Scrawny / Sniper / Blue Outfit",
+    "The Air Post - Forgotten Island Cannon Room - Wolfen 58 - Scrawny Blue Outfit (Rocket Gun)": "Scrawny / Rocket Gun / Blue Outfit",
+    "The Air Post - Forgotten Island Cannon Room - Wolfen 59 - Scrawny Blue Outfit (Club)": "Scrawny / Club / Blue Outfit",
+    "The Air Post - Forgotten Island Cannon Room - Wolfen 60 - Scrawny Blue Outfit (Club)": "Scrawny / Club / Blue Outfit",
+    "The Air Post - Forgotten Island Cannon Room - Wolfen 61 - Grunt Black Outfit (Fists)": "Grunt / Fists / Black Outfit",
+    "Forgotten Island - Hell's Road - Wolfen 04 - Scrawny Yellow Outfit (Fists)": "Scrawny / Fists / Yellow Outfit",
+    "Forgotten Island - Laboratory Entrance - Wolfen 05 - Grunt Yellow Outfit (Club)": "Grunt / Club / Yellow Outfit",
+    "Forgotten Island - Laboratory Entrance - Wolfen 06 - Grunt Blue Outfit (Fists)": "Grunt / Fists / Blue Outfit",
+    "Forgotten Island - Laboratory Entrance - Wolfen 07 - Scrawny Yellow Outfit (Rocket Gun)": "Scrawny / Rocket Gun / Yellow Outfit",
+    "Forgotten Island - Laboratory Entrance - Wolfen 08 - Kronos Black Outfit (Fists)": "Kronos / Fists / Black Outfit",
+    "Wolfen City - Entrance - Wolfen 01 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "Wolfen City - Entrance - Wolfen 02 - Grunt Yellow Outfit (Fists)": "Grunt / Fists / Yellow Outfit",
+    "Wolfen City - Entrance - Wolfen 03 - Scrawny Blue Outfit (Fists)": "Scrawny / Fists / Blue Outfit",
+    "Wolfen City - Entrance - Wolfen 04 - Grunt Yellow Outfit (Fists)": "Grunt / Fists / Yellow Outfit",
+    "Wolfen City - Entrance - Wolfen 05 - Scrawny Blue Outfit (Fists)": "Scrawny / Fists / Blue Outfit",
+    "Wolfen City - Wolfen 06 - Scrawny Blue Outfit (Club)": "Scrawny / Club / Blue Outfit",
+    "Wolfen City - Wolfen 07 - Scrawny Blue Outfit (Club)": "Scrawny / Club / Blue Outfit",
+    "Wolfen City - Wolfen 08 - Kronos Black Outfit (Fists)": "Kronos / Fists / Black Outfit",
+    "Wolfen City - Wolfen 09 - Grunt Blue Outfit (Club)": "Grunt / Club / Blue Outfit",
+    "Wolfen City - Wolfen 10 - Kronos Black Outfit (Fists)": "Kronos / Fists / Black Outfit",
+    "Wolfen City - Wolfen 11 - Scrawny Yellow Outfit (Gun)": "Scrawny / Gun / Yellow Outfit",
+    "Wolfen City - Wolfen 12 - Grunt Blue Outfit (Fists)": "Grunt / Fists / Blue Outfit",
+    "Wolfen City - Wolfen 13 - Scrawny Blue Outfit (Sniper)": "Scrawny / Sniper / Blue Outfit",
+    "Wolfen City - Wolfen 14 - Scrawny Blue Outfit (Sniper)": "Scrawny / Sniper / Blue Outfit",
+    "Wolfen City - Wolfen 15 - Scrawny Yellow Outfit (Gun)": "Scrawny / Gun / Yellow Outfit",
+    "Wolfen City - Wolfen 16 - Kronos Black Outfit (Fists)": "Kronos / Fists / Black Outfit",
+    "Wolfen City - Wolfen 17 - Grunt Yellow Outfit (Fists)": "Grunt / Fists / Yellow Outfit",
+    "Wolfen City - Wolfen 18 - Grunt Blue Outfit (Club)": "Grunt / Club / Blue Outfit",
+    "Wolfen City - Wolfen 19 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "Wolfen City - Wolfen 20 - Grunt Blue Outfit (Club)": "Grunt / Club / Blue Outfit",
+    "Wolfen City - Wolfen 21 - Kronos Black Outfit (Fists)": "Kronos / Fists / Black Outfit",
+    "Wolfen City - Wolfen 22 - Scrawny Yellow Outfit (Gun)": "Scrawny / Gun / Yellow Outfit",
+    "Wolfen City - Wolfen 23 - Scrawny Yellow Outfit (Gun)": "Scrawny / Gun / Yellow Outfit",
+    "Wolfen City - Wolfen 24 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "Wolfen City - Wolfen 25 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "Wolfen City - Wolfen 26 - Scrawny Blue Outfit (Gun)": "Scrawny / Gun / Blue Outfit",
+    "Wolfen City - Wolfen 27 - Grunt Blue Outfit (Fists)": "Grunt / Fists / Blue Outfit",
+    "Wolfen City - Wolfen 28 - Grunt Blue Outfit (Fists)": "Grunt / Fists / Blue Outfit",
+    "Wolfen City - Wolfen 29 - Grunt Blue Outfit (Fists)": "Grunt / Fists / Blue Outfit",
+    "Wolfen City - Wolfen 32 - Scrawny Blue Outfit (Sniper)": "Scrawny / Sniper / Blue Outfit",
+    "Wolfen City - Wolfen 33 - Kronos Black Outfit (Fists)": "Kronos / Fists / Black Outfit",
+    "Wolfen City - Wolfen 34 - Scrawny Blue Outfit (Sniper)": "Scrawny / Sniper / Blue Outfit",
+    "Wolfen City - Wolfen 35 - Scrawny Blue Outfit (Sniper)": "Scrawny / Sniper / Blue Outfit",
+    "Wolfen City - Wolfen 36 - Scrawny Blue Outfit (Sniper)": "Scrawny / Sniper / Blue Outfit",
+    "Wolfen City - Wolfun Reserve - Wolfen 37 - Scrawny Blue Outfit (Fists)": "Scrawny / Fists / Blue Outfit",
+    "Wolfen City - Wolfun Reserve - Wolfen 39 - Scrawny Blue Outfit (Fists)": "Scrawny / Fists / Blue Outfit",
+    "Wolfen City - Wolfun Reserve - Wolfen 40 - Scrawny Blue Outfit (Fists)": "Scrawny / Fists / Blue Outfit",
+    "The Fortress - Fortress Arena - Wolfen 04 - Scrawny": "Scrawny"
+  }
+}

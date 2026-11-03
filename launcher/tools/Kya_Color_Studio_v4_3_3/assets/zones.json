@@ -1,0 +1,162 @@
+{
+  "01": {
+    "name": "Pants",
+    "pixels": 255428,
+    "bounds": [
+      0,
+      0,
+      255,
+      1024
+    ]
+  },
+  "02": {
+    "name": "Pants laces",
+    "pixels": 2515,
+    "bounds": [
+      90,
+      726,
+      256,
+      1024
+    ]
+  },
+  "03": {
+    "name": "Back & shirt collar",
+    "pixels": 84732,
+    "bounds": [
+      256,
+      0,
+      532,
+      308
+    ]
+  },
+  "04": {
+    "name": "Shoulders",
+    "pixels": 57057,
+    "bounds": [
+      256,
+      308,
+      532,
+      523
+    ]
+  },
+  "05": {
+    "name": "Chest / top",
+    "pixels": 76222,
+    "bounds": [
+      256,
+      523,
+      532,
+      800
+    ]
+  },
+  "06": {
+    "name": "Hair - crown & back",
+    "pixels": 83374,
+    "bounds": [
+      775,
+      0,
+      1024,
+      411
+    ]
+  },
+  "07": {
+    "name": "Hair - braid & locks",
+    "pixels": 35065,
+    "bounds": [
+      705,
+      411,
+      1024,
+      592
+    ]
+  },
+  "08": {
+    "name": "Shoes - upper section",
+    "pixels": 35482,
+    "bounds": [
+      256,
+      800,
+      416,
+      1024
+    ]
+  },
+  "09": {
+    "name": "Glove - back",
+    "pixels": 22860,
+    "bounds": [
+      635,
+      704,
+      775,
+      871
+    ]
+  },
+  "10": {
+    "name": "Pants pocket",
+    "pixels": 23052,
+    "bounds": [
+      776,
+      704,
+      864,
+      972
+    ]
+  },
+  "11": {
+    "name": "Belt",
+    "pixels": 55104,
+    "bounds": [
+      532,
+      592,
+      1024,
+      704
+    ]
+  },
+  "13": {
+    "name": "Eyes",
+    "pixels": 2589,
+    "bounds": [
+      541,
+      884,
+      601,
+      944
+    ]
+  },
+  "14": {
+    "name": "Belt buckle",
+    "pixels": 27557,
+    "bounds": [
+      865,
+      705,
+      1024,
+      1024
+    ]
+  },
+  "15": {
+    "name": "Shoes - toe & sole",
+    "pixels": 26208,
+    "bounds": [
+      415,
+      800,
+      532,
+      1024
+    ]
+  },
+  "LP": {
+    "name": "Lipstick",
+    "pixels": 3213,
+    "bounds": [
+      533,
+      441,
+      609,
+      511
+    ]
+  },
+  "NP": {
+    "name": "Nail Polish",
+    "pixels": 1788,
+    "bounds": [
+      539,
+      846,
+      634,
+      868
+    ]
+  }
+}

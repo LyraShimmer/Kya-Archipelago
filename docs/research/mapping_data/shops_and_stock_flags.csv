@@ -1,0 +1,19 @@
+﻿Location,Stock byte/address hex,Mask hex,AP location ID
+Nativs City - Shop - Basic Boomy,0x6fa7f0,0x8,51474274
+Nativs City - Shop - Yellow Bracelet,0x6fc4d8,0x10,51474275
+Nativs City - Shop - Telescope,0x6fc4d8,0x2,51474276
+Nativs City - Shop - Magic Board,0x6fc4d8,0x4,51474277
+Nativs City - Shop - Green Bracelet,0x6fc510,0x2,51474278
+Nativs City - Shop - Climbing Gloves,0x6fc510,0x8,51474279
+Nativs City - Shop - Extra Energy Bar 1,0x6fc4e8,0x4,51474280
+Nativs City - Shop - Blue Bracelet,0x6fc4e8,0x1,51474281
+Nativs City - Shop - Jamgut Birdcall,0x6fc4e8,0x2,51474282
+Nativs City - Shop - Speed Board,0x6fc4f0,0x1,51474283
+Nativs City - Shop - Golden Boomy,0x6fc4e0,0x10,51474284
+Nativs City - Shop - Silver Bracelet,0x6fc4e0,0x8,51474285
+Nativs City - Shop - Silver Boomy,0x6fc4f8,0x8,51474286
+Nativs City - Shop - Brown Bracelet,0x6fc4f8,0x4,51474287
+Nativs City - Shop - Magic Bouncers,0x6fc4f8,0x10,51474288
+Nativs City - Shop - Extra Energy Bar 2,0x6fc500,0x4,51474289
+Nativs City - Shop - Black Bracelet,0x6fc4f0,0x8,51474290
+Nativs City - Shop - Gold Bracelet,0x6fc500,0x8,51474291

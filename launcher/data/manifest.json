@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "base_build": "0.8.14-ft-safe-shop-audit",
+  "files": [
+    "core.json",
+    "wolfen.json",
+    "fast_travel.json",
+    "shops.json",
+    "access.json",
+    "items.json",
+    "zones.json"
+  ],
+  "notes": "0.9.60: FT no-progression APWorld 0.8.14 + read-only native shop CSV audit. Does not retroactively guess purchases; previous 0.9.59 Lava/Amber/map fixes kept."
+}
