@@ -2539,3 +2539,41 @@ AP_BUILD_VERSION = PROTOTYPE_VERSION
 # solely to enforce no advancement items on unresolved FT checks.
 PROTOTYPE_VERSION = '0.8.14-ft-safe-shop-audit'
 AP_BUILD_VERSION = PROTOTYPE_VERSION
+
+
+# ==========================================================================
+# 0.8.14.1 BETA LOGIC HOTFIX (2026-11-04)
+# ZERO Archipelago reward/check locations in Wolfen City. The City remains a
+# physical Region and its Wolfen keys stay known for scene/zone identification.
+# Launcher data/core.json + wolfen.json + zones.json must be updated to the
+# matching tables to avoid stale check submissions. No EXE recompile needed.
+# Keep the existing slot_data prototype_version for launcher 0.9.63 hardcoded
+# compatibility checks (Amber/Lava). The hotfix marker below identifies the
+# new logic revision. Existing rooms are not retroactively modified.
+# ==========================================================================
+_WOLFEN_CITY_DISABLED_NAMES = frozenset(LOCATION_NAMES_BY_ZONE['Wolfen City'])
+assert len(_WOLFEN_CITY_DISABLED_NAMES) == 41, len(_WOLFEN_CITY_DISABLED_NAMES)
+assert len(WOLFEN_LOCATIONS_BY_ZONE['Wolfen City']) == 40
+LOCATION_NAME_TO_ID = {name: ident for name, ident in LOCATION_NAME_TO_ID.items()
+                       if name not in _WOLFEN_CITY_DISABLED_NAMES}
+LOCATION_NAME_TO_ZONE = {name: zone for name, zone in LOCATION_NAME_TO_ZONE.items()
+                         if name not in _WOLFEN_CITY_DISABLED_NAMES}
+LOCATION_NAMES_BY_ZONE = dict(LOCATION_NAMES_BY_ZONE)
+LOCATION_NAMES_BY_ZONE['Wolfen City'] = ()
+WOLFEN_LOCATIONS_BY_ZONE = dict(WOLFEN_LOCATIONS_BY_ZONE)
+WOLFEN_LOCATIONS_BY_ZONE['Wolfen City'] = ()
+WOLFEN_ZONE_KEY_TO_LOCATION = dict(WOLFEN_ZONE_KEY_TO_LOCATION)
+WOLFEN_ZONE_KEY_TO_LOCATION['Wolfen City'] = {}
+# Preserve WOLFEN_KEY_TO_ZONES and WOLFEN_KEY_TO_LOCATION for scene recognition.
+SPECIAL_LOCATION_CONDITIONS = {name: cond for name, cond in SPECIAL_LOCATION_CONDITIONS.items()
+                               if name not in _WOLFEN_CITY_DISABLED_NAMES}
+SPECIAL_LOCATION_ZONES = {name: zone for name, zone in SPECIAL_LOCATION_ZONES.items()
+                          if name not in _WOLFEN_CITY_DISABLED_NAMES}
+BRACELET_ZONE_LOCATIONS = tuple(
+    ('Hunters Domain - Wind Tower - Wolfen 01 - Scrawny Blue Outfit (Rocket Gun)' if name.startswith('Wolfen City - ') else name)
+    for name in BRACELET_ZONE_LOCATIONS
+)
+assert len(BRACELET_ZONE_LOCATIONS) == 7 and len(set(BRACELET_ZONE_LOCATIONS)) == 7
+assert all(name in LOCATION_NAME_TO_ID for name in BRACELET_ZONE_LOCATIONS)
+assert not any(name.startswith('Wolfen City - ') for name in LOCATION_NAME_TO_ID)
+KYA_LOGIC_HOTFIX = '2026-11-04-wolfen-city-no-locations-ap-root-entrance'

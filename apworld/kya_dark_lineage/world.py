@@ -136,9 +136,10 @@ class KyaDarkLineageWorld(World):
         self.multiworld.regions.append(menu)
         self.multiworld.regions.extend(regions.values())
 
-        # 0.7.8 route graph from the live validation run. The Root is reachable
-        # before Jamgut/Hunters progression, so it is deliberately a parallel
-        # branch from Flying Forest rather than only a post-Quarry destination.
+        # 0.8.14.1: The Root's vanilla route was tested with the Launcher
+        # doors UNLOCKED. In AP-FT mode those physical Nativ entrances are
+        # deliberately locked; do not infer a reachable Root from FF gear.
+        # Only the selected Root FT01 gives early access in AP mode.
         menu.connect(regions["Nativs City"])
 
         fast_travel_vanilla = int(self._effective_ft_value()) == 1
@@ -178,7 +179,10 @@ class KyaDarkLineageWorld(World):
             and state.has(ITEM_CLIMBING_GLOVES, p)
         )
         regions["Flying Forest"].connect(regions["Hunters Domain"], rule=ff_exit)
-        regions["Flying Forest"].connect(regions["The Root"], rule=ff_exit)
+        # This route models a VANILLA traversal only; the AP door/target is
+        # hard-locked and cannot be enabled by Board/Gloves alone.
+        if fast_travel_vanilla:
+            regions["Flying Forest"].connect(regions["The Root"], rule=ff_exit)
 
         # Wind Tower: Bouncers are required, Silver is explicitly NOT a
         # prerequisite in the player's terrain notes. Quarry has its own FT01;
@@ -202,7 +206,11 @@ class KyaDarkLineageWorld(World):
                 state.has(ITEM_PROGRESSIVE_BOARD, p, 2)
                 and state.has(ITEM_CLIMBING_GLOVES, p),
         )
-        regions["Amber Quarry"].connect(regions["The Root"])
+        # Do not fabricate an Amber Quarry -> Root shortcut in AP mode.
+        # Access to Root is seed-granted by its starting FT01, not a
+        # downstream equipment-only transition through a locked Nativ gate.
+        if fast_travel_vanilla:
+            regions["Amber Quarry"].connect(regions["The Root"])
 
         # 0.7.9 hard deadline gate. The validation run showed that both Jamgut
         # and the second Progressive Board (Speed Board) must already be owned
@@ -697,11 +705,14 @@ class KyaDarkLineageWorld(World):
             "mapped_wolfens_by_zone": {zone: len(WOLFEN_ZONE_KEY_TO_LOCATION[zone]) for zone in ZONE_ORDER},
             "zone_safe_detection": True,
             "starter_boomy": "Vanilla tutorial reward; never AP-precollected",
-            "bracelet_distribution": "seven map-validated locked bracelet checks retained",
+            "bracelet_distribution": "seven locked bracelets retained; Wolfen City bracelet moved to Wind Tower 01",
+            "logic_hotfix": "2026-11-04-wolfen-city-no-locations-ap-root-entrance",
+            "disabled_reward_zones": ["Wolfen City"],
+            "disabled_wolfen_city_locations": 41,
             "early_progression": "No forced early items: reachable AP graph decides placement",
-            "logic_revision": "0.8.11: Quarry 01 only without Gloves; Quarry 02-10 require Gloves at minimum; FT-aware entrances retained; other uncertain terrain provisional",
+            "logic_revision": "0.8.14.1: Wolfen City has zero AP locations; AP Root only via selected FT01; Quarry/Wind Tower/Amber item rules retained",
             "runtime_goal": "Final Boss Brazul Defeated + real credits @ 0x0044982C 0->4",
             "target_build": "PAL SLES_514.73",
-            "demo_note": "0.8.11 Quarry progression numbering fix; FT locks automatic. NEW seed required; Launcher 0.9.34 compatible.",
+            "demo_note": "2026-11-04: New seed required. Update launcher external data (core/wolfen/zones) for no Wolfen City checks; exe 0.9.63 retained.",
             "subzone_naming_revision": "2026-10-05 Flying Forest corrected; Quarry descriptive split remains provisional",
         }
