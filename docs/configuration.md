@@ -13,7 +13,6 @@ game: 'Kya: Dark Lineage'
   accessibility: full
   fast_travel: archipelago
   fast_travel_progression: archipelago
-  starting_fast_travels: 6
   lock_wolfen_city: true
   lock_the_fortress: true
   ap_nooties_modifier: 0
@@ -33,9 +32,8 @@ game: 'Kya: Dark Lineage'
 
 | YAML key | Default | Meaning |
 | --- | --- | --- |
-| `fast_travel_progression` | `archipelago` | `archipelago` uses randomized starting access; `vanilla` follows the original game's progression |
+| `fast_travel_progression` | `archipelago` | `archipelago` starts with all 6 validated FT01 destinations; `vanilla` follows the original progression |
 | `fast_travel` | `archipelago` | Compatibility alias for YAML creators; use the same value as `fast_travel_progression` |
-| `starting_fast_travels` | `6` | Number of unique starting destinations, from `1` to `6` when using Archipelago progression |
 | `lock_wolfen_city` | `true` | Requires the randomized access item to use the Wolfen City elevator |
 | `lock_the_fortress` | `true` | Requires the randomized access item to use the Fortress elevator |
 | `ap_nooties_modifier` | `0` | Modifier to Nooties awarded by AP rewards, from `-100` to `1000` in steps of 10 |
@@ -53,3 +51,5 @@ The available settings are defined in [`options.py`](../apworld/kya_dark_lineage
 4. In the Kya Launcher, connect to the room with its host address, slot name, and password if required.
 
 See the complete [player installation guide](installation.md) for PCSX2/PINE and graphics configuration.
+
+**v9.0.1 test candidate:** `starting_fast_travels` was removed. Use a new seed; the six FT01 destinations are always on in Archipelago mode.

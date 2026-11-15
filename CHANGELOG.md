@@ -1,3 +1,13 @@
+## v9.0.1 RC2 (local test candidate — not published)
+- Restored/retained all 318 AP checks, including Wolfen City 41.
+- Six FT01 destinations open initially in Archipelago mode.
+- Quarry/Root physical access rules tightened.
+- Wolfen City and The Fortress checks may not hold advancement items.
+- Previous bracelet shop accessibility rules retained.
+- Updated Launcher Python source auto-credits a native Rune check on receiving
+  its AP Rune item, to prevent an uncollectable native Rune pickup check.
+- No Windows binary produced. SSL runtime untouched; recompile before gameplay test.
+
 # Changelog
 
 ## 9.0.0-beta1 — private/open beta preparation

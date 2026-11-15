@@ -38,7 +38,7 @@ from kya_map_guard import MapGuardRecovery
 from kya_brazul_capture import BrazulCaptureGuard
 
 
-APP_TITLE = "Kya: Dark Lineage - Archipelago Launcher 9.0.0-beta1"
+APP_TITLE = "Kya: Dark Lineage - Archipelago Launcher 9.0.1 RC2"
 WINDOW_W = 620
 WINDOW_H = 1000
 
@@ -8805,6 +8805,31 @@ class KyaLauncher(tk.Tk):
         if name == "Unknown item":
             self._log_threadsafe(f"ERROR: unrecognized Archipelago item id {item_id}. Reward NOT applied.", "error")
         self._ap_item_counts[item_id]=self._ap_item_counts.get(item_id,0)+1
+        # v9.0.1 RC2 RUNE SHADOW CHECK:
+        # AP Rune rewards consume their vanilla pickup flags. The six original
+        # Rune Locations hold only filler/useful, but would otherwise remain
+        # impossible to mark for a 318/318 clear. Credit the counterpart check
+        # on server-authoritative AP Rune delivery, including replay/reconnect;
+        # pending+ACK sets make this idempotent. Never infer a check solely
+        # from a save-state ScenarioVar or from an unverified connection.
+        if name.startswith("Progressive Rune: "):
+            linked_location = d.get("ITEM_TO_SPECIAL_LOCATION", {}).get(name)
+            if (linked_location and self._ap_joined and self._ap_seed_build_verified
+                    and self._ap_link is not None):
+                linked_id = d.get("LOCATION_NAME_TO_ID", {}).get(linked_location)
+                if linked_id is not None:
+                    lid = int(linked_id)
+                    if lid not in self._ap_checked and lid not in self._ap_pending_checks:
+                        try:
+                            durable = self._ap_queue_location_check(
+                                self._ap_link, lid, linked_location, d)
+                            self._log_threadsafe(
+                                f"RUNE SHADOW CHECK queued: {linked_location} "
+                                f"(AP Rune received; durable={durable})", "ok")
+                        except Exception as exc:
+                            self._log_threadsafe(
+                                f"RUNE SHADOW CHECK retry on reconnect: "
+                                f"{linked_location} ({type(exc).__name__}: {exc})", "warn")
         if (not effective_replay) and self.overlay_enabled:
             loc_name = {int(v): k for k, v in d.get("LOCATION_NAME_TO_ID", {}).items()}.get(source_location, f"Location {source_location}")
             loc_display = self._ap_public_location_name(loc_name)

@@ -1,6 +1,6 @@
 from BaseClasses import Item, ItemClassification, Location, Region, Tutorial
 from worlds.AutoWorld import WebWorld, World
-from worlds.generic.Rules import set_rule, add_item_rule
+from worlds.generic.Rules import set_rule, add_item_rule, add_rule
 
 from .options import KyaDarkLineageOptions
 
@@ -25,6 +25,7 @@ from .constants import (
     LOCATION_NAME_TO_ID,
     LOCATION_NAMES_BY_ZONE,
     PROTOTYPE_VERSION,
+    KYA_LOGIC_HOTFIX,
     SPECIAL_LOCATION_CONDITIONS,
     SHOP_LOCATION_CONDITIONS,
     FAST_TRAVEL_LOCATION_ZONES,
@@ -89,7 +90,7 @@ class KyaDarkLineageWorld(World):
             return
 
         zones = list(FAST_TRAVEL_ALLOWED_ROUTES)
-        count = max(1, min(len(zones), int(self.options.starting_fast_travels.value)))
+        count = len(zones)  # v9.0.1: all six FT01; AP unlock items do not exist yet
 
         # In AP-FT mode BOTH normal Nativ exits are always locked.  Keep the
         # validated Flying Forest FT01 among starting routes so small FT counts
@@ -136,10 +137,9 @@ class KyaDarkLineageWorld(World):
         self.multiworld.regions.append(menu)
         self.multiworld.regions.extend(regions.values())
 
-        # 0.8.14.1: The Root's vanilla route was tested with the Launcher
-        # doors UNLOCKED. In AP-FT mode those physical Nativ entrances are
-        # deliberately locked; do not infer a reachable Root from FF gear.
-        # Only the selected Root FT01 gives early access in AP mode.
+        # 0.7.8 route graph from the live validation run. The Root is reachable
+        # before Jamgut/Hunters progression, so it is deliberately a parallel
+        # branch from Flying Forest rather than only a post-Quarry destination.
         menu.connect(regions["Nativs City"])
 
         fast_travel_vanilla = int(self._effective_ft_value()) == 1
@@ -179,8 +179,8 @@ class KyaDarkLineageWorld(World):
             and state.has(ITEM_CLIMBING_GLOVES, p)
         )
         regions["Flying Forest"].connect(regions["Hunters Domain"], rule=ff_exit)
-        # This route models a VANILLA traversal only; the AP door/target is
-        # hard-locked and cannot be enabled by Board/Gloves alone.
+        # In AP mode the Nativs City->Root entrance is physically locked.
+        # Opening the zone in the AP graph via gear alone creates a false path.
         if fast_travel_vanilla:
             regions["Flying Forest"].connect(regions["The Root"], rule=ff_exit)
 
@@ -198,7 +198,8 @@ class KyaDarkLineageWorld(World):
             rule=lambda state, p=self.player:
                 state.has(ITEM_JAMGUT, p)
                 and state.has(ITEM_CLIMBING_GLOVES, p)
-                and state.has(ITEM_PROGRESSIVE_BOARD, p, 2),
+                and state.has(ITEM_PROGRESSIVE_BOARD, p, 2)
+                and state.has(ITEM_MAGIC_BOUNCERS, p),
         )
         regions["The Quarry"].connect(
             regions["Amber Quarry"],
@@ -206,9 +207,7 @@ class KyaDarkLineageWorld(World):
                 state.has(ITEM_PROGRESSIVE_BOARD, p, 2)
                 and state.has(ITEM_CLIMBING_GLOVES, p),
         )
-        # Do not fabricate an Amber Quarry -> Root shortcut in AP mode.
-        # Access to Root is seed-granted by its starting FT01, not a
-        # downstream equipment-only transition through a locked Nativ gate.
+        # No unconfirmed Amber Quarry->Root shortcut under locked AP gates.
         if fast_travel_vanilla:
             regions["Amber Quarry"].connect(regions["The Root"])
 
@@ -315,6 +314,19 @@ class KyaDarkLineageWorld(World):
 
         def loc(name: str):
             return self.multiworld.get_location(name, p)
+
+        # v9.0.1 candidate: Keep all 40 City Wolfen + Map Discovery
+        # checks, but never give them progression (from ANY player).
+        for city_name in LOCATION_NAMES_BY_ZONE["Wolfen City"]:
+            add_item_rule(loc(city_name), lambda item: not item.advancement)
+
+        # v9.0.1 RC2: The Fortress contains mandatory late-game traversal
+        # and final-boss scenes that have not been audited Wolfen-by-Wolfen.
+        # Do not strand any critical item (not only Progressive Boomy) behind
+        # unmodeled access or combat gates. All Fortress locations remain in
+        # the AP pool, with filler/useful rewards only.
+        for fortress_name in LOCATION_NAMES_BY_ZONE["The Fortress"]:
+            add_item_rule(loc(fortress_name), lambda item: not item.advancement)
 
         # Lava Worm detector is still an in-game beta hypothesis. Its check
         # must never hold progression, but useful rewards (e.g. +5% Protection)
@@ -471,7 +483,10 @@ class KyaDarkLineageWorld(World):
                 return (state.has(ITEM_JAMGUT, p)
                         and state.has(ITEM_CLIMBING_GLOVES, p)
                         and (number < 20 or state.has(ITEM_PROGRESSIVE_BOARD, p, 2))
-                        and (number < 22 or state.has(ITEM_MAGIC_BOUNCERS, p)))
+                        # Wolfen 13 is behind Bouncers according to
+                        # eNigma's 2026-11-06 terrain report.
+                        and ((number < 22 and number != 13)
+                             or state.has(ITEM_MAGIC_BOUNCERS, p)))
             set_rule(loc(WOLFEN_LOCATIONS_BY_ZONE["The Quarry"][n - 1]), quarry_rule)
         # Amber Quarry: entrance requires Speed+Gloves. No individual
         # 14-Wolfen sequence was captured (mapper failed), so hold their
@@ -617,6 +632,21 @@ class KyaDarkLineageWorld(World):
                     lambda state, required=required: can_reach_wolfen_count(state, required),
                 )
 
+        # In the original game, a preceding bracelet upgrade must be
+        # owned before the next bracelet appears in the shop. Match this
+        # prerequisite until a safe in-memory stock override is validated.
+        # Shop checks remain filler/useful-only, not progression locations.
+        bracelet_shop_requirements = {
+            "Green": 1, "Blue": 2, "Brown": 3,
+            "Black": 4, "Silver": 5, "Gold": 6,
+        }
+        for bracelet_name, previous_count in bracelet_shop_requirements.items():
+            shop = f"Nativs City - Shop - {bracelet_name} Bracelet"
+            if shop not in self.location_name_to_id:
+                raise ValueError(f"Missing bracelet shop: {shop}")
+            add_rule(loc(shop), lambda state, count=previous_count, p=p:
+                     state.has(ITEM_PROGRESSIVE_BRACELET, p, count))
+
         # EXPERIMENTAL BETA SAFETY: vanilla shop thresholds alone are NOT
         # sufficient to prove affordable AP progression. Never place any
         # advancement behind a Nooties-paid location until money logic is
@@ -651,6 +681,7 @@ class KyaDarkLineageWorld(World):
                 and state.has(ITEM_PROGRESSIVE_BOARD, p, 2)
                 and state.has(ITEM_CLIMBING_GLOVES, p)
                 and state.has(ITEM_JAMGUT, p)
+                and state.has(ITEM_MAGIC_BOUNCERS, p)
                 and state.has("Receptacle", p)
                 and all(state.has(rune, p) for rune in ITEM_RUNES)
         )
@@ -705,14 +736,14 @@ class KyaDarkLineageWorld(World):
             "mapped_wolfens_by_zone": {zone: len(WOLFEN_ZONE_KEY_TO_LOCATION[zone]) for zone in ZONE_ORDER},
             "zone_safe_detection": True,
             "starter_boomy": "Vanilla tutorial reward; never AP-precollected",
-            "bracelet_distribution": "seven locked bracelets retained; Wolfen City bracelet moved to Wind Tower 01",
-            "logic_hotfix": "2026-11-04-wolfen-city-no-locations-ap-root-entrance",
-            "disabled_reward_zones": ["Wolfen City"],
-            "disabled_wolfen_city_locations": 41,
+            "bracelet_distribution": "seven locked Progressive Bracelets; seventh moved from Wolfen City to Wind Tower 01",
             "early_progression": "No forced early items: reachable AP graph decides placement",
-            "logic_revision": "0.8.14.1: Wolfen City has zero AP locations; AP Root only via selected FT01; Quarry/Wind Tower/Amber item rules retained",
+            "logic_hotfix": KYA_LOGIC_HOTFIX,
+            "disabled_reward_zones": [],
+            "disabled_wolfen_city_locations": 0,
+            "logic_revision": "v9.0.1 RC2: FT6; City41; Quarry Bouncers; Fortress filler-only; Rune shadow checks require updated Launcher",
             "runtime_goal": "Final Boss Brazul Defeated + real credits @ 0x0044982C 0->4",
             "target_build": "PAL SLES_514.73",
-            "demo_note": "2026-11-04: New seed required. Update launcher external data (core/wolfen/zones) for no Wolfen City checks; exe 0.9.63 retained.",
+            "demo_note": "0.8.11 Quarry progression numbering fix; FT locks automatic. NEW seed required; Launcher 0.9.34 compatible.",
             "subzone_naming_revision": "2026-10-05 Flying Forest corrected; Quarry descriptive split remains provisional",
         }

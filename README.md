@@ -1,6 +1,6 @@
 # Kya: Dark Lineage — Archipelago
 
-**First beta: `9.0.0-beta1`** · PAL PS2 `SLES-51473` · PCSX2 + PINE
+**v9.0.1 RC2 source release candidate (pending Windows/runtime verification)** · PAL PS2 `SLES-51473` · PCSX2 + PINE
 
 An unofficial, community-developed Archipelago multiworld integration for *Kya: Dark Lineage*. This repository makes the **Launcher source, APWorld source, runtime memory maps, reverse-engineering research tables, and technical documentation** available for inspection.
 
@@ -12,7 +12,7 @@ Get the following files from **GitHub Releases** (not from the repository's auto
 
 | Download | Description |
 | --- | --- |
-| `Launcher.zip` | Compiled Windows Launcher, MemoryCore, runtime data and optional tools |
+| `Launcher.zip` | Windows Launcher bundle; the RC2 kit initially contains **Python source mode**. Run `BUILD_RELEASE_WINDOWS.bat` to generate the compiled EXE edition before publishing. |
 | `kya_dark_lineage.apworld` | Custom world for Archipelago |
 | `Kya_Dark_Lineage.yaml` | Example player configuration |
 
@@ -53,7 +53,7 @@ The exported dataset includes **318 named locations** and **257 Wolfen key mappi
 - [Known issues](docs/known_issues.md)
 - [Research methods and confidence](docs/research/methodology.md)
 
-The **release label** `9.0.0-beta1` is a public milestone; the compatible implementation versions are Launcher `0.9.63` and APWorld `0.8.14`.
+The v9.0.1 RC2 package contains source-level progression/FT fixes; the Launcher must be rebuilt for the rune-check fix. The APWorld retains the compatibility protocol/build token expected by the Launcher. See [v9.0.1 release guide](docs/release_901.md).
 
 ## Credits, AI disclosure, rights
 

@@ -10,5 +10,5 @@
     "items.json",
     "zones.json"
   ],
-  "notes": "0.9.60: FT no-progression APWorld 0.8.14 + read-only native shop CSV audit. Does not retroactively guess purchases; previous 0.9.59 Lava/Amber/map fixes kept."
+  "notes": "v9.0.1 RC2 (test only): 6 initial FT01; City 41 filler-only; Quarry Bouncers; Fortress filler-only; rune AP receipt triggers vanilla rune shadow check in updated source Launcher (EXE must be rebuilt for runtime); existing SSL/camera logic preserved."
 }

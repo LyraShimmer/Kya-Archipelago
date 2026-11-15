@@ -53,8 +53,8 @@ class ShopPriceModifier(TenPercentStepRange):
 class FastTravelProgression(Choice):
     """How Fast Travel access is handled.
 
-    Archipelago: the seed chooses a configurable number of unique destination
-    zones that are available from Nativs City immediately.
+    Archipelago: all six unique FT01 destinations are available immediately
+    from Nativs City. Other FT locations remain normal Archipelago checks.
     Vanilla: no AP Fast Travel injection; Kya follows the normal game order.
     """
 
@@ -62,19 +62,6 @@ class FastTravelProgression(Choice):
     option_archipelago = 0
     option_vanilla = 1
     default = 0
-
-
-class StartingFastTravels(Range):
-    """Number of unique destination zones opened at the start in AP mode.
-
-    The first beta deliberately limits this to one destination per zone. This
-    avoids the confirmed/observed same-zone sequential-teleport instability.
-    """
-
-    display_name = "Starting Fast Travels"
-    range_start = 1
-    range_end = 6
-    default = 6
 
 
 class LockWolfenCity(Toggle):
@@ -102,7 +89,6 @@ class KyaFastTravelCreatorCompatibility(Choice):
 class KyaDarkLineageOptions(PerGameCommonOptions):
     fast_travel: KyaFastTravelCreatorCompatibility
     fast_travel_progression: FastTravelProgression
-    starting_fast_travels: StartingFastTravels
     lock_wolfen_city: LockWolfenCity
     lock_the_fortress: LockTheFortress
     ap_nooties_modifier: APNootiesModifier
