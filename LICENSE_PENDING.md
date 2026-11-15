@@ -4,7 +4,7 @@ Kya Archipelago is a 100% open-source project.
 
 All original source code and resources created specifically for this project are freely available for anyone to use, modify, improve, redistribute, or build upon.
 
-The only requirement is to **credit LyraShimmer (Sharoms) as the original creator and initiator of the Kya Archipelago project**.
+The only requirement is to **Sharoms as the original creator and initiator of the Kya Archipelago project**.
 
 Contributions, modifications, and derivative projects are welcome.
 
