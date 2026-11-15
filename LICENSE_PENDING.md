@@ -1,5 +1,11 @@
-# Licensing decision required
+# Open Source License
 
-No open-source license has been selected. Do not assume the code, game-derived textures, documentation or bundled external dependencies are freely redistributable.
+Kya Archipelago is a 100% open-source project.
 
-Before publishing, choose a license for the original code; attribute contributors; review all third-party code and assets; and ensure the repository does not contain copyrighted game extracts without permission.
+All original source code and resources created specifically for this project are freely available for anyone to use, modify, improve, redistribute, or build upon.
+
+The only requirement is to **credit LyraShimmer (Sharoms) as the original creator and initiator of the Kya Archipelago project**.
+
+Contributions, modifications, and derivative projects are welcome.
+
+This permission applies only to original project content. Kya: Dark Lineage, its assets, and any third-party dependencies remain the property of their respective owners.
