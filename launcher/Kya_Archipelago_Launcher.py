@@ -31,6 +31,7 @@ from kya_pine_raw import PineClient, PineError
 from kya_data_loader import load_game_data
 from kya_memory_bootstrap import ensure_memory_core, stop_owned_memory_core
 from kya_ap_link import APLink
+from kya_tls import connect_tls
 from kya_shop_native import NativeShopResolver, NativeSoldStateObserver
 from kya_shop_audit import export_native_shop_audit
 from kya_auto_save import AutoSaveController, default_sstates_path
@@ -938,13 +939,10 @@ def can_connect(host: str, port: int, timeout: float = 2.0) -> tuple[bool, str |
 
     def probe(use_tls: bool) -> None:
         mode = "wss" if use_tls else "ws"
-        with socket.create_connection((host, port), timeout=timeout) as raw_sock:
+        with (connect_tls(host, port, timeout=timeout) if use_tls
+              else socket.create_connection((host, port), timeout=timeout)) as raw_sock:
             raw_sock.settimeout(timeout)
-            if use_tls:
-                context = ssl.create_default_context()
-                sock = context.wrap_socket(raw_sock, server_hostname=host)
-            else:
-                sock = raw_sock
+            sock = raw_sock
 
             with sock:
                 raw_key = os.urandom(16)

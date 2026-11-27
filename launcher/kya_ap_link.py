@@ -13,6 +13,8 @@ import threading
 import time
 from urllib.parse import urlparse
 
+from kya_tls import connect_tls
+
 GAME = "Kya: Dark Lineage"
 VERSION = {"class": "Version", "major": 0, "minor": 6, "build": 7}
 
@@ -140,11 +142,10 @@ class APLink:
                 raw_sock = None
                 sock = None
                 try:
-                    raw_sock = socket.create_connection((host, port), timeout=8)
                     if scheme == "wss":
-                        context = ssl.create_default_context()
-                        sock = context.wrap_socket(raw_sock, server_hostname=host)
+                        sock = connect_tls(host, port, timeout=8)
                     else:
+                        raw_sock = socket.create_connection((host, port), timeout=8)
                         sock = raw_sock
                     sock.settimeout(8)
 

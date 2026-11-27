@@ -1,4 +1,5 @@
 # -*- mode: python ; coding: utf-8 -*-
+from PyInstaller.utils.hooks import collect_data_files
 
 a = Analysis(
     ['Kya_Archipelago_Launcher.py'],
@@ -9,8 +10,8 @@ a = Analysis(
         ('9ec63ff9a73c4adf-f25ef499ddb275c6-00002213.png', '.'),
         ('Icon.ico', '.'),
         ('data/*.json', 'data'),
-    ],
-    hiddenimports=[],
+    ] + collect_data_files('certifi'),
+    hiddenimports=['certifi', 'kya_tls'],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
