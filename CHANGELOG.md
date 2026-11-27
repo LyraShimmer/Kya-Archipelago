@@ -1,4 +1,16 @@
-## v9.0.1 RC2 (local test candidate — not published)
+# Changelog
+
+## v9.0.2-beta (2026-11-27)
+
+- Fixed secure WebSocket (WSS) certificate verification failures on hosted Archipelago rooms, contributed by eNigma (@eBigma) through PR #1.
+- Added certificate trust fallback via optional `KYA_CA_BUNDLE`, `certifi`, then the OS store. Certificate verification is never disabled.
+- Updated Launcher packaging to bundle `certifi`.
+- Added contributor credits and third-party notices.
+- Confirmed successful connections to `archipelago.gg` in live testing.
+- Launcher-only release: no changes to APWorld, YAML, game logic, progression conditions or location IDs.
+
+## v9.0.1-beta (2026-11-15)
+
 - Restored/retained all 318 AP checks, including Wolfen City 41.
 - Six FT01 destinations open initially in Archipelago mode.
 - Quarry/Root physical access rules tightened.
@@ -8,7 +20,6 @@
   its AP Rune item, to prevent an uncollectable native Rune pickup check.
 - No Windows binary produced. SSL runtime untouched; recompile before gameplay test.
 
-# Changelog
 
 ## 9.0.0-beta1 — private/open beta preparation
 

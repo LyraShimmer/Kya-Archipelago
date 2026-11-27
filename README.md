@@ -1,6 +1,6 @@
 # Kya: Dark Lineage — Archipelago
 
-**v9.0.1 RC2 source release candidate (pending Windows/runtime verification)** · PAL PS2 `SLES-51473` · PCSX2 + PINE
+**v9.0.2-beta - Launcher TLS/WSS stability update (APWorld logic unchanged)** · PAL PS2 `SLES-51473` · PCSX2 + PINE
 
 An unofficial, community-developed Archipelago multiworld integration for *Kya: Dark Lineage*. This repository makes the **Launcher source, APWorld source, runtime memory maps, reverse-engineering research tables, and technical documentation** available for inspection.
 
@@ -12,9 +12,11 @@ Get the following files from **GitHub Releases** (not from the repository's auto
 
 | Download | Description |
 | --- | --- |
-| `Launcher.zip` | Windows Launcher bundle; the RC2 kit initially contains **Python source mode**. Run `BUILD_RELEASE_WINDOWS.bat` to generate the compiled EXE edition before publishing. |
+| `Launcher.zip` | Windows Launcher bundle with compiled executables, game data and third-party licensing notices. |
 | `kya_dark_lineage.apworld` | Custom world for Archipelago |
 | `Kya_Dark_Lineage.yaml` | Example player configuration |
+
+For **v9.0.2**, update only `Launcher.zip`. The APWorld and YAML from v9.0.1-beta are unchanged. No new seeds are needed solely for this network fix.
 
 **[Read the step-by-step installation guide](docs/installation.md)** before playing. It covers the supported PAL game version, enabling PINE, **switching PCSX2 from Software Renderer to Vulkan**, enabling replacement textures, generating a custom-world seed, and connecting the Launcher.
 
@@ -53,7 +55,7 @@ The exported dataset includes **318 named locations** and **257 Wolfen key mappi
 - [Known issues](docs/known_issues.md)
 - [Research methods and confidence](docs/research/methodology.md)
 
-The v9.0.1 RC2 package contains source-level progression/FT fixes; the Launcher must be rebuilt for the rune-check fix. The APWorld retains the compatibility protocol/build token expected by the Launcher. See [v9.0.1 release guide](docs/release_901.md).
+v9.0.2 integrates [eNigma’s TLS/WSS fix (PR #1)](https://github.com/LyraShimmer/Kya-Archipelago/pull/1). The APWorld and YAML progression rules remain those of v9.0.1-beta. See [CHANGELOG.md](CHANGELOG.md).
 
 ## Credits, AI disclosure, rights
 
@@ -61,4 +63,4 @@ The development process used **LLMs extensively**, particularly ChatGPT, alongsi
 
 *Kya: Dark Lineage* and its original assets are owned by their respective rights holders. This is an unofficial fan project, unaffiliated with the game rights holders, PCSX2, Archipelago, the NSA, or the listed AI providers. Game ISO files, bulk original game extracts and executable game binaries are not supplied. Review any bundled artwork or textures before distributing them publicly.
 
-**License status:** A license for the project's original code has not yet been selected; see [`LICENSE_PENDING.md`](LICENSE_PENDING.md). Do not assume that repository visibility alone grants redistribution rights.
+**Reuse and attribution:** The maintainer’s project-specific permissions for original content are documented in [`LICENSE_PENDING.md`](LICENSE_PENDING.md). These are not a standard OSI-approved license and do not cover third-party code or game assets. See [CONTRIBUTORS.md](CONTRIBUTORS.md) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

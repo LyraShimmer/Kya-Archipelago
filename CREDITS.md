@@ -6,6 +6,10 @@
 
 LyraShimmer led the project, defined its gameplay and Archipelago integration goals, gathered and compared game-state observations, performed hands-on PCSX2 testing, investigated edge cases, and evaluated whether memory mappings and features behaved correctly in real gameplay. The published mappings document an iterative reverse-engineering process, not a complete or official game specification.
 
+## Community contributors
+
+- **[eNigma (@eBigma)](https://github.com/eBigma)** - extensive v9.0.1 gameplay and multiworld testing, identification of hosted-room TLS certificate errors, and the verified secure WSS connection fix in [pull request #1](https://github.com/LyraShimmer/Kya-Archipelago/pull/1).
+
 ## Reverse engineering: Ghidra
 
 A particularly important acknowledgment goes to **[Ghidra](https://github.com/NationalSecurityAgency/ghidra)**, the open-source software reverse-engineering framework developed and maintained by the **National Security Agency (NSA)** and its contributors.
@@ -29,6 +33,7 @@ The project is **not presented as entirely hand-written or entirely AI-generated
 - **[Ghidra](https://github.com/NationalSecurityAgency/ghidra)** — reverse engineering of game code and object behavior; special thanks to its maintainers and contributors.
 - **PINE** — the emulator communication interface used by the Launcher to interact with a running game.
 - **[Python](https://www.python.org/)** and **[PyInstaller](https://pyinstaller.org/)** — implementation and Windows executable packaging.
+- **[certifi](https://github.com/certifi/python-certifi)** - Mozilla CA bundle for verified WSS connections; MPL-2.0 license, with notice in `THIRD_PARTY_NOTICES.md`.
 - **[Pillow](https://python-pillow.github.io/)** — image handling used by the optional Kya Color Studio.
 
 ### Community documentation references
@@ -41,4 +46,4 @@ If a future version adds or adapts third-party source code, that code should rec
 
 *Kya: Dark Lineage*, its characters, artwork, and original game assets remain the property of their respective rights holders. Kya Archipelago is an unofficial fan-made integration and is not affiliated with or endorsed by the game's rights holders, the Archipelago project, PCSX2, the NSA, or the AI/tool providers named above.
 
-A license for this project's original source code has not yet been selected. The presence of source code on GitHub alone is not permission to redistribute proprietary game assets or to reuse the code under an assumed open-source license. See [`LICENSE_PENDING.md`](LICENSE_PENDING.md).
+The maintainer has published a project-specific permission statement for original source code and resources in [`LICENSE_PENDING.md`](LICENSE_PENDING.md). This is not a standard OSI-approved license, and it does not grant rights to third-party software or game assets.

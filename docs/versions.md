@@ -1,7 +1,17 @@
 # Release and compatibility versions
 
-- **GitHub release name:** `9.0.0-beta1` — an outward-facing beta milestone.
-- **Launcher implementation:** `0.9.63` codebase, with its existing matching guards and data compatibility preserved.
-- **APWorld implementation:** `0.8.14` — location IDs, world generation logic and version guards retained.
+## v9.0.2-beta (2026-11-27)
 
-Do **not** replace every occurrence of `0.8.14` or `0.9.63` with `9.0.0`: some literals are compatibility/version checks. Rename the whole protocol only after an explicit review of those checks and a new multiworld test.
+- Launcher only: secure WSS/TLS certificate verification fix contributed by [eNigma (@eBigma)](https://github.com/eBigma) through [PR #1](https://github.com/LyraShimmer/Kya-Archipelago/pull/1).
+- APWorld and YAML: unchanged from v9.0.1-beta.
+- Location IDs, item placements, progression requirements and game rules: unchanged.
+- Internal Archipelago protocol values remain unchanged; they are not interchangeable with GitHub release version numbers.
+
+## v9.0.1-beta (2026-11-15)
+
+- Corrected progression logic, six initial fast travels, Wolfen City/Fortress protection, and rune check behavior.
+- 318 checks preserved.
+
+## Compatibility warning
+
+Do not replace internal protocol, Launcher or APWorld version literals merely to match the public release version. Review and test protocol changes separately.
